@@ -26,10 +26,10 @@ title: Notatki Licealne                          # the main title
 tagline: Zbiór notatek z liceum i nie tylko   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Nie wiem jak ty to znalazłeś
+  Zbiór notatek z liceum i nie tylko
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'http://notes.tobiasbot.ovh'
+url: 'https://notes.tobiasbot.ovh'
 
 github:
   username: cheryx             # change to your github username
