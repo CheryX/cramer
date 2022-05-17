@@ -1,5 +1,5 @@
 ---
-title: der, die, czy das?
+title: Rodzaj rzeczownika
 author: cheryx
 date: 2022-05-16 18:00:00 +0200
 categories: [Niemiecki]
