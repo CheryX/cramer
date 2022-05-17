@@ -12,7 +12,6 @@ math: true
 Powtórzenie działu II ale bez 50 paragrafów tekstu na 1 temat. Jeśli nic nie umiesz to przeczytaj całe, a potem porób zadania z końca podręcznika.
 
 > Po przeczytaniu tego zostaniesz prawdziwym chemikiem. Panie Heisenberg, nie zapomnij o tym.
-> > Co-pliot mi to zaproponował ale uznałem że śmieszne więc zostawiłem.
 >
 > <div style="max-width: 200px; margin: auto;">
 >
@@ -24,17 +23,14 @@ Powtórzenie działu II ale bez 50 paragrafów tekstu na 1 temat. Jeśli nic nie
 
 ## Wzór ogólny tlenków
 
-<div>
-$$
-\stackrel{n}{X_2}\stackrel{II}{O_n}
-$$
-</div>
+$$\stackrel{n}{X_2}\stackrel{II}{O_n}$$
 
 Gdzie:
 * $X$ - dowolny pierwiastek chemiczny inny niż tlen lub fluor
 * $n$ - wartościowość pierwiastka $X$
 
 > Istnieją tlenki których nie skracamy, nawet jeśli jest to możliwe, są to: $P_4O_6$, $P_4O_{10}$, $H_2O_2$, $N_2O_4$.
+{: .prompt-warning }
 
 ### Wartościowości pierwiastków
 
@@ -44,33 +40,18 @@ $B$ i $Al$ zawsze mają wartościowość $III$
 
 ## Reakcje otrzymywania tlenków
 
-<div>
-$$
-metal + tlen \xrightarrow{} tlenek~metalu
-$$
-</div>
+$$metal + tlen \xrightarrow{} tlenek~metalu$$
 
-<div>
-$$
-tlenek~metalu_1 + tlen \xrightarrow{} tlenek~metalu_2
-$$
-</div>
+$$tlenek~metalu_1 + tlen \xrightarrow{} tlenek~metalu_2$$
 
 > Tlen zawsze zapisujemy w formie $O_2$
+{: .prompt-warning }
 
 ### Przykłady reakcji otrzymywania tlenków
 
-<div>
-$$
-2Cu + O_2 \xrightarrow{} 2CuO
-$$
-</div>
+$$2Cu + O_2 \xrightarrow{} 2CuO$$
 
-<div>
-$$
-4Fe + 3O_2 \xrightarrow{} 2Fe_2O_3
-$$
-</div>
+$$4Fe + 3O_2 \xrightarrow{} 2Fe_2O_3$$
 
 ## Reaktywnośc tlenków
 
@@ -89,18 +70,10 @@ Grupa | Zasadowe | Amfoteryczne | Kwasowe | Obojętne
 
 ## Wzór ogólny wodorków
 
-<div>
-$$
-\stackrel{n}{X}\stackrel{I}{H_n}
-$$
-</div>
+$$\stackrel{n}{X}\stackrel{I}{H_n}$$
 
 > Grupy 16 i 17 mają wzór ogólny wodorków:
-> <div>
-> $$
-> \stackrel{I}{H_n}\stackrel{n}{X}
-> $$
-> </div>
+> $$\stackrel{I}{H_n}\stackrel{n}{X}$$
 
 Gdzie:
 * $X$ - dowolny pierwiastek chemiczny inny niż tlen lub fluor
@@ -110,11 +83,7 @@ Gdzie:
 
 W prawie każdym przypadku tworzymy nazwę wodorka w następujący sposób:
 
-<div>
-$$
-wodorek+X+(Y)
-$$
-</div>
+$$wodorek+X+(Y)$$
 
 Gdzie:
 * $X$ - nazwa pierwiastka
@@ -122,11 +91,7 @@ Gdzie:
 
 Ale aby nie było za łatwo to w grupach 13-17 używamy następjącej formy:
 
-<div>
-$$
-X-o-wodór
-$$
-</div>
+$$X-o-wodór$$
 
 Na przykład: `siarkowodór`, `chlorowodór`.
 
@@ -134,17 +99,9 @@ Ostatnim wymaganym wyjątkiem jest $NH_3$, który ma nazwę: `amoniak`.
 
 ## Reakcje otrzymywania wodorów
 
-<div>
-$$
-niemetal + wodór \xrightarrow{} związek~niemetalu~z~wodorem
-$$
-</div>
+$$niemetal + wodór \xrightarrow{} związek~niemetalu~z~wodorem$$
 
-<div>
-$$
-metal + wodór \xrightarrow{katalizator} wodorek~metalu
-$$
-</div>
+$$metal + wodór \xrightarrow{katalizator} wodorek~metalu$$
 
 ## Reaktywnośc wodorków
 
@@ -161,11 +118,7 @@ Grupa | Zasadowe  | Kwasowe | Obojętne
 
 ## Wzór ogólny wodorotlenków
 
-<div>
-$$
-M^{n+}(OH)_n^-
-$$
-</div>
+$$M^{n+}(OH)_n^-$$
 
 Gdzie:
 * $M^{n+}$ - kation metalu
@@ -186,39 +139,19 @@ Nazewnictwo nie ma żadnych wyjątków, i jest to: $ wodorotlenek + X$, gdzie $X
 
 Metalami aktywnymi są metale grupy $I$ oraz $II$ bez berylu.
 
-<div>
-$$
-metal~aktywny + H_2O \xrightarrow{} wodorotlenek + H_2
-$$
-</div>
+$$metal~aktywny + H_2O \xrightarrow{} wodorotlenek + H_2$$
 
-<div>
-$$
-tlenek~metalu~aktywnego + H_2O \xrightarrow{} wodorotlenek
-$$
-</div>
+$$tlenek~metalu~aktywnego + H_2O \xrightarrow{} wodorotlenek$$
 
-<div>
-$$
-wodorek~metalu + H_2O \xrightarrow{} wodorotlenek
-$$
-</div>
+$$wodorek~metalu + H_2O \xrightarrow{} wodorotlenek$$
 
 Jeśli wodorotolenek nie jest rozpuszczalny w wodzie to można użyć wzoru:
 
-<div>
-$$
-sól_1 + wodorotlenek_1 \xrightarrow{} wodorotlenek_2 + sól_2
-$$
-</div>
+$$sól_1 + wodorotlenek_1 \xrightarrow{} wodorotlenek_2 + sól_2$$
 
 Na przykład:
 
-<div>
-$$
-NaCl + KOH \xrightarrow{} NaOH + KCl  
-$$
-</div>
+$$NaCl + KOH \xrightarrow{} NaOH + KCl  $$
 
 ## Właściwości wodorotlenków
 Aby sprawdzić rozpuszczalność wodorotlenków, wystarczy sprawdzić ją w tabeli rozpuszczalności.
@@ -234,49 +167,32 @@ Wodorotlenkami amforerycznymi są:
 
 Są 2 reakcje dotyczące wodorotlenków amfoterycznych:
 
-<div>
-$$
-wodorotlenek~amfoteryczny + kwas \xrightarrow{} sól + H_2O
-$$
-</div>
+$$wodorotlenek~amfoteryczny + kwas \xrightarrow{} sól + H_2O$$
 
-<div>
-$$
-wodorotlenek~amfoteryczny + zasada \xrightarrow{} hydrokompleks
-$$
-</div>
+$$wodorotlenek~amfoteryczny + zasada \xrightarrow{} hydrokompleks$$
 
 Reakcja rozkładu wodorotlenku:
 
-<div>
-$$
-wodorotlenek \xrightarrow{T} H_2O + tlenek~metalu
-$$
-</div>
+$$wodorotlenek \xrightarrow{T} H_2O + tlenek~metalu$$
 
 # Kwasy
 
 ## Wzór ogólny kwasów
 
-<div>
-$$
-\stackrel{I}{H_m}\stackrel{m}{R}
-$$
-</div>
+$$\stackrel{I}{H_m}\stackrel{m}{R}$$
 
 Gdzie:
 * $R$ - Reszta kwasowa
 * $m$ - Wartościowość $R$
 
 > Jeśli w reszcie kwasowej znajduje się tlen, to jest to kwas tlenowy. W przeciwnym wypadku jest to kwas beztlenowy.
+{: .prompt-tip }
 
 ## Nazewnictwo kwasów
 
 Tworzymy nazwę kwasu w następujący sposób:
 
-<div>
 $$ kwas ~~~X-końcówka$$
-</div>
 
 Gdzie:
 * $X$ to nazwa pierwiastka.
@@ -294,15 +210,11 @@ Przykłady:
 
 Kwasy beztlenowe otrzymujemy poprzez reakcje:
 
-<div>
 $$wodorek~niemetalu_{(g)} \xrightarrow{H_2O} kwas_{(aq)}$$
-</div>
 
 Kwasy tlenowe otrzymujemy poprzez reakcje:
 
-<div>
 $$tlenek~kwasowy+woda \xrightarrow{} kwas~tlenowy_{(aq)}$$
-</div>
 
 ## Moc kwasów
 
@@ -322,11 +234,7 @@ Porównójąc moc kwasu kwasów tlenowych o tym samym pierwiastku należy spojrz
 
 ## Wzór ogólny soli
 
-<div>
-$$
-\stackrel{m}{M}_n\stackrel{n}{(R)}_m
-$$
-</div>
+$$\stackrel{m}{M}_n\stackrel{n}{(R)}_m$$
 
 Gdzie:
 * $M^{m+}$ - kation metalu
@@ -366,13 +274,3 @@ $$ niemetal~przy~wodorotlenku + ~/di/tri + wodorotlenek + kation~metalu$$
 Przykłady:
 * $CaCl(OH)$ - chlorek wodorotlenek wapnia.
 * $FeBr(OH)_2$ - bromek diwodorotlenek żelaza.
-
-## Otrzymywanie wodorotlenków
-
-Soon™
-
-## Skały wapienne
-
-są wymagane przez nauczyciela z jakiegoś powodu więc zrobie :d
-
-# Hydraty
