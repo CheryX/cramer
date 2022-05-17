@@ -43,16 +43,25 @@ $$\begin{cases}
 
 ## Metoda graficzna
 
-Metoda graficzna polega na narysowaniu układu obu równań, zwykle te równania mają wzór funkcji liniowej więc na układzie powinny być 2 kreski.
-
-Przykład równania:
+Metoda graficzna polega na narysowaniu układu obu równań, zwykle te równania mają wzór funkcji liniowej więc na układzie współrzędnych powinny być 2 proste.
 
 $$\begin{cases}
-    4x+y=6 \\
-    3x+7y=9 \\
+    2x+y=6 \\
+    3x+3y=9 \\
 \end{cases}$$
 
-> Zaraz będzie rysunek
+Najpierw należy przekształcić równanie do postaci $y=ax+b$
+
+$$\begin{cases}
+    y=-2x+6 \\
+    y=-x+3 \\
+\end{cases}$$
+
+Teraz można narysować układ współrzędnych.
+
+> miejsce na zdj zaraz dodam
+
+Punkt przecięcia prostych to punkt, który spełnia równanie, w tym przypadku jest to punkt $(3, 0)$. Dlatego rozwiązaniem równania jest $x=3, y=0$.
 
 > Jeśli kreski są równoległe, to jest to `równanie sprzeczne`, a jeśli są w tym samym miejscu, to jest to `równanie tożsamościowe`.
 {: .prompt-tip }
