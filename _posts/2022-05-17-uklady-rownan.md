@@ -38,10 +38,101 @@ $$\begin{cases}
 
 # Metody rozwiązywania równań
 
+> W poleceniu może być wskazana metoda rozwiązania równania.
+{: .prompt-warning }
+
+## Metoda graficzna
+
+Metoda graficzna polega na narysowaniu układu obu równań, zwykle te równania mają wzór funkcji liniowej więc na układzie powinny być 2 kreski.
+
+Przykład równania:
+
+$$\begin{cases}
+    4x+y=6 \\
+    3x+7y=9 \\
+\end{cases}$$
+
+> Zaraz będzie rysunek
+
+> Jeśli kreski są równoległe, to jest to `równanie sprzeczne`, a jeśli są w tym samym miejscu, to jest to `równanie tożsamościowe`.
+{: .prompt-tip }
+
 ## Metoda podstawiania
 
-soon^tm
+Metoda postawiania polega na przekształceniu jednego równania do postaci gdzie zmienna $x$ lub $y$ jest tylko po jednej stronie równania.
+
+Przykład przekształcania równania:
+
+$$\begin{cases}
+    4x-y=2 \\ 
+    -x+y=5 |*-1\\
+\end{cases}$$
+
+$$\begin{cases}
+    4x-y=2 \\ 
+    x-y=5 |+y \\
+\end{cases}$$
+
+$$\begin{cases}
+    4x-y=2 \\ 
+    x=5+y \\
+\end{cases}$$
+
+Jeśli mamy taką forme, to w drugim równaniu można za zmienną (w tym przypadku $x$) podstawić resztę równania.
+
+$$\begin{cases}
+    4(5+y)-y=2 \\ 
+    x=5+y \\
+\end{cases}$$
+
+$$\begin{cases}
+    20+4y-y=2 \\ 
+    x=5+y \\
+\end{cases}$$
+
+$$\begin{cases}
+    3y=-18 \\ 
+    x=5+y \\
+\end{cases}$$
+
+$$\begin{cases}
+    y=-6 \\ 
+    x=5+y \\
+\end{cases}$$
+
+Mamy już obliczoną zmienną $y$, więc możemy z łatwością obliczyć $x$.
+
+$$\begin{cases}
+    y=-6 \\ 
+    x=5-6 \\
+\end{cases}$$
+
+$$\begin{cases}
+    y=-6 \\ 
+    x=-1 \\
+\end{cases}$$
+
+> Kolejność obliczania zmiennych jest dowolna, najpierw można obliczyć $x$, a potem $y$.
+{: .prompt-tip }
 
 ## Metoda przeciwnych współczynników
 
-## Metoda Cramera
+Metoda przeciwnych współczynników polega na sprowadzeniu obu równań do postaci, gdzie jeden współczynnik jest przeciwny drugiemu. Na przykład w równaniu pierwszym występuje $-5x$, a w drugim $5x$.
+
+Przykład sprowadzenia równania do odpowiedniej formy:
+
+$$\begin{cases}
+    3x-2y=13 | *4 \\ 
+    4x+5y=2 |*(-3)\\
+\end{cases}$$
+
+$$\begin{cases}
+    12x-8y=52\\
+    -12x-15y=-6\\
+\end{cases}$$
+
+Jeśli mamy taką forme, to dodajemy obie strony równania do siebie, przy czym eliminujemy jedną ze zmiennych
+
+$$-23y=46$$
+
+$$y=-2$$
