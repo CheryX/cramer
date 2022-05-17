@@ -3,7 +3,7 @@ title: der, die, czy das?
 author: cheryx
 date: 2022-05-16 18:00:00 +0200
 categories: [Niemiecki]
-tags: [niemiecki]
+tags: [niemiecki, de-gramatyka]
 render_with_liquid: false
 math: true
 ---
