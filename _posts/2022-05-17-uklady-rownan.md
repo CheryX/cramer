@@ -10,7 +10,7 @@ math: true
 
 # Czym jest układ równań?
 
-Układ równań jest to układ składający się z dwóch lub więcej równań. Przykładami równań są:
+Układ równań jest to układ składający się z dwóch lub więcej równań.[^uklady] Przykładami równań są:
 
 $$\begin{cases}
     2x+y=6 \\
@@ -145,3 +145,5 @@ Jeśli mamy taką forme, to dodajemy obie strony równania do siebie, przy czym 
 $$-23y=46$$
 
 $$y=-2$$
+
+[^uklady]: [Informacje o układach równań](https://en.wikipedia.org/wiki/System_of_linear_equations)

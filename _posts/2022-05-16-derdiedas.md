@@ -8,9 +8,10 @@ render_with_liquid: false
 math: true
 ---
 
-Jest spora szansa że podczas sprawdzianu zapomnisz który pronoun pasuje do którego słowa, możesz zawsze spróbować uratować pare punktów stosując się do tych (prawie) ogólnych zasad.
+Jest spora szansa że podczas sprawdzianu zapomnisz który pronoun pasuje do którego słowa, możesz zawsze spróbować uratować pare punktów stosując się do tych (prawie) ogólnych zasad.[^1]
 
-> UWAGA! **Narazie** obowiązują nas tylko Nominative oraz Accusative
+> **Narazie** obowiązują nas tylko Nominative oraz Accusative
+{: .prompt-warning }
 
 Nazwa|Nominative|Accusative|Dative|Genitive
 -|-|-|-|-|
@@ -31,6 +32,7 @@ plural | die | die | den | der
 Jest 90% szans że końcówka wyrazu decyduje o jego rodzaju.
 
 > Nie jest to prawdziwe dla każdego przypadku, ale jest dla większości
+{: .prompt-danger }
 
 Nazwa|Końcówki
 -|-
@@ -41,9 +43,12 @@ neuter  | -chen, -lein, -sel, -ett, -ment, -um
 ## Znaczenie
 
 > Nie jest to prawdziwe dla każdego przypadku, ale jest dla większości
+{: .prompt-danger }
 
 Nazwa|Przyklady
 -|-
 masculine | Męska część rodziny, dni, miesiące, pory roku, męskie zawody, marki samochodów  
 feminine | Żeńska część rodziny, cyfry, statki, 
 neuter  | Miasta, kontynenty, kraje, metale, liczebniki (tuzin, dekada)
+
+[^1]: [Wszystkie informacje](http://www.dartmouth.edu/~deutsch/Grammatik/Nouns/nouns.html)

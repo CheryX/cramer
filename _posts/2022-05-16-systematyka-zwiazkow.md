@@ -51,7 +51,7 @@ $$tlenek~metalu_1 + tlen \xrightarrow{} tlenek~metalu_2$$
 
 $$2Cu + O_2 \xrightarrow{} 2CuO$$
 
-$$4Fe + 3O_2 \xrightarrow{} 2Fe_2O_3$$
+$$4Fe + 3O_2 \xrightarrow{} 2Fe_2O_3$$[^tlenki]
 
 ## Reaktywnośc tlenków
 
@@ -95,7 +95,7 @@ $$X-o-wodór$$
 
 Na przykład: `siarkowodór`, `chlorowodór`.
 
-Ostatnim wymaganym wyjątkiem jest $NH_3$, który ma nazwę: `amoniak`.
+Ostatnim wymaganym wyjątkiem jest $NH_3$, który ma nazwę: `amoniak`.[^wodorki]
 
 ## Reakcje otrzymywania wodorów
 
@@ -173,7 +173,7 @@ $$wodorotlenek~amfoteryczny + zasada \xrightarrow{} hydrokompleks$$
 
 Reakcja rozkładu wodorotlenku:
 
-$$wodorotlenek \xrightarrow{T} H_2O + tlenek~metalu$$
+$$wodorotlenek \xrightarrow{T} H_2O + tlenek~metalu$$[^wodorotlenki]
 
 # Kwasy
 
@@ -228,7 +228,7 @@ A w kwasach tlenowych:
 
 ![moc2](https://user-images.githubusercontent.com/58445363/164991613-da2ef06e-bf93-4fe4-ad3b-5894a97f458b.png)
 
-Porównójąc moc kwasu kwasów tlenowych o tym samym pierwiastku należy spojrzeć na liczbę tlenu w reszcie kwasowej. Na przykład $HClO$ ma mniejszą moc niż $HClO_2$, ponieważ chlor ma większą wartościowość.
+Porównójąc moc kwasu kwasów tlenowych o tym samym pierwiastku należy spojrzeć na liczbę tlenu w reszcie kwasowej. Na przykład $HClO$ ma mniejszą moc niż $HClO_2$, ponieważ chlor ma większą wartościowość.[^kwasy]
 
 # Sole
 
@@ -273,4 +273,11 @@ $$ niemetal~przy~wodorotlenku + ~/di/tri + wodorotlenek + kation~metalu$$
 
 Przykłady:
 * $CaCl(OH)$ - chlorek wodorotlenek wapnia.
-* $FeBr(OH)_2$ - bromek diwodorotlenek żelaza.
+* $FeBr(OH)_2$ - bromek diwodorotlenek żelaza.[^sole][^sole2]
+
+[^tlenki]: [Informacje o tlenkach](https://en.wikipedia.org/wiki/Oxide)
+[^wodorki]: [Informacje o wodorkach](https://en.wikipedia.org/wiki/Hydride)
+[^wodorotlenki]: [Informacje o wodorotlenkach](https://en.wikipedia.org/wiki/Hydroxide)
+[^kwasy]: [Informacje o kwasach](https://en.wikipedia.org/wiki/Acid)
+[^sole]: [Informacje o solach](https://pl.wikipedia.org/wiki/Sole)
+[^sole2]: [Dodatkowe informacje o solach](https://en.wikipedia.org/wiki/Salt_(chemistry))
