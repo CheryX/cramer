@@ -59,8 +59,7 @@ $$\begin{cases}
 
 Teraz można narysować układ współrzędnych.
 
-![1](https://user-images.githubusercontent.com/58445363/169097678-07321750-f278-4fb4-9a93-b895347cbd52.svg)
-
+![1](https://user-images.githubusercontent.com/58445363/169099881-5a8cb295-bf28-4b2b-a8ac-46ca9b4ea922.png)
 
 Punkt przecięcia prostych to punkt, który spełnia równanie, w tym przypadku jest to punkt $(3, 0)$. Dlatego rozwiązaniem równania jest $x=3, y=0$.
 
