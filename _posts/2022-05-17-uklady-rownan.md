@@ -46,21 +46,20 @@ $$\begin{cases}
 Metoda graficzna polega na narysowaniu układu obu równań, zwykle te równania mają wzór funkcji liniowej więc na układzie współrzędnych powinny być 2 proste.
 
 $$\begin{cases}
-    2x+y=6 \\
-    3x+3y=9 \\
+    y=x+2 \\
+    2y+2x=-8 \\
 \end{cases}$$
 
 Najpierw należy przekształcić równanie do postaci $y=ax+b$
 
 $$\begin{cases}
-    y=-2x+6 \\
-    y=-x+3 \\
+    y=x+2 \\
+    y=-x-4 \\
 \end{cases}$$
 
 Teraz można narysować układ współrzędnych.
 
-![uklad](https://user-images.githubusercontent.com/58445363/168878361-55132c43-f1ff-4934-bbde-2ff7579b9da0.png)
-
+> wstaw tutaj obrazek
 
 Punkt przecięcia prostych to punkt, który spełnia równanie, w tym przypadku jest to punkt $(3, 0)$. Dlatego rozwiązaniem równania jest $x=3, y=0$.
 
@@ -75,7 +74,7 @@ Przykład przekształcania równania:
 
 $$\begin{cases}
     4x-y=2 \\ 
-    -x+y=5 |*-1\\
+    -x+y=-5 |*-1\\
 \end{cases}$$
 
 $$\begin{cases}
