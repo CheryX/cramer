@@ -20,7 +20,7 @@ Gdzie $a\neq0$[^wzor]. Kształt na układzie współrzędnych jest parabolą.
 
 Parabola to jest kształt na układzie współrzędnych, który otrzymujemy m.in przy użyciu funkcji kwadratowej. Wygląda on następująco
 
-> dodaj tu zdj paraboli (jest juz gotowa)
+![2](https://user-images.githubusercontent.com/58445363/169342146-51622a6d-0d06-4f90-95d7-d3c944391a3e.png)
 
 Parabola składa się z:
 * wierzchołka - oznaczany punktem $W(p, q)$
