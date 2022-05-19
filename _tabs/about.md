@@ -1,5 +1,5 @@
 ---
-title: About
+title: O projekcie
 icon: fas fa-info-circle
 order: 4
 ---
