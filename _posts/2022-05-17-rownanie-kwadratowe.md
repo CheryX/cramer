@@ -3,7 +3,7 @@ title: Funkcja kwadratowa
 author: cheryx
 date: 2022-05-17 20:20:00 +0200
 categories: [Matematyka]
-tags: [matematyka]
+tags: [matematyka, 1-klasa, funkcje]
 render_with_liquid: false
 math: true
 ---

@@ -3,7 +3,7 @@ title: Układy Równań
 author: cheryx
 date: 2022-05-17 18:46:00 +0200
 categories: [Matematyka]
-tags: [matematyka, uklady]
+tags: [matematyka, 1-klasa, funkcje]
 render_with_liquid: false
 math: true
 ---
