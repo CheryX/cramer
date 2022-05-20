@@ -26,6 +26,20 @@ Witaj w projekcjie `Notatki Licealne`, jest to projekt który ma na celu ułatwi
 
 5. Napisz notatkę w języku Markdown.
 
+    > Zacznij notatkę od ustawień (oczywiście zmieniając je w zależności od potrzeb):
+    >```
+    >---
+    >title: C++ Wstęp
+    >author: cheryx
+    >date: 2022-05-20 14:15:00 +0200
+    >categories: [Informatyka, C++]
+    >tags: [informatyka, c++, 1-klasa]
+    >render_with_liquid: false
+    >math: true
+    >---
+    >```
+    {: .prompt-warning }
+
 6. Zapisz zmiany
 
     ![image](https://user-images.githubusercontent.com/58445363/169597581-97d07053-0082-4840-b300-511ca29bae8b.png)
