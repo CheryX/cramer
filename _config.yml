@@ -1,111 +1,60 @@
-# The Site Configuration
-
-# Import the theme
 theme: jekyll-theme-chirpy
 
-# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
-# and doesn't have a custom domain.
 baseurl: ''
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: pl
-
-# Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
-prefer_datetime_locale:
-
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+prefer_datetime_locale: pl
 timezone: Europe/Warsaw
+title: Projekt Cramer
+tagline: Zbiór notatek do szkół ponadpodstawowych
+description: >-
+  Projekt Cramer jest zbiorem notatek do szkół ponadpodstawowych, do którego każdy może dodać swoją notatkę.
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
-title: Notatki Licealne                          # the main title
-
-tagline: Zbiór notatek z liceum i nie tylko   # it will display as the sub-title
-
-description: >-                        # used by seo meta and the atom feed
-  Zbiór notatek z liceum i nie tylko
-
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://notes.tobiasbot.ovh'
 
 github:
-  username: cheryx             # change to your github username
+  username: cheryx
 
 twitter:
-  username: CheresniaX            # change to your twitter username
+  username: CheresniaX
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: CheryX
-  email: cheryx@tobiasbot.ovh             # change to your email address
+  email: maciejmusielik@gmail.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/CheresniaX      # change to your twitter homepage
-    - https://github.com/cheryx       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/CheresniaX
+    - https://github.com/cheryx
 
-google_site_verification:               # fill in to your verification string
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+google_site_verification:
 
 google_analytics: 
-  id: G-XG0DNQYV7V                 # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
+  id: 
   pv:
-    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path:       # the local PV cache data, friendly to visitors from GFW region
+    proxy_endpoint:
+    cache_path: 
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode:   # [light|dark]
+theme_mode: dark
 
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
 img_cdn: 'https://avatars.githubusercontent.com/u/58445363?v=4'
-
-# the avatar on sidebar, support local or CORS resources
 avatar: '/commons/avatar.jpg'
 
-# boolean type, the global switch for ToC in posts.
 toc: true
 
 comments:
   active: giscus
   giscus:
-    repo:  CheryX/notes # <gh-username>/<repo>
+    repo:  CheryX/notes
     repo_id: R_kgDOHWKFow
     category: Giscus
     category_id: DIC_kwDOHWKFo84CPJ2p
-    mapping:          # optional, default to 'pathname'
-    input_position:   # optional, default to 'bottom'
-    lang:             # optional, default to the value of `site.lang`
+    mapping:
+    input_position:
+    lang:
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled:      # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env:          # [development|production]
+    enabled:
+    env:
 
 paginate: 10
 
