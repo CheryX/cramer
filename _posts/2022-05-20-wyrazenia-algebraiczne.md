@@ -8,7 +8,7 @@ render_with_liquid: false
 math: true
 ---
 
-Ze względu na pilność, narazie nie będe się zbytnio rozpisywał (normalna wersja bedzie ok 20-21)
+Ze względu na pilność, narazie nie będe się zbytnio rozpisywał (normalna wersja bedzie ok 20-21) oczywiscie nie w maju XD
 
 # Wyrażenia Algebraiczne
 
