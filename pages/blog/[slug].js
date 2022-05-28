@@ -5,8 +5,9 @@ import path from 'path'
 import matter from 'gray-matter'
 
 import { Nav, Winogrona } from '../../components'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-const components = { Nav, Winogrona }
+const components = { Nav, Winogrona, SyntaxHighlighter }
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
   return (

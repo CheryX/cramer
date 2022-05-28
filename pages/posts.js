@@ -6,7 +6,7 @@ import matter from 'gray-matter'
 const Bio = ({ posts }) => {
   return (
     <div className="mt-3"> 
-      różowy jarosław
+      <h2>Posty</h2>
       <PostList posts={posts} />
     </div>
   )
