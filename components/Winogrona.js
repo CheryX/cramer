@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Testowy = () => {
+const Winogrona = () => {
 
   const [color, setColor] = useState("red");
   const [text, setText] = useState("czerwone");
@@ -33,4 +33,4 @@ const Testowy = () => {
   );
 }
 
-export default Testowy;
+export default Winogrona

@@ -1,8 +1,4 @@
-import Testowy from "./Testowy";
-import PostList from "./PostList";
+import Nav from './Nav'
+import Winogrona from './Winogrona'
 
-const components = {
-  Testowy, PostList
-};
-
-export default components;
+export { Nav, Winogrona }

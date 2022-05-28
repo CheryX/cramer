@@ -1,35 +1,64 @@
-import * as fs from 'fs'
-import * as matter from 'gray-matter' 
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import Link from 'next/link'
+import Image from 'next/image'
 
-import Head from 'next/head'
-import Testowy from '../components/Testowy'
-import PostList from '../components/PostList'
-import Normal from '../layouts/NormalLayout'
-
-export default function Home({ posts }) {
+const Home = ({ posts }) => {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Normal title="Main site">
-        <Testowy />
-        <PostList posts={posts}/>
-      </Normal>
+
+    <div className="mt-5">
+      <h1>Tu pewnie bedzie cos fajnego a potem z 3 posty nowe</h1>
+      
+      {posts.map((post, index) => (
+        <Link href={'/blog/' + post.slug} passHref key={index}>
+          <div className="card mb-3 pointer" style={{ maxWidth: '540px', cursor: 'pointer' }}>
+            <div className="row g-0">
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">{post.frontMatter.title}</h5>
+                  <p className="card-text">{post.frontMatter.description}</p>
+                  <p className="card-text">
+                    <small className="text-muted">{post.frontMatter.date}</small>
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 m-auto">
+                <Image
+                  src={post.frontMatter.thumbnailUrl}
+                  className="img-fluid mt-1 rounded-start"
+                  alt="thumbnail"
+                  width={500}
+                  height={400}
+                  objectFit="cover"
+                  />
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
     </div>
   )
 }
 
-export async function getStaticProps() {
-  const postList = fs.readdirSync('./posts', (e) => {console.log(e)} ) //this one dot...
+export const getStaticProps = async () => {
+  const files = fs.readdirSync(path.join('posts'))
 
-  let posts = []
-  for (let file of postList) {
-    let fileContent = matter.read(`./posts/${file}`)
-    fileContent.data.fileName = "/posts/"+file
-    posts.push(fileContent.data)
+  const posts = files.map(filename => {
+    const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
+    const { data: frontMatter } = matter(markdownWithMeta)
+
+    return {
+      frontMatter,
+      slug: filename.split('.')[0]
+    }
+  })
+
+  return {
+    props: {
+      posts
+    }
   }
-
-  return { props: { posts }}
 }
+
+export default Home
