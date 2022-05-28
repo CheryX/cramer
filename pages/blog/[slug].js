@@ -2,8 +2,8 @@ import { MDXRemote } from 'next-mdx-remote'
 import { getPost, getPostPaths } from '../../lib/posts'
 
 import { Nav, Winogrona } from '../../components'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-const components = { Nav, Winogrona, SyntaxHighlighter }
+import "highlight.js/styles/atom-one-dark.css";
+const components = { Nav, Winogrona }
 
 const PostPage = ({ frontMatter: { title }, mdxSource }) => {
 	return (

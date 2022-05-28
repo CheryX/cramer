@@ -1,7 +1,7 @@
 import { PostList } from "../components"
 import { getAllPosts } from "../lib/posts"
 
-const Bio = ({ posts }) => {
+const Posts = ({ posts }) => {
   return (
     <div className="mt-3"> 
       <h2>Posty</h2>
@@ -13,4 +13,5 @@ const Bio = ({ posts }) => {
 export const getStaticProps = async () => {
   return { props: { posts : getAllPosts() } }
 }
-export default Bio
+
+export default Posts
