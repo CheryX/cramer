@@ -1,5 +1,5 @@
 ---
-title: Wybrane funckje
+title: Wybrane funkcje
 author: cheryx
 date: 2022-05-17 20:20:00 +0200
 categories: [Matematyka]
