@@ -33,6 +33,9 @@ const Pre = (props) => {
           }`}
           onClick={onCopy}
         >
+          <i class="bi bi-clipboard" style={{
+            color: copied ? 'green' : 'gray'
+          }}></i>
         </button>
       )}
 

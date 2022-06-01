@@ -5,6 +5,7 @@ tags: [informatyka, c++]
 draft: false
 summary: Podstawowe informacje o C++
 thumbnail: 'https://images.unsplash.com/photo-1635775017492-1eb935a082a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+authors: ['default', 'electruuu']
 ---
 
 **C++** jest popularnym językiem programowaia który został stworzony w 1979 jako *C z klasami*, teraz ten język jest używany w programowaniu ważnych części kodu, systemów operacyjnych oraz wiele więcej.[^cpp] Język ten jest tak popularny że trafił na liste dozwolonych języków na maturze rozszerzonej z informatyki.[^cke] Ten język nie jest stworzony dla osób zaczynającym z programowaniem, a nawet można stwierdzić że jest to po prostu *strzelanie w stopę*[^garbage]. Jeśli planujesz napisać dobrze maturę z informatyki, to polecam skorzystać z przyjemniejszych oraz łatwiejszych języków programowania.[^stackoverflow]
@@ -24,7 +25,6 @@ Aby przygotować workspace do pracy z C++ należy zrobić przygotować:
 
 > Kompilatory online mają ograniczoną funkcjonalność.
 
-
 > Często występują problemy co do [Visual Studio Code](https://code.visualstudio.com/Download) na systemach Windows.
 
 
@@ -40,7 +40,6 @@ cd my_project
 ```
 
 > To są komendy na systemach Linux/macOS, za wszelkie starty na systemach Windows nie odpowiadam.
- 
 
 W nowym katalogu należy stworzyć nowy plik o rozszrzeniu `.cpp`, na przykład `main.cpp`.
 
@@ -121,7 +120,6 @@ cin >> x;
 
 > Uwaga, kierunki strzałek po `cout` oraz `cin` są w innych kierunkach.
 
-
 ### Wprowadzanie danych z klawiatury
 
 Za pomocą funkcji `cin` możemy wprowadzać dane z klawiatury, takim sposobem trzeba stworzyć *zmienną*, o której będzie potem.
@@ -187,8 +185,6 @@ Wpisz wartosc a: 5
 Aby zmienić wartość zmiennej należy użyć operatora `=` *(assignment operator)*.
 > Znak `=` jest używany do definiowania, a `==` do porównywania.
 
-
-
 ```c++
 int a = 5;
 a = 10;
@@ -202,7 +198,6 @@ b = b + 10;
 ```
 
 > Zapis jak `b = b + 10` można skrócić do `b += 10`
-
 
 # Zadania (Łatwe)
 
@@ -225,7 +220,6 @@ for (int i = 0; i < 10; i++) {
 
 > `i++` oznacza zwiększenie wartości zmiennej o 1.
 
-
 Początek instrukcji rozpoczynamy `for`, później w nawiasie okrągłym zapisujemy 3 argumenty oddzielone średnikami.
 1. Definicja iteratora, czyli zmiennej która informuje program która to jest iteracja (pętla).
 2. Warunek, czy pętla ma się jeszcze wykonać, w tym przypadku oznacza to: *dopóki **i** jest mniejsze od 10*.
@@ -241,9 +235,7 @@ for (int i = 0; i < 5; i++) {
 0 1 2 3 4
 ```
 
-
 > Po 3 argumencie (`i++`) w pętli for nie umieszczamy średnika
-
 
 ## while
 
@@ -274,7 +266,6 @@ do {
 ```
 
 > Pętla do while wykonuje się conajmiej raz.
-
 
 # Zadania (Średnie)
 
