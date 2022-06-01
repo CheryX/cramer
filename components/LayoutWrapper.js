@@ -1,7 +1,6 @@
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logoSmall.svg'
 import SectionContainer from './SectionContainer'
-
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
@@ -17,10 +16,6 @@ const LayoutWrapper = ({ children }) => {
                 <li><a key={link.title} href={link.href} className="nav-link px-2 text-white">{link.title}</a></li>
             ))}
             </ul>
-
-            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" className="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search" />
-            </form>
           </div>
         </div>
       </header>
