@@ -24,3 +24,9 @@ footer.end{
 	bottom:0;
     width: 100%;
 }
+
+.eLink {
+    color: #00bcd4;
+    text-decoration: underline;
+    font-style: italic;
+}

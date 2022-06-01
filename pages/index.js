@@ -31,11 +31,11 @@ export default function Home({ posts, tags }) {
         <div className="row justify-content-md-center">
           <div className="col-md-5">
             <h1 className="text-center fw-bold my-5">O nas</h1>
-            <p className='text-justify mx-5'>Irure aute dolor occaecat nostrud labore quis eu est incididunt excepteur aute. Ullamco incididunt sit excepteur aute. Duis labore eu Lorem nulla qui fugiat commodo aliquip duis. Amet proident aliqua nulla enim pariatur magna irure officia.</p>
+            <p className='text-justify mx-5'>Projekt Cramer to jest nowy projekt open source, mający na celu ułatwić uczniom dostęp do wiedzy i nie tylko.  </p>
           </div>
           <div className="col-md-5">
             <h1 className="text-center fw-bold my-5">Jak stworzyć notatkę</h1>
-            <p className='text-justify mx-5'>Minim quis esse velit voluptate ex cillum est qui aliqua id elit. Duis aliqua consequat aliquip laborum dolore ad occaecat anim irure nisi. Officia culpa nisi nisi cillum enim sit nisi esse. Quis nisi et quis </p>
+            <p className='text-justify mx-5'>Jeśli chcesz dodać własną notatkę lub poprawić błąd, wystarczy wejść na strone projektu na <a href="https://github.com/cheryx/notes" className="eLink">GitHubie</a> i stworzyć pull requesta. Dokładna instrukcja jest dostępna <a href="/about" className="eLink">tutaj</a>.</p>
           </div>
         </div>
       </div>
