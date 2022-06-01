@@ -1,10 +1,11 @@
 {
-  "name": "jekyll-theme-chirpy",
-  "version": "5.1.0",
-  "description": "A minimal, responsive, and powerful Jekyll theme for presenting professional writing.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
+  "name": "cramer",
+  "version": "0.2",
+    "scripts": {
+    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
+    "dev": "next dev",
+    "build": "next build && node ./scripts/generate-sitemap",
+    "serve": "next start -p 3001"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
