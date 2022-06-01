@@ -1,0 +1,75 @@
+---
+title: Wyrażenia Algebraiczne
+date: '2022-05-20'
+tags: [matematyka, algebra]
+summary: 'Potęgi, logarytmy oraz wzory skróconego mnożenia'
+draft: false
+thumbnail: 'https://images.unsplash.com/photo-1653074281018-c08f358059ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
+---
+Ze względu na pilność, narazie nie będe się zbytnio rozpisywał (normalna wersja bedzie ok 20-21) oczywiscie nie w maju XD
+
+# Wyrażenia Algebraiczne
+
+## Potęgi
+
+Potęga, czyli **$a^b$**, jest to **$a$** podniesione do wykładnika **$b$**.
+
+### Potęga o wykładniku ujemnym
+
+$$a^{-b} = \frac{1}{a^{b}}$$
+
+### Potęga o wykładniku wymiernym
+
+$$a^{\frac{1}{2}} = \sqrt{a}$$
+
+Należy sprowadzić liczbę wymierną do postaci zwykłej, a następnie wykonać potęgę.
+
+$$a^{5.5} = a^{11/2} = \sqrt[2]{a^{11}}$$
+
+$$a^{14/1} = \sqrt[1]{a^{14}}$$
+
+$$a^{61/5} = \sqrt[5]{a^{61}}$$
+
+$$a^{10/4} = \sqrt[4]{a^{10}}$$
+
+### Potęga o wykładniku niewymiernym
+
+Tak naprawde ciężko obliczyć potęge o wykładniku niewymiernym, ale w poleceniach będzie można dokonać uproszczeń. Oto kilka z nich:
+
+$$(a^{\sqrt{6}})^{\sqrt{6}} = a^{\sqrt{6}*\sqrt{6}} = a^{6}$$
+
+$$(a^{\sqrt{2}})^{\sqrt{18}} = a^{\sqrt{2}*\sqrt{18}} = a^{\sqrt{4}*\sqrt{9}} = a^{6}$$
+
+## Logarytmy
+
+Logarytm to jest zapis: **$\log_a(b)$**, gdzie **$a$** jest podstawą logarytmu, a **$b$** jest liczb logarytmowaną.
+
+Gdzie:
+* $a > 0$
+* $b > 0, b \neq 1$
+
+W skrócie **$\log_a(b) = c$** jest równy, **$a^c = b$**
+
+Na sprawdzianie będzie wykorzystywana znajomość właściwości logarytmów:
+* $log_a(a) = 1$, bo $a^1 = a$
+* $log_a(1) = 0$, bo $a^0 = 1$
+* $log_a(a^b) = b$
+* $a^{log_a(b)} = b$, można to wywnioskować z definicji logarytmu
+* $log_a(x*y) = log_a(x) + log_a(y)$
+* $log_a(x/y) = log_a(x) - log_a(y)$
+
+Oraz jedyna własność na rozszerzeniu:
+
+$$\log_b(c) = \frac{\log_a(c)}{\log_a(b)}$$, gdzie $a$ jest dowolną liczbą większą od 0.
+
+## Wzory Skróconego Mnożenia
+
+Wzory skróconego mnożenia są przydatne, jeśli działamy na zmiennych.
+
+$$(a+b)^2 = a^2 + 2ab + b^2$$
+
+$$(a-b)^2 = a^2 - 2ab + b^2$$
+
+$$(a-b)(a+b) = a^2 - b^2$$
+
+> Nawet AI które się wcześniej nad chemią załamało to umie, to jest podstawa.
