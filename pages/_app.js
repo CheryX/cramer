@@ -1,14 +1,28 @@
-import Nav from '../components/Nav'
+import 'katex/dist/katex.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import '../css/globals.css'
 
-function MyApp({ Component, pageProps }) {
+import { ThemeProvider } from 'next-themes'
+import Head from 'next/head'
+
+import siteMetadata from '@/data/siteMetadata'
+import LayoutWrapper from '@/components/LayoutWrapper'
+import { ClientReload } from '@/components/ClientReload'
+
+const isDevelopment = process.env.NODE_ENV === 'development'
+const isSocket = process.env.SOCKET
+
+export default function App({ Component, pageProps }) {
   return (
-    <div className="container">
-      <Nav />
-      <main>
+    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+      {isDevelopment && isSocket && <ClientReload />}
+      <LayoutWrapper>
         <Component {...pageProps} />
-      </main>
-    </div>
+      </LayoutWrapper>
+    </ThemeProvider>
   )
 }
-
-export default MyApp

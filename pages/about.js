@@ -1,9 +1,21 @@
-const About = () => {
-  return (
-    <div className="mt-3"> 
-      cześć, tutaj saweł dobry człowiek, czy wiedziałeś że masz prawa? cóż, konstytucja mówi że je masz
-    </div>
-  )
+import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import { getFileBySlug } from '@/lib/mdx'
+
+const DEFAULT_LAYOUT = 'AuthorLayout'
+
+export async function getStaticProps() {
+  const authorDetails = await getFileBySlug('authors', ['default'])
+  return { props: { authorDetails } }
 }
 
-export default About
+export default function About({ authorDetails }) {
+  const { mdxSource, frontMatter } = authorDetails
+
+  return (
+    <MDXLayoutRenderer
+      layout={frontMatter.layout || DEFAULT_LAYOUT}
+      mdxSource={mdxSource}
+      frontMatter={frontMatter}
+    />
+  )
+}
