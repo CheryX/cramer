@@ -1,7 +1,9 @@
 import 'katex/dist/katex.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import '../css/globals.css'
+import '@/css/globals.css'
+import '@/css/prism.css'
+import '@/css/tailwind.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'

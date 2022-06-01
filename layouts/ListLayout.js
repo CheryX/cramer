@@ -16,18 +16,23 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   return (
     <>
       <div>
-            <input
-              aria-label="Szukaj notatek"
-              type="text"
-              onChange={(e) => setSearchValue(e.target.value)}
-              placeholder="Szukaj notatek"
-            />
-
         <div className="container-fluid">
-          <div className="container px-4 py-5" id="custom-cards">
-            <h1 className="pb-2 text-center fw-bold ">Wszystkie notatki</h1>
+          <div className="container px-4" id="custom-cards">
+            <h1 className="pb-2 text-center fw-bold ">
+              Wszystkie notatki
+            </h1> 
 
-            <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <form className="mt-5 mb-4" role="search">
+              <input
+                aria-label="Szukaj notatek"
+                type="text"
+                onChange={(e) => setSearchValue(e.target.value)}
+                className="form-control form-control-dark text-white bg-dark"
+                placeholder="Szukaj notatek"
+              />
+            </form>
+
+            <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
 
               {!filteredBlogPosts.length && 'Nie znaleziono postów, proszę skontaktuj się z autorem strony'}
               {displayPosts.map((frontMatter) => ArticleCard({frontMatter}) )}
