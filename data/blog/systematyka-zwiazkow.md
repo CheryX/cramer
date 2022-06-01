@@ -10,14 +10,6 @@ thumbnail: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=r
 
 Powtórzenie działu II ale bez 50 paragrafów tekstu na 1 temat. Jeśli nic nie umiesz to przeczytaj całe, a potem porób zadania z końca podręcznika.
 
-> Po przeczytaniu tego zostaniesz prawdziwym chemikiem. Panie Heisenberg, nie zapomnij o tym.
->
-> <div style="max-width: 200px; margin: auto;">
->
-> <img src="https://i.pinimg.com/originals/d9/d9/35/d9d935e8ceff0ff7715aa74be76866a1.png" />
-> 
-> </div>
-
 # Tlenki
 
 ## Wzór ogólny tlenków
@@ -29,7 +21,6 @@ Gdzie:
 * $n$ - wartościowość pierwiastka $X$
 
 > Istnieją tlenki których nie skracamy, nawet jeśli jest to możliwe, są to: $P_4O_6$, $P_4O_{10}$, $H_2O_2$, $N_2O_4$.
-{: .prompt-warning }
 
 ### Wartościowości pierwiastków
 
@@ -44,7 +35,6 @@ $$metal + tlen \xrightarrow{} tlenek~metalu$$
 $$tlenek~metalu_1 + tlen \xrightarrow{} tlenek~metalu_2$$
 
 > Tlen zawsze zapisujemy w formie $O_2$
-{: .prompt-warning }
 
 ### Przykłady reakcji otrzymywania tlenków
 
@@ -185,7 +175,6 @@ Gdzie:
 * $m$ - Wartościowość $R$
 
 > Jeśli w reszcie kwasowej znajduje się tlen, to jest to kwas tlenowy. W przeciwnym wypadku jest to kwas beztlenowy.
-{: .prompt-tip }
 
 ## Nazewnictwo kwasów
 

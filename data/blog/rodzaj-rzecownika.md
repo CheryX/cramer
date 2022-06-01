@@ -9,8 +9,7 @@ thumbnail: 'https://images.unsplash.com/photo-1598965057003-1e9092d37b77?ixlib=r
 
 Jest spora szansa że podczas sprawdzianu zapomnisz który pronoun pasuje do którego słowa, możesz zawsze spróbować uratować pare punktów stosując się do tych (prawie) ogólnych zasad.[^1]
 
-> **Narazie** obowiązują nas tylko Nominative oraz Accusative
-{: .prompt-warning }
+> **Narazie** obowiązują nas tylko Nominative, Accusative oraz Dative
 
 Nazwa|Nominative|Accusative|Dative|Genitive
 -|-|-|-|-|
@@ -31,7 +30,6 @@ plural | die | die | den | der
 Jest 90% szans że końcówka wyrazu decyduje o jego rodzaju.
 
 > Nie jest to prawdziwe dla każdego przypadku, ale jest dla większości
-{: .prompt-danger }
 
 Nazwa|Końcówki
 -|-
@@ -42,7 +40,6 @@ neuter  | -chen, -lein, -sel, -ett, -ment, -um
 ## Znaczenie
 
 > Nie jest to prawdziwe dla każdego przypadku, ale jest dla większości
-{: .prompt-danger }
 
 Nazwa|Przyklady
 -|-

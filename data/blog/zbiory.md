@@ -20,7 +20,6 @@ $$B = \{5, 9, 20, 40\} $$
 $$C = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\} $$
 
 > Zwykle zbiory oznaczamy dużą literą.
-{: .prompt-tip }
 
 ## Porównywanie zbiorów
 
@@ -84,7 +83,7 @@ Przedział to jest zbiór wszystkich liczb rzeczywistych z zakresu $a$ i $b$, is
 
 ## Przedział otwarty
 
-Przedział otwarty zapisujemy w formie $\(a, b\)$, gdzie $a$ i $b$ są liczbami rzeczywistymi. Do tego przedziału należą wszystkie liczby pomiędzy $a$ i $b$ na osi liczbowej, ale bez $a$ i $b$. Na osi liczbowej koniec przedziału zapisujemy niewypełnionym kołem (okrąg).
+Przedział otwarty zapisujemy w formie $\lparen a, b\rparen$, gdzie $a$ i $b$ są liczbami rzeczywistymi. Do tego przedziału należą wszystkie liczby pomiędzy $a$ i $b$ na osi liczbowej, ale bez $a$ i $b$. Na osi liczbowej koniec przedziału zapisujemy niewypełnionym kołem (okrąg).
 
 > Ewentualnie tutaj będą jakieś osie liczbowe.
 
