@@ -98,6 +98,9 @@ Cechami hiperboli są
 * *Jaki jest wzór na proporcjonalność odwrotną?* $xy=a$
 * *Jaki kształt ma wykres proporcjonalności odwrotnej?* hiperbola
 * *Jaka jest dziedzina hiperboli* $x\in R-{0}$
+* *Do czego służy delta?*
+    * W klasie 1: do otrzymania ocney niedostatecznej
+    * W klasach wyższych: Obliczania miejsc zerowych, punktów wieszchołka, osi symetrii
 
 > To są wszystkie materiały, które obecnie są wymagane.
 
