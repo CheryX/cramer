@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Projekt Cramer</title>
+      <link>https://notes.tobiasbot.ovh/blog</link>
+      <description>Projekt ułatwiający uczniom dostęp do wiedzy i nie tylko.</description>
+      <language>pl-pl</language>
+      <managingEditor>maciejmusielik@gmail.com (CheryX)</managingEditor>
+      <webMaster>maciejmusielik@gmail.com (CheryX)</webMaster>
+      <lastBuildDate>Tue, 17 May 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://notes.tobiasbot.ovh/tags/funkcje/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://notes.tobiasbot.ovh/blog/uklady-rownan</guid>
+    <title>Układy Równań</title>
+    <link>https://notes.tobiasbot.ovh/blog/uklady-rownan</link>
+    <description>Rozwiązywanie układów równań</description>
+    <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
+    <author>maciejmusielik@gmail.com (CheryX)</author>
+    <category>matematyka</category><category>funkcje</category>
+  </item>
+
+  <item>
+    <guid>https://notes.tobiasbot.ovh/blog/wybrane-funkcje</guid>
+    <title>Wybrane funkcje</title>
+    <link>https://notes.tobiasbot.ovh/blog/wybrane-funkcje</link>
+    <description>Funkcja kwadratowa, logarytmiczna oraz proporcjonalność odwrotna</description>
+    <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
+    <author>maciejmusielik@gmail.com (CheryX)</author>
+    <category>matematyka</category><category>funkcje</category>
+  </item>
+
+    </channel>
+  </rss>

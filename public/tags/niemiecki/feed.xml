@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Projekt Cramer</title>
+      <link>https://notes.tobiasbot.ovh/blog</link>
+      <description>Projekt ułatwiający uczniom dostęp do wiedzy i nie tylko.</description>
+      <language>pl-pl</language>
+      <managingEditor>maciejmusielik@gmail.com (CheryX)</managingEditor>
+      <webMaster>maciejmusielik@gmail.com (CheryX)</webMaster>
+      <lastBuildDate>Mon, 16 May 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://notes.tobiasbot.ovh/tags/niemiecki/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://notes.tobiasbot.ovh/blog/rodzaj-rzecownika</guid>
+    <title>Rodzaj rzeczownika</title>
+    <link>https://notes.tobiasbot.ovh/blog/rodzaj-rzecownika</link>
+    <description>Pomoc do znalezienia rodzaju rzeczownika</description>
+    <pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate>
+    <author>maciejmusielik@gmail.com (CheryX)</author>
+    <category>niemiecki</category><category>gramatyka</category>
+  </item>
+
+    </channel>
+  </rss>
