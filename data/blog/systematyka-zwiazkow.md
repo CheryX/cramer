@@ -29,7 +29,7 @@ Gdzie:
 * $n$ - wartościowość pierwiastka $X$
 
 > Istnieją tlenki których nie skracamy, nawet jeśli jest to możliwe, są to: $P_4O_6$, $P_4O_{10}$, $H_2O_2$, $N_2O_4$.
-
+{: .prompt-warning }
 
 ### Wartościowości pierwiastków
 
@@ -44,7 +44,7 @@ $$metal + tlen \xrightarrow{} tlenek~metalu$$
 $$tlenek~metalu_1 + tlen \xrightarrow{} tlenek~metalu_2$$
 
 > Tlen zawsze zapisujemy w formie $O_2$
-
+{: .prompt-warning }
 
 ### Przykłady reakcji otrzymywania tlenków
 
@@ -185,7 +185,7 @@ Gdzie:
 * $m$ - Wartościowość $R$
 
 > Jeśli w reszcie kwasowej znajduje się tlen, to jest to kwas tlenowy. W przeciwnym wypadku jest to kwas beztlenowy.
-
+{: .prompt-tip }
 
 ## Nazewnictwo kwasów
 

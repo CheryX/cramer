@@ -38,7 +38,7 @@ $$\begin{cases}
 # Metody rozwiązywania równań
 
 > W poleceniu może być wskazana metoda rozwiązania równania.
-
+{: .prompt-warning }
 
 ## Metoda graficzna
 
@@ -63,7 +63,7 @@ Teraz można narysować układ współrzędnych.
 Punkt przecięcia prostych to punkt, który spełnia równanie, w tym przypadku jest to punkt $(3, 0)$. Dlatego rozwiązaniem równania jest $x=3, y=0$.
 
 > Jeśli kreski są równoległe, to jest to `równanie sprzeczne`, a jeśli są w tym samym miejscu, to jest to `równanie tożsamościowe`.
-
+{: .prompt-tip }
 
 ## Metoda podstawiania
 
@@ -121,7 +121,7 @@ $$\begin{cases}
 \end{cases}$$
 
 > Kolejność obliczania zmiennych jest dowolna, najpierw można obliczyć $x$, a potem $y$.
-
+{: .prompt-tip }
 
 ## Metoda przeciwnych współczynników
 

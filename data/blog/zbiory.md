@@ -20,7 +20,7 @@ $$B = \{5, 9, 20, 40\} $$
 $$C = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\} $$
 
 > Zwykle zbiory oznaczamy dużą literą.
-
+{: .prompt-tip }
 
 ## Porównywanie zbiorów
 

@@ -30,14 +30,6 @@ Aby przygotować workspace do pracy z C++ należy zrobić przygotować:
 
 ----------
 
-```py
-var num1, num2, sum
-num1 = prompt('Enter first number')
-num2 = prompt('Enter second number')
-sum = parseInt(num1) + parseInt(num2) // "+" means "add"
-alert('Sum = ' + sum) // "+" means combine into a string
-```
-
 ## Tworzenie pliku
 
 Na początek należy stworzyć nowy katalog projektu, w którym będzie znajdował się plik z kodem. Można go stworzyć używając Eksploratora plików lub komendy `mkdir`:

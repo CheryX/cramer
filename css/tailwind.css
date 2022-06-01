@@ -18,6 +18,11 @@
   @apply my-5;
 }
 
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before
+{
+  content: "";
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
