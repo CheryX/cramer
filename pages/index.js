@@ -23,7 +23,7 @@ export default function Home({ posts, tags }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
 
-      <div style={{ backgroundImage: 'url("/static/images/Background.png")', padding: '5em 0' }} className='container-fluid m-0 text-white d-flex justify-content-center align-items-center'>
+      <div style={{ backgroundImage: 'url("/static/images/Background.png")'}} className='container-fluid m-0 text-white d-flex justify-content-center align-items-center'>
         <FullLogo className="img-fluid" />
       </div>
 
@@ -55,7 +55,7 @@ export default function Home({ posts, tags }) {
 
       <div className='container-fluid p-4 mb-5'>
         <h2 className="text-center fw-bold my-5">Najpopulariejsze tagi</h2>
-        <div className="text-center">
+        <p className="text-center">
           {Object.keys(tags).length === 0 && 'Nie znaleziono tagów'}
           {sortedTags.map((t) => {
             return (
@@ -65,12 +65,12 @@ export default function Home({ posts, tags }) {
                   href={`/tags/${kebabCase(t)}`}
                   className="fw-bold text-decoration-none text-muted font-monospace me-4"
                 >
-                  {`(${tags[t]})`}
+                  {`(${tags[t]}) `}
                 </Link>
               </>
             )
           })}
-        </div>
+        </p>
       </div>
 
       <div className='container-fluid py-5 mt-5 text-center bgAlt'>

@@ -7,9 +7,19 @@
       <language>pl-pl</language>
       <managingEditor>maciejmusielik@gmail.com (CheryX)</managingEditor>
       <webMaster>maciejmusielik@gmail.com (CheryX)</webMaster>
-      <lastBuildDate>Fri, 20 May 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 02 Jun 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://notes.tobiasbot.ovh/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://notes.tobiasbot.ovh/blog/geometria-a</guid>
+    <title>Geometria analitycza</title>
+    <link>https://notes.tobiasbot.ovh/blog/geometria-a</link>
+    <description>Definicja prostej, półprostej, odcinka, punktu oraz kąta</description>
+    <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+    <author>maciejmusielik@gmail.com (CheryX)</author>
+    <category>matematyka</category><category>geometria</category>
+  </item>
+
   <item>
     <guid>https://notes.tobiasbot.ovh/blog/cpp</guid>
     <title>C++ Wstęp</title>
