@@ -86,23 +86,30 @@ Cechami hiperboli są
 * brak miejsc zerowych
 * dwie gałęzie
 
-# W pigułce
+# Inne funkcje
 
-* *Jaki jest wzór ogólny na równanie kwadratowe?* $ax^2 + bx + c$
-* *Jaki jest wzór kanoniczny równanie kwadratowe?* $a(x-p)^2 + q$
-* *Jaki kształt ma równanie kwadratowe?* parabola
-* *Co decyduje o kierunku ramion paraboli?* współczynnik $a$, jeśli jest dodatni to ramiona idą do góry.
-* *Z czego jest zbudowana parabola?* wierzchołek oraz 2 ramiona
-* *Jak przekształcić równanie kanoniczne do równania ogólnego?* wymnożyć równanie używając wzorów skróconego mnożenia
-* *Jak ustalić punkt wierzchołka paraboli w równaniu kanonicznym?* $W(p, q)$
-* *Jaki jest wzór na proporcjonalność odwrotną?* $xy=a$
-* *Jaki kształt ma wykres proporcjonalności odwrotnej?* hiperbola
-* *Jaka jest dziedzina hiperboli* $x\in R-{0}$
-* *Do czego służy delta?*
-    * W klasie 1: do otrzymania ocney niedostatecznej
-    * W klasach wyższych: Obliczania miejsc zerowych, punktów wieszchołka, osi symetrii
+Są jeszcze funkcje logarytmiczne oraz wykładnicze, obie te funkcje są krótkie i proste.
 
-> To są wszystkie materiały, które obecnie są wymagane.
+## Funckja logarytmiczna
+
+Funkcje logarytmiczną można opisać wzorem:
+
+$$
+f(x) = log_a(x)
+$$
+
+Gdzie:
+* $a > 0 \land a \neq 0$
+* $x > 0$
+
+Dziedziną takiej funkcji jest $R_+$
+## Funkcja wykładnicza
+
+Jest to funkcja opisana wzorem:
+
+$$
+f(x) = n^x
+$$
 
 
 [^wzor]: [Równanie kwadratowe](https://en.wikipedia.org/wiki/Quadratic_equation)

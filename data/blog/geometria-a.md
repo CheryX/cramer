@@ -1,5 +1,5 @@
 ---
-title: Geometria analitycza
+title: Geometria
 date: '2022-06-02'
 tags: [matematyka, geometria]
 draft: false
