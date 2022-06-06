@@ -7,9 +7,19 @@
       <language>pl-pl</language>
       <managingEditor>maciejmusielik@gmail.com (CheryX)</managingEditor>
       <webMaster>maciejmusielik@gmail.com (CheryX)</webMaster>
-      <lastBuildDate>Thu, 02 Jun 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 06 Jun 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://notes.tobiasbot.ovh/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://notes.tobiasbot.ovh/blog/zadanie-specjalne</guid>
+    <title>Zadanie specjalne - Rozwiązanie</title>
+    <link>https://notes.tobiasbot.ovh/blog/zadanie-specjalne</link>
+    <description>Rozwiązanie do specjalnego zadania z fizyki</description>
+    <pubDate>Mon, 06 Jun 2022 00:00:00 GMT</pubDate>
+    <author>maciejmusielik@gmail.com (CheryX)</author>
+    <category>fizyka</category>
+  </item>
+
   <item>
     <guid>https://notes.tobiasbot.ovh/blog/geometria-a</guid>
     <title>Geometria analitycza</title>

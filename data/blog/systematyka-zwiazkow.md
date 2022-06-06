@@ -7,6 +7,7 @@ summary: Tlenki, Wodorki, Wodorotlenki, Kwasy oraz Sole w jednym miejscu
 thumbnail: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
 ---
 
+<TOCInline toc={props.toc} toHeading={1} />
 
 Powtórzenie działu II ale bez 50 paragrafów tekstu na 1 temat. Jeśli nic nie umiesz to przeczytaj całe, a potem porób zadania z końca podręcznika.
 
