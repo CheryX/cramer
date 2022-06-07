@@ -11,7 +11,6 @@ thumbnail: 'https://images.unsplash.com/photo-1533582437341-dfdc01630b05?ixlib=r
 
 <TOCInline toc={props.toc} toHeading={2} />
 
-
 ## Część I - Upadek kamienia
 
 Z treści zadania można ułożyć równanie
@@ -59,8 +58,10 @@ $$
 
 ## Część IV - Czy jest to wahadłem matematycznym
 
-Po krótkiej analizie można stwierdzić że to nie jest wahadło matematyczne, ze względu na to że się ono "zjeżdżać" po równi pochyłej.
+Po kilku obliczeniach można stwierdzić że to nie jest wahadło matematyczne, ponieważ nie wacha się ono symetrycznie.
 
 ## Część V - Pozycja kulki po $\frac{3}{4}$ drogi
 
 Przez to że wahadło będzie "zjeżdżać" po równi pochyłej, to po jakimś czasie przestanie się wahać, i zostanie w stałym kącie równy $\alpha = 30[°]$
+
+> **Ta część jest niepoprawna!**
