@@ -7,9 +7,10 @@ summary: Rozwiązanie do specjalnego zadania z fizyki
 thumbnail: 'https://images.unsplash.com/photo-1533582437341-dfdc01630b05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
 ---
 
-> Uwaga! Jest szansa że to zadanie nie zostało rozwiązane poprawnie
+> Część V jest błędna
 
 <TOCInline toc={props.toc} toHeading={2} />
+
 
 ## Część I - Upadek kamienia
 
@@ -47,13 +48,13 @@ $$
 Obliczenie przyśpieszenia podstawki ($a$) można łatwo obliczyć używając $sin$ oraz $cos$.
 
 $$
-a = g*(sin\alpha - fcos\alpha) = 1.78 [\frac{m}{s^2}]
+a = g*(sin\alpha - fcos\alpha) = 2.02 [\frac{m}{s^2}]
 $$
 
 A układ drgań ze wzoru:
 
 $$
-T = 2π*\sqrt{\frac{l}{(b+g)*cos\alpha}} = 4.96 [Hz]
+T = 2π*\sqrt{\frac{l}{(b+g)*cos\alpha}} = 4.99 [Hz]
 $$
 
 ## Część IV - Czy jest to wahadłem matematycznym
