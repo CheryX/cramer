@@ -7,9 +7,15 @@ summary: Rozwiązanie do specjalnego zadania z fizyki
 thumbnail: 'https://images.unsplash.com/photo-1533582437341-dfdc01630b05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
 ---
 
-> Część V jest błędna
+> Jest szansa że jest to niepoprawne
 
 <TOCInline toc={props.toc} toHeading={2} />
+
+## Dane
+
+$g [\frac{m}{s^2}]$ | $\Delta H$ | $\alpha [rad]$ | $l [cm]$ | $f$ | $L [m]$
+-- | -- | -- | --  | --  | --  
+$9.81$ | $85.13$ | $\frac{\pi}{6}=30[°]$ | $7$ | $0.34$ | $4$ | 
 
 ## Część I - Upadek kamienia
 
@@ -47,21 +53,45 @@ $$
 Obliczenie przyśpieszenia podstawki ($a$) można łatwo obliczyć używając $sin$ oraz $cos$.
 
 $$
-a = g*(sin\alpha - fcos\alpha) = 2.02 [\frac{m}{s^2}]
+a = (b+g)*(sin\alpha - fcos\alpha) = 2.63 [\frac{m}{s^2}]
 $$
 
-A układ drgań ze wzoru:
+Następnie należy zkorzystać z twierdzenia cosinusów, i obliczyć *fałszywą grawitacje*, którą oznaczam znakiem $x$.
 
 $$
-T = 2π*\sqrt{\frac{l}{(b+g)*cos\alpha}} = 4.99 [Hz]
+x = \sqrt{a^2 + (b+g)^2 + 2 *a*(b+g)*sin(\alpha) = 11.72 [\frac{m}{s^2}]}
+$$
+
+$$
+T = 2π*\sqrt{\frac{l}{x}} = 0.49 [s]
 $$
 
 ## Część IV - Czy jest to wahadłem matematycznym
 
-Po kilku obliczeniach można stwierdzić że to nie jest wahadło matematyczne, ponieważ nie wacha się ono symetrycznie.
+Po zrobieniu dobrego rysunku widać, że nie jest to wahadło matematyczne ponieważ jego maksymalny kąt jest większy niż $5[°]$.
 
 ## Część V - Pozycja kulki po $\frac{3}{4}$ drogi
 
-Przez to że wahadło będzie "zjeżdżać" po równi pochyłej, to po jakimś czasie przestanie się wahać, i zostanie w stałym kącie równy $\alpha = 30[°]$
+Najpierw należy obliczyć czas w którym mamy obliczyć położenie kulki.
 
-> **Ta część jest niepoprawna!**
+$$
+t_2 = \sqrt{\frac{0.75*s}{a}}=\sqrt{\frac{0.75*\frac{L}{cos\alpha}}{a}}= 1.15 [s]
+$$
+
+Wkońcu należy ustalić położenie wahadła, ignorując opór powietrza kąt kulki będzie przypominać cosinusoide, dlatego należy użyć funkcji:
+
+$$
+f(x) = cos(\frac{2π*x}{T})*\alpha
+$$
+
+$$
+f(t_2) = -19.39[°]
+$$
+
+Pod koniec można obliczyć kierunek, wystarczy użyć pochodnej funkcji $f(x)$.
+
+$$
+f'x(t_2) < 0
+$$
+
+Przez to że jest to mniejsze od $0$, to wahadło będzie aktualnie się poruszało w prawo.
