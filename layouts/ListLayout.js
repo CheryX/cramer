@@ -13,7 +13,7 @@ export default function ListLayout({ posts, tags, initialDisplayPosts = [] }) {
 
 	return (
 		<>
-			<PageSEO title="Home" description="thinking" type="list" />
+			<PageSEO title="Search" description="thinking" type="list" />
 			<h1>Posts</h1>
             <form className="mt-5 mb-4" role="search">
               <input

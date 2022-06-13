@@ -14,6 +14,9 @@ export default function PageSEO({ type='normal', title, description, image, url 
 		case 'list':
 			color = 'Blue';
 			break;
+		case 'error':
+			color = 'Red';
+			break;
 	}
 
 	return (
