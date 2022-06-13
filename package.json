@@ -22,5 +22,5 @@
     "remark-footnotes": "^4.0.1",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1"
-  }
+  }, "browser": { "fs": false, "os": false}
 }

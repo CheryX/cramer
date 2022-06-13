@@ -23,10 +23,8 @@ const Winogrona = () => {
 
   return (
     <div>
-      <p>
-        <button onClick={handleClick}>Zmień kolor</button>
-      </p>
       <p style={{color: color}}>
+        <button className="btn btn-outline-success" onClick={handleClick}>Zmień kolor</button>
         Winogrona {text} 40% taniej 8.99zł za kilogram, a Banany Bio 25% taniej 4.99zł za kilogram!
       </p>
     </div>

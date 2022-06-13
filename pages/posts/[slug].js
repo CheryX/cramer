@@ -5,15 +5,15 @@ import { serialize } from 'next-mdx-remote/serialize'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import path from 'path'
-import CustomLink from '../../components/CustomLink'
-import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils'
+import CustomLink from '@/components/CustomLink'
+import { postFilePaths, POSTS_PATH } from '@/lib/mdxUtils'
 import rehypeHighlight from "rehype-highlight"
 import rehypeKatex from 'rehype-katex'
 import rehypePrismPlus from 'rehype-prism-plus'
 import remarkGfm from 'remark-gfm'
 import remarkFootnotes from 'remark-footnotes'
 import remarkMath from 'remark-math'
-import PostPage from '@/layouts/PostPage'
+import PostLayout from '@/layouts/PostLayout'
 
 const components = {
 	a: CustomLink,
@@ -24,9 +24,9 @@ const components = {
 export default function Post({ source, frontMatter, posts }) {
 	return (
 		<>
-			<PostPage frontMatter={frontMatter}>
+			<PostLayout frontMatter={frontMatter}>
 				<MDXRemote {...source} components={components}  posts={posts} />
-			</PostPage>
+			</PostLayout>
 		</>
 	)
 }

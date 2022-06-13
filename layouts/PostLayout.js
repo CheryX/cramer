@@ -1,7 +1,7 @@
 import PageSEO from "@/components/SEO"
 import Link from "next/link"
 
-export default function PostPage({ frontMatter, children, posts }) {
+export default function PostLayout({ frontMatter, children, posts }) {
 	return (
 		<>
 			<PageSEO title={frontMatter.title} description={frontMatter.description} />
