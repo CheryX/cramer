@@ -2,19 +2,29 @@ import PageSEO from "@/components/SEO"
 import Link from "next/link"
 import { useState } from 'react'
 
-export default function ListLayout({ posts, tags, initialDisplayPosts = [] }) {
+export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] }) {
     const [searchValue, setSearchValue] = useState('')
     const filteredBlogPosts = posts.filter((frontMatter) => {
       const searchContent = frontMatter.data.title + frontMatter.data.summary + frontMatter.data.tags.join(' ')
       return searchContent.toLowerCase().includes(searchValue.toLowerCase())
     })
 
-    const displayPosts = initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+    const displayPosts = initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts;
+	let title;
+	if (tag == null) {
+		title = "Wszystkie notatki"
+	}
+	else {
+		title = `Notatki o tagu ${tag}`
+	}
+
+	console.log(tag)
+
 
 	return (
 		<>
 			<PageSEO title="Search" description="thinking" type="list" />
-			<h1>Posts</h1>
+			<h1>{title}</h1>
             <form className="mt-5 mb-4" role="search">
               <input
                 aria-label="Szukaj notatek"
