@@ -6,10 +6,13 @@ export default function PageSEO({ type='normal', title, description, image, url 
 	let color;
 	switch (type) {
 		case 'normal':
-			color = 'Blue';
+			color = 'Default';
 			break;
-		case 'warning':
-			color = 'Red';
+		case 'post':
+			color = 'Cyan';
+			break;
+		case 'list':
+			color = 'Blue';
 			break;
 	}
 

@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function PostLayout({ frontMatter, children, posts }) {
 	return (
 		<>
-			<PageSEO title={frontMatter.title} description={frontMatter.description} />
+			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
 			<header>
 				<nav>
 					<Link href="/">
