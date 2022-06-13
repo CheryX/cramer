@@ -1,0 +1,51 @@
+---
+title: Example Post
+description: This frontmatter description will appear below the title
+---
+
+This is an example post, with a [link](https://nextjs.org) and a React component:
+
+<Winogrona />
+
+The title and description are pulled from the MDX file and processed using `gray-matter`. Additionally, links are rendered using a custom component passed to `next-mdx-remote`.
+
+```py
+print('Janek')
+```
+
+$$
+x^2 + y^2 = z^2
+$$
+
+Go back [home](/).
+
+# GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a | b  |  c |  d  |
+| - | :- | -: | :-: |
+
+## Tasklist
+
+* [ ] to do
+* [x] done
+
+| Alpha    | Bravo   |
+| -------- | ------- |
+| 中文       | Charlie |
+| 👩‍❤️‍👩 | Delta   |
