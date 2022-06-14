@@ -1,5 +1,5 @@
 import 'katex/dist/katex.css'
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '@/css/prism.css'
 import Head from 'next/head'
