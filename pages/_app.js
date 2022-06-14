@@ -4,6 +4,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import '@/css/prism.css'
 import Head from 'next/head'
 
+// note to future contributors: its not too late to turn back
+
 export default function App({ Component, pageProps }) {
 	return (
 		<>
