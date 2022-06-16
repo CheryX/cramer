@@ -6,11 +6,12 @@ import CustomLink from '@/components/CustomLink'
 import { postFilePaths } from '@/lib/mdxUtils'
 import PostLayout from '@/layouts/PostLayout'
 import { renderMdx } from '@/lib/renderMdx'
+import Winogrona from '@/components/Winogrona'
+import Accordion from '@/components/Accordion'
 
 const components = {
 	a: CustomLink,
-	Winogrona: dynamic(() => import('../../components/Winogrona')),
-	Head,
+	Winogrona, Accordion, Head,
 }
 
 export default function Post({ source, frontMatter, posts }) {
