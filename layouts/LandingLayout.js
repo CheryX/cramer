@@ -5,13 +5,6 @@ export default function LandingLayout({ posts, tags }) {
 	return (
 		<>
 			<PageSEO title="Home" description="thinking" />
-			<h1>Home</h1>
-			<ul>
-				<li><Link as='/about' href='/about'><a>About</a></Link></li>
-				<li><Link as='/contributing' href='/contributing'><a>Contributing</a></Link></li>
-				<li><Link as='/posts' href='/posts'><a>Search</a></Link></li>
-			</ul>
-			<hr />
 			<h2>Posts</h2>
 			<ul>
 				{posts.map((post) => (

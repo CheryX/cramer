@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
+import Header from '@/components/Header'
 class MyDocument extends Document {
 	render() {
 		return (
@@ -9,6 +9,7 @@ class MyDocument extends Document {
 			</Head>
 
 			<body>
+				<Header />
 				<Main />
 				<NextScript />
 			</body>
