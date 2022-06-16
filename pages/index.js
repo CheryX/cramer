@@ -1,5 +1,5 @@
 import LandingLayout from '@/layouts/LandingLayout'
-import { getAllPosts, getAllTags } from '@/lib/notesData'
+import { getAllPostsData, getAllTags } from '@/lib/notesData'
 
 export default function Index({ posts, tags }) {
 	return (
@@ -8,7 +8,7 @@ export default function Index({ posts, tags }) {
 }
 
 export function getStaticProps() {
-	const posts = getAllPosts()
+	const posts = getAllPostsData()
 	const tags = getAllTags()
 
 	return { props: { posts, tags } }

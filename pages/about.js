@@ -1,15 +1,14 @@
 
 import { MDXRemote } from 'next-mdx-remote'
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import CustomLink from '@/components/CustomLink'
-import { postFilePaths } from '@/lib/mdxUtils'
 import PostLayout from '@/layouts/PostLayout'
 import { renderMdx } from '@/lib/renderMdx'
+import Winogrona from '@/components/Winogrona'
 
 const components = {
 	a: CustomLink,
-	Winogrona: dynamic(() => import('../../components/Winogrona')),
+	Winogrona: Winogrona,
 	Head,
 }
 
@@ -23,17 +22,6 @@ export default function Post({ source, frontMatter, posts }) {
 	)
 }
 
-export const getStaticProps = async ({ params }) => {
-	return renderMdx(params.slug);
-}
-
-export const getStaticPaths = async () => {
-	const paths = postFilePaths
-		.map((path) => path.replace(/\.mdx?$/, ''))
-		.map((slug) => ({ params: { slug } }))
-
-	return {
-		paths,
-		fallback: false,
-	}
+export const getStaticProps = async () => {
+	return renderMdx('about');
 }

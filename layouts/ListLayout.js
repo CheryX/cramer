@@ -18,8 +18,6 @@ export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] 
 		title = `Notatki o tagu ${tag}`
 	}
 
-	console.log(tag)
-
 
 	return (
 		<>
