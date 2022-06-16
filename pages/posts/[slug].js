@@ -7,11 +7,12 @@ import { postFilePaths } from '@/lib/mdxUtils'
 import PostLayout from '@/layouts/PostLayout'
 import { renderMdx } from '@/lib/renderMdx'
 import Winogrona from '@/components/Winogrona'
-import Accordion from '@/components/Accordion'
+import { Accordion, AccordionGroup } from '@/components/base/Accordion'
+import Graph from '@/components/Graph'
 
 const components = {
 	a: CustomLink,
-	Winogrona, Accordion, Head,
+	Winogrona, Accordion, Head, AccordionGroup, Graph
 }
 
 export default function Post({ source, frontMatter, posts }) {
