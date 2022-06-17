@@ -4,7 +4,7 @@ import Link from "next/link"
 import authors from "@/lib/authors"
 import Image from "next/image"
 
-const githubUrl = (username) => `https://github.com/cheryx/notes/blob/master/data/blog/${username}`
+const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, children, posts, fileName }) {

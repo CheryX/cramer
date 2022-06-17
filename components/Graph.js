@@ -45,10 +45,10 @@ const Graph = ({ fun, p, height }) => {
         ctx.beginPath()
         for (let tempx = -w/2; tempx<w/2; tempx++) {
             let x = tempx/30
-            if (eval(fun)==Infinity) {
+            if (eval(fun)>15) {
                 ctx.stroke(); ctx.beginPath()
             } else {
-                ctx.lineTo(tempx+w/2,eval(fun)*30+h/2)
+                ctx.lineTo(tempx+w/2,-eval(fun)*30+h/2)
             }
         }
         ctx.stroke()
