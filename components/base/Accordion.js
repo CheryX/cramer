@@ -13,8 +13,8 @@ export function Accordion({title, children }) {
 				{title}
 				</button>
 			</h2>
-			<div class={`accordion-collapse ${collapse}`}>
-				<div class="accordion-body">
+			<div className={`accordion-collapse ${collapse}`}>
+				<div className="accordion-body">
 					{children}
 				</div>
 			</div>

@@ -13,6 +13,7 @@ export default function LandingLayout({ posts, tags }) {
 						<Link
 							as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
 							href={`/posts/[slug]`}
+							key={post.filePath}
 						>
 							<a className="text-decoration-none">
 							<PostCard title={post.data.title} description={post.data.description} date={post.data.date} thumbnail={post.data.thumbnail} />

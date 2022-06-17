@@ -15,11 +15,12 @@ const components = {
 	Winogrona, Accordion, Head, AccordionGroup, Graph
 }
 
-export default function Post({ source, frontMatter, posts }) {
+export default function Post({ source, frontMatter, posts, fileName }) {
+	console.log(fileName)
 	return (
 		<>
-			<PostLayout frontMatter={frontMatter}>
-				<MDXRemote {...source} components={components}  posts={posts} />
+			<PostLayout frontMatter={frontMatter}  posts={posts} fileName={fileName}>
+				<MDXRemote {...source} components={components}  posts={posts} fileName={fileName} />
 			</PostLayout>
 		</>
 	)
