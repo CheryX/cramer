@@ -1,17 +1,39 @@
-export default function PostCard({title, date, description, thumbnail}) {
+import Tag from '@/components/Tag'
+import formatDate from '@/lib/formatDate'
 
-    const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
-    const card = {
-        width: "400px",
-        height: "220px",
-        background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${thumbnail})`
-    }
+const PostCard = ({ data }) => {
+
+    const { date, title, thumbnail, summary, tags } = data.data
+    const slug = data.filePath
 
     return (
-        <div style={card} className="card mb-3 text-white p-3">
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <p>{new Date(date).toLocaleDateString('pl-PL', postDateTemplate)}</p>
+
+    <div className="col">
+      <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style={{
+         background:
+          'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), '+`url(${thumbnail})`
+      }}>
+        <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <a href={`/blog/${slug}`} className='text-white text-decoration-none'>
+              <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ">
+              {title}
+              </h2>
+            </a>
+          <ul className="d-flex list-unstyled mt-auto">
+            <li className="d-flex align-items-center me-3">
+              <i className="bi bi-tags mx-1"></i>
+              <small>{tags.map((tag) => (<><Tag key={tag} text={tag} />, </>))}</small>
+            </li>
+            <li className="d-flex align-items-center">
+              <i className="bi bi-calendar3 mx-1"></i>
+              <small><time dateTime={date}>{formatDate(date)}</time></small>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+  
     )
 }
+
+export default PostCard

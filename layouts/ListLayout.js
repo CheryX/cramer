@@ -22,7 +22,7 @@ export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] 
 	return (
 		<>
 			<PageSEO title="Search" description="thinking" type="list" />
-			<h1>{title}</h1>
+			<h1 className="mt-7">{title}</h1>
             <form className="mt-5 mb-4" role="search">
               <input
                 aria-label="Szukaj notatek"

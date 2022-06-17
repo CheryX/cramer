@@ -9,14 +9,17 @@ import { renderMdx } from '@/lib/renderMdx'
 import Winogrona from '@/components/Winogrona'
 import { Accordion, AccordionGroup } from '@/components/base/Accordion'
 import Graph from '@/components/Graph'
+import Table from '@/components/CustomTable'
+import CustomImage from '@/components/CustomImage'
 
 const components = {
 	a: CustomLink,
-	Winogrona, Accordion, Head, AccordionGroup, Graph
+	Winogrona, Accordion, Head, AccordionGroup, Graph,
+	table: Table,
+	img: CustomImage
 }
 
 export default function Post({ source, frontMatter, posts, fileName }) {
-	console.log(fileName)
 	return (
 		<>
 			<PostLayout frontMatter={frontMatter}  posts={posts} fileName={fileName}>
