@@ -22,7 +22,7 @@ export default function LandingLayout({ posts, tags }) {
 					{tags.map((t) => {
 						return (
 						<>
-							<Tag text={t}/>
+							<Tag text={t} color="black" m/>
 						</>
 						)
 					})}

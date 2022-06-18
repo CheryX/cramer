@@ -22,7 +22,7 @@ const PostCard = ({ data }) => {
           <ul className="d-flex list-unstyled mt-auto">
             <li className="d-flex align-items-center me-3">
               <i className="bi bi-tags mx-1"></i>
-              <small>{tags.map((tag) => (<><Tag key={tag} text={tag} />, </>))}</small>
+              <small>{tags.map((tag) => (<><Tag key={tag} text={tag} color="white" />, </>))}</small>
             </li>
             <li className="d-flex align-items-center">
               <i className="bi bi-calendar3 mx-1"></i>
