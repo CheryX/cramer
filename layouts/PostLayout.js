@@ -3,18 +3,19 @@ import PageSEO from "@/components/SEO"
 import Link from "next/link"
 import authors from "@/lib/authors"
 import Image from "next/image"
+import TOC from "@/components/TOC"
 
 const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, children, posts, fileName }) {
+export default function PostLayout({ frontMatter, children, posts, fileName, toc }) {
 	return (
 		<>
 			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
 			<div className="d-flex align-items-center justify-content-center mt-7">
 				<div className="container row g-2 justify-content-center">
 					<div className="col-lg-3 me-3 d-none d-lg-block">		
-									
+
 						{frontMatter.date&& (
 							<>
 								<span className="fs-5 d-flex align-items-center">
@@ -46,14 +47,26 @@ export default function PostLayout({ frontMatter, children, posts, fileName }) {
 							</>
 						)}
 						{(frontMatter.tags.length!=0) && (
-							<>
-								<h3>TAGI</h3>
+							<div className="mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5">
+								<strong className="h6 my-2 text-muted">Tagi</strong>
 								<div className="flex flex-wrap">
 									{frontMatter.tags.map((tag, index) => (
 										<span className="me-1" key={index}>
 										{tag}
 										</span>
 									))}
+								</div>
+							</div>
+						)}
+
+						{toc && (
+							<>
+								<div className="mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-muted">
+									<strong className="h6 my-2">Na tej stronie</strong>
+									<hr className="my-2" />
+									<nav id="TableOfContents">
+										<TOC toc={toc} />
+									</nav>
 								</div>
 							</>
 						)}

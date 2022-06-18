@@ -4,7 +4,7 @@ import formatDate from '@/lib/formatDate'
 const PostCard = ({ data }) => {
 
     const { date, title, thumbnail, summary, tags } = data.data
-    const slug = data.filePath
+    const slug = data.filePath ? data.filePath.replace(/\.mdx$/, '') : ''
 
     return (
 
@@ -14,7 +14,7 @@ const PostCard = ({ data }) => {
           'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), '+`url(${thumbnail})`
       }}>
         <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <a href={`/blog/${slug}`} className='text-white text-decoration-none'>
+            <a href={`/posts/${slug}`} className='text-white text-decoration-none'>
               <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ">
               {title}
               </h2>

@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Button from "@/components/base/Button";
 
-const Winogrona = () => {
+const Winogrona = (props) => {
 
   const [color, setColor] = useState("red");
   const [text, setText] = useState("czerwone");
+
+  console.log(props)
 
   const handleClick = () => {
     if(color == "red") {

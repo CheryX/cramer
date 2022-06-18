@@ -11,19 +11,28 @@ import { Accordion, AccordionGroup } from '@/components/base/Accordion'
 import Graph from '@/components/Graph'
 import Table from '@/components/CustomTable'
 import CustomImage from '@/components/CustomImage'
+import TOC from '@/components/TOC'
 
+const Heading1 = ({ children }) => {
+	const idText = children.replace(/ /g, "-").toLowerCase();
+  
+	return <h1 id={idText}>{children}</h1>;
+  };
+
+  
 const components = {
+	Winogrona, Accordion, Head, AccordionGroup, Graph, TOC,
 	a: CustomLink,
-	Winogrona, Accordion, Head, AccordionGroup, Graph,
 	table: Table,
-	img: CustomImage
+	img: CustomImage,
+	h1: Heading1
 }
 
-export default function Post({ source, frontMatter, posts, fileName }) {
+export default function Post({ source, frontMatter, posts, fileName, toc }) {
 	return (
 		<>
-			<PostLayout frontMatter={frontMatter}  posts={posts} fileName={fileName}>
-				<MDXRemote {...source} components={components}  posts={posts} fileName={fileName} />
+			<PostLayout frontMatter={frontMatter} toc={toc} posts={posts} fileName={fileName}>
+				<MDXRemote {...source} components={components} />
 			</PostLayout>
 		</>
 	)
