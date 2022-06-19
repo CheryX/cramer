@@ -9,7 +9,6 @@ const Tag = ({ text, color, m }) => {
   if (m === true) m = 'm-2'
 
   let classes = ["text-decoration-none font-monospace", color, m].join(' ')
-  console.log(classes)
 
   return (
     <Link href={`/tags/${text}`}>

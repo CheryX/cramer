@@ -2,6 +2,7 @@ import 'katex/dist/katex.css'
 import '@/css/theme.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '@/css/prism.css'
+import '@/css/globals.css'
 import Head from 'next/head'
 import { useEffect } from "react";
 

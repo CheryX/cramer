@@ -1,0 +1,9 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-landing {
+    background: 
+        linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.05) 100%),
+        linear-gradient(99.82deg, #DED6FF 25.28%, #E9EBFF 46.46%, #E3E6FF 65.54%);
+}

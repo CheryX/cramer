@@ -1,12 +1,12 @@
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
+$body-color: #0c2c66;
+$body-bg: #ebedff;
 $border-radius: .4rem;
 $success: #7952b3;
 $gutter: 0rem;
 
 $white: #fff;
-$primary: #00b5bb;
+$primary: #0c2c66;
 
 $navbar-dark-color:                 rgba($white, .80);
 $navbar-dark-hover-color:           rgba($white, .95);
@@ -24,7 +24,26 @@ $spacers: (
   6: $spacer * 3,
   7: $spacer * 6,
   8: $spacer * 10,
+  9: 25%,
+  10: 30%,
 );
 
-
 @import "bootstrap/scss/bootstrap";
+
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities/api";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (40: 40%),
+        ),
+      ),
+    ),
+  )
+);

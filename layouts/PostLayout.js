@@ -4,6 +4,7 @@ import Link from "next/link"
 import authors from "@/lib/authors"
 import Image from "next/image"
 import TOC from "@/components/TOC"
+import Header from "@/components/Header"
 
 const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -12,6 +13,7 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 	return (
 		<>
 			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
+			<Header type="posts" />
 			<div className="d-flex align-items-center justify-content-center mt-7">
 				<div className="container row g-2 justify-content-center">
 					<div className="col-lg-3 me-3 d-none d-lg-block">		
