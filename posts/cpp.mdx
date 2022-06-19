@@ -135,12 +135,6 @@ cin >> x;
 cout << x;
 ```
 
-# Zadania (Bardzo Łatwe)
-
-1. Wypisz na ekran `"Hello World!"`
-2. Zrób program który wpisuje dane z klawiatury i wypisuje je na ekran
-3. Program który pyta o imię i wypisuje na ekran `"Witaj, [imię]!"`
-
 # Zmienne
 
 ## Jak przechowywać dane w programie, aby użyć ich później?
@@ -203,11 +197,6 @@ b = b + 10;
 ```
 
 > Zapis jak `b = b + 10` można skrócić do `b += 10`
-
-# Zadania (Łatwe)
-
-1. Zrób program który wypisze dzielnik dla podanej liczby.
-2. Zrób program który sprawdza czy osoba jest pełnoletnia.
 
 # Pętle
 
@@ -272,12 +261,6 @@ do {
 
 > Pętla do while wykonuje się conajmiej raz.
 
-# Zadania (Średnie)
-
-1. Zrób program który wypisze liczby od 0 do 10.
-2. Zrób program który wypisze liczby od 10 do 0.
-3. Zrób program który wypisze parzyste liczby od 0 do 100.
-
 # Funkcje
 
 Jeśli chcesz wykonać jakiś kawałek kodu wiele razy, możesz to zrobić za pomocą funkcji. Na szczęście już pisaliśmy wcześniej funkcje `main()`, więc nie jest to coś nowego.
@@ -309,14 +292,135 @@ int main() {
 Witaj Piotrek
 ```
 
-# Zadania (Trudne)
+---
+
+# Zadania
+
+<AccordionGroup>
+    <Accordion title='Wypisz na ekran "Hello World!"'>
+        ``` cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            cout << "Hello World!";
+        }
+        ```
+    </Accordion>
+    <Accordion title='Program który wpisuje dane z klawiatury i wypisuje je na ekran'>
+        ``` cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            int a;
+            cin >> a;
+            cout << a;
+        }
+        ```
+    </Accordion>
+    <Accordion title='Program który pyta o imię i wypisuje na ekran "Witaj, [imię]!"'>
+        ``` cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            string name;
+            cout << "Podaj imię: ";
+            cin >> name;
+            cout << "Witaj, " << name << "!";
+        }
+        ```
+    </Accordion>
+</AccordionGroup>
+
+---
+
+<AccordionGroup>
+    <Accordion title="Program który wypisze czy liczba jest parzysta.">
+        ``` cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            cout << "Podaj liczbę: ";
+            int a;
+            cin >> a;
+            if (a % 2 == 0) {
+                cout << "Liczba jest parzysta." << endl;
+            } else {
+                cout << "Liczba jest nieparzysta." << endl;
+            }
+        }
+        ```
+    </Accordion>
+    <Accordion title="Program który sprawdza czy osoba jest pełnoletnia.">
+        ```cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            cout << "Podaj wiek: ";
+            int a;
+            cin >> a;
+            if (a >= 18) {
+                cout << "Jesteś pełnoletni." << endl;
+            } else {
+                cout << "Jesteś niepełnoletni." << endl;
+            }
+        }
+        ```
+    </Accordion>
+</AccordionGroup>
+
+---
+
+<AccordionGroup>
+    <Accordion title="Program który wypisze liczby od 0 do 10.">
+        ```cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            for (int i = 0; i <= 10; i++) {
+                cout << i << " ";
+            }
+        }
+        ```
+    </Accordion>
+    <Accordion title="Program który wypisze liczby od 0 do 10.">
+        ```cpp
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+            for (int i = 10; i >= 0; i--) {
+                cout << i << " ";
+            }
+        }
+        ```
+    </Accordion>
+    <Accordion title="Program który wypisze parzyste liczby od 0 do 100">
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        for (int i = 0; i <= 50; i++) {
+            cout << i*2 << " ";
+        }
+    }
+    ```
+    </Accordion>
+</AccordionGroup>
+
+---
 
 1. Funkcja wypisująca uśmiechy o dowolnej szerokości oraz wysokości 
 2. Funkcja sprawdzająca czy liczba jest pierwsza
 3. Funkcja pokazująca tabliczke mnożenia
-4. Gra w kamień papier nożyce
-5. Funkcja licząca masę planety. Zkorzystaj ze wzoru $M_S = \frac{4π^2 * (1)^3}{G * T^2}$
 
+zrob to ktos prosze zmeczony jestem juz
 
 [^cpp]: [Wikipedia - C++](https://en.wikipedia.org/wiki/C%2B%2B)
 [^cke]: [Wybór języków na mature](https://cke.gov.pl/images/_KOMUNIKATY/20190806%20Komunikat%20o%20egzaminie%20z%20informatyki.pdf)
