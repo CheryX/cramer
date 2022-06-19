@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import PostCard from "@/components/PostCard"
 import PageSEO from "@/components/SEO"
-import Link from "next/link"
 import Tag from "@/components/Tag"
 import Header from "@/components/Header"
-import Image from "next/image"
 
 export default function LandingLayout({ posts, tags }) {
+
+	let featuredPosts = posts.filter(post => post.data.featured);
+
 	return (
 		<>
 			<PageSEO title="Home" description="Projekt Cramer to miejsce z darmowymi notatkami które możesz wykorzystać do nauki np. przed sprawdzianem" />
@@ -25,7 +26,7 @@ export default function LandingLayout({ posts, tags }) {
 			</div>
 
 			{/* Quote */}
-			<div className="container w-50 d-flex flex-direction align-items-center justify-content-center">
+			<div className="container px-lg-7 my-md-4 my-7 d-flex flex-direction align-items-center justify-content-center">
 				{/* Picture */}
 				<div className="d-md-block ms-7 d-none">
 					<img
@@ -37,7 +38,7 @@ export default function LandingLayout({ posts, tags }) {
 					/>
 				</div>
 				{/* Text */}
-				<div className="me-7">
+				<div className="me-md-7">
 					<p className="fs-3 fw-bold ms-5 pb-0 mb-0">
 						Szkoła przygotowuje dzieci do życia w świecie, który nie istnieje. 
 					</p>
@@ -53,20 +54,16 @@ export default function LandingLayout({ posts, tags }) {
 				{/* tu beda 3 posty ktore sa faktycznie fajne */}
 				<div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
 
-				{posts.map((data) => PostCard({data}) )}
+				{featuredPosts.map((data) => PostCard({data}) )}
 
 				</div>
-				<hr />
+
 				<div className='container-fluid p-4 mb-5'>
 					<h2 className="text-center fw-bold my-5">Najpopulariejsze tagi</h2>
 					<p className="text-center">
 					{Object.keys(tags).length === 0 && 'Nie znaleziono tagów'}
-					{tags.map((t) => {
-						return (
-						<>
-							<Tag text={t} color="black" m/>
-						</>
-						)
+					{tags.map((t, index) => {
+						return <span key={index} className="mx-2"><Tag text={t} color="black"/> </span>
 					})}
 					</p>
 				</div>

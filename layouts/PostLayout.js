@@ -83,8 +83,8 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 							borderRadius: "5px",
 						}}>
 							<h1 className="mb-1 mb-lg-2 f1 fw-600 text-white"><b>{frontMatter.title}</b></h1>
-							{frontMatter.description && (
-							<p className="description text-white">{frontMatter.description}</p>
+							{frontMatter.summary && (
+							<p className="description text-white">{frontMatter.summary}</p>
 							)}
 						</div>
 						<div className="col-lg-3 me-3 d-lg-none">		
