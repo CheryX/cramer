@@ -55,6 +55,7 @@ const Graph = ({ fun, p, height }) => {
 
         ctx.fillStyle = "#FDFFFC"
         if (p!=undefined) {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             p = JSON.parse(p)
             for (let i in p) {
                 ctx.beginPath()

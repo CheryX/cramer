@@ -48,25 +48,24 @@ export default function LandingLayout({ posts, tags }) {
 				</div>
 			</div>
 
+			{/* Featured Posts */}
 			<div className="container justify-content-center mt-7">
-				<h2 className="fw-bold fs-2 text-center">Wyróżnione Posty</h2>
+				<h2 className="fw-bold fs-1 text-md-center mb-md-6">Wyróżnione Posty</h2>
 
-				{/* tu beda 3 posty ktore sa faktycznie fajne */}
 				<div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
-
-				{featuredPosts.map((data) => PostCard({data}) )}
-
+					{featuredPosts.map((data) => PostCard({data}) )}
 				</div>
 
-				<div className='container-fluid p-4 mb-5'>
-					<h2 className="text-center fw-bold my-5">Najpopulariejsze tagi</h2>
-					<p className="text-center">
-					{Object.keys(tags).length === 0 && 'Nie znaleziono tagów'}
+			</div>
+
+			<div className="container justify-content-center mt-md-7 my-6 mb-md-8">
+				<h2 className="fw-bold fs-1 text-md-center mb-md-6">Najpopularniejsze tagi</h2>
+
+				<p className="text-md-center">
 					{tags.map((t, index) => {
 						return <span key={index} className="mx-2"><Tag text={t} color="black"/> </span>
 					})}
-					</p>
-				</div>
+				</p>
 			</div>
 
 		</>
