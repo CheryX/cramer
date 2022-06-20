@@ -31,10 +31,10 @@ export default function Header({ type }) {
 
 						<div className="offcanvas-body d-flex justify-content-lg-end">
 							<ul className="navbar-nav nav">
-								<li index={0} className="nav-item"><Link href="/"><a className={`nav-link ${type==='home'&&selectedClass} `}>Home</a></Link></li>
-								<li index={1} className="nav-item"><Link href="/posts"><a className={`nav-link ${type==='posts'&&selectedClass} `}>Posty</a></Link></li>
-								<li index={2} className="nav-item"><Link href="/about"><a className={`nav-link ${type==='about'&&selectedClass} `}>O nas</a></Link></li>
-								<li index={3} className="nav-item"><Link href="/contributing"><a className={`nav-link ${type==='contributing'&&selectedClass} `}>Dodaj notatkę</a></Link></li>
+								<li key={0} className="nav-item"><Link href="/"><a className={`nav-link ${type==='home'&&selectedClass} `}>Home</a></Link></li>
+								<li key={1} className="nav-item"><Link href="/posts"><a className={`nav-link ${type==='posts'&&selectedClass} `}>Posty</a></Link></li>
+								<li key={2} className="nav-item"><Link href="/about"><a className={`nav-link ${type==='about'&&selectedClass} `}>O nas</a></Link></li>
+								<li key={3} className="nav-item"><Link href="/contributing"><a className={`nav-link ${type==='contributing'&&selectedClass} `}>Dodaj notatkę</a></Link></li>
 							</ul>
 						</div>
 
