@@ -8,7 +8,7 @@ export default function Header({ type }) {
 	return (
 
 		<>
-            <nav className="navbar p-3 navbar-expand-lg d-flex">
+            <nav className="navbar p-3 navbar-expand-lg d-flex d-print-none">
                 <div className="container">
 
                     <Link href="/">

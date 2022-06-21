@@ -13,7 +13,7 @@ export function Accordion({title, children }) {
 				{title}
 				</button>
 			</h2>
-			<div className={`accordion-collapse ${collapse}`}>
+			<div className={`accordion-collapse ${collapse} d-print-block`}>
 				<div className="accordion-body">
 					{children}
 				</div>
