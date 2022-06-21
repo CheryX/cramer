@@ -2,6 +2,7 @@ import PageSEO from "@/components/SEO"
 import Link from "next/link"
 import { useState } from 'react'
 import Header from "@/components/Header"
+import WideCard from "@/components/WideCard"
 
 export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] }) {
     const [searchValue, setSearchValue] = useState('')
@@ -24,30 +25,25 @@ export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] 
 		<>
 			<PageSEO title="Search" description="thinking" type="list" />
 			<Header type="posts" />
-			<h1 className="mt-7">{title}</h1>
-            <form className="mt-5 mb-4" role="search">
-              <input
-                aria-label="Szukaj notatek"
-                type="text"
-                onChange={(e) => setSearchValue(e.target.value)}
-                className="form-control"
-                placeholder="Szukaj notatek"
-              />
-            </form>
-			<ul>
-				{displayPosts.map((post) => (
-					<li key={post.filePath}>
-						<Link
-							as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
-							href={`/posts/[slug]`}
-						>
-							<a>{post.data.title}</a>
-						</Link>
-                         - Tags: {post.data.tags.join(', ')}
-                        <hr />
-					</li>
-				))}
-			</ul>
+			<div className="container">
+				<h1 className="mt-7">{title}</h1>
+				<form className="mt-5 mb-4" role="search">
+				<input
+					aria-label="Szukaj notatek"
+					type="text"
+					onChange={(e) => setSearchValue(e.target.value)}
+					className="form-control"
+					placeholder="Szukaj notatek"
+				/>
+				</form>
+				<hr />
+					{displayPosts.map((post) => (
+						<>
+							<WideCard data={post}/>
+							<div className="mb-5"></div>
+						</>
+					))}
+			</div>
 		</>
 	)
 }
