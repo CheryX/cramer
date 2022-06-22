@@ -21,6 +21,7 @@ const TOC = ({
     </ul>
   )
 
+  let toc = []
   return tocList
 }
 
