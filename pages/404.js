@@ -1,11 +1,10 @@
-import { PageSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
+import PageSEO from "@/components/SEO"
 
-export default function FourZeroFour() {
-  return (
-    <>
-      <PageSEO title={`Page Not Found - ${siteMetadata.title}`} />
-      <h1>404</h1>
-    </>
-  )
+export default function Index() {
+	return (
+        <>
+            <PageSEO title="404" description="thinking" type="error" />
+			<h1>404</h1>
+        </>
+	)
 }

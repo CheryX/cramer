@@ -1,143 +1,138 @@
-import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
-import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+/* eslint-disable @next/next/no-img-element */
+import PageSEO from "@/components/SEO"
+import Link from "next/link"
+import authors from "@/lib/authors"
+import Image from "next/image"
+import TOC from "@/components/TOC"
+import Header from "@/components/Header"
 
-const editUrl = (fileName) => `https://github.com/cheryx/notes/blob/master/data/blog/${fileName}`
+const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+export default function PostLayout({ frontMatter, children, posts, fileName, toc }) {
+	let thumbnail = frontMatter.thumbnail || "/images/bg.jpg"
 
-  return (
-    <SectionContainer>
-      <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
-        authorDetails={authorDetails}
-        {...frontMatter}
-      />
-      <ScrollTopAndComment />
-      <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center">
-              <dl className="space-y-10">
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
-                </div>
-              </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
-              </div>
-            </div>
-          </header>
-          <div
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0 col-10 col-md-7 m-auto"
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-              <dt className="sr-only">Authors</dt>
-              <dd>
-                <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-                  {authorDetails.map((author) => (
-                    <li className="flex items-center space-x-2" key={author.name}>
-                      {author.avatar && (
-                        <Image
-                          src={author.avatar}
-                          width="38px"
-                          height="38px"
-                          alt="avatar"
-                          className="h-10 w-10 rounded-full"
-                        />
-                      )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dt className="sr-only">Name</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                        <dt className="sr-only">Github</dt>
-                        <dd>
-                          {author.github && (
-                            <Link
-                              href={author.github}
-                              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                            >
-                              {author.github.replace('https://github.com/', '@')}
-                            </Link>
-                          )}
-                        </dd>
-                      </dl>
-                    </li>
-                  ))}
-                </ul>
-              </dd>
-            </dl>
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div>
-            </div>
-            <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
-                {tags && (
-                  <div className="py-4 xl:py-8">
-                    <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      Tagi
-                    </h2>
-                    <div className="flex flex-wrap">
-                      {tags.map((tag) => (
-                        <span className="me-1">
-                        <Tag key={tag} text={tag}/>
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-                {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
-                    {prev && (
-                      <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Poprzednia notatka
-                        </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
-                        </div>
-                      </div>
-                    )}
-                    {next && (
-                      <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Następna notatka
-                        </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-              <div className="pt-4 xl:pt-8">
-                <Link
-                  href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                >
-                  &larr; Powrót do bloga
-                </Link>
-              </div>
-            </footer>
-          </div>
-        </div>
-      </article>
-    </SectionContainer>
-  )
+	return (
+		<>
+			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
+			<Header type="posts" />
+			<div className="d-flex align-items-center justify-content-center mt-7">
+				<div className="container row g-2 justify-content-center">
+					<div className="col-lg-3 me-3 d-none d-print-none d-lg-block">		
+
+						{frontMatter.date&& (
+							<>
+								<span className="fs-5 d-flex align-items-center">
+									<i className="bi bi-calendar3 me-3"></i>
+									<time dateTime={frontMatter.date}>
+										{new Date(frontMatter.date).toLocaleDateString('pl-PL', postDateTemplate)}
+									</time>
+								</span>
+								<hr />
+							</>
+						)}
+						{frontMatter.authors && (
+							<>
+								<ul className="list-unstyled">
+									{frontMatter.authors.map((author, index) => (
+										<li key={index} className="my-1 d-flex align-items-center">
+											<img src={authors[author].avatar} className="avatar me-1" alt={authors[author].name} style={{
+												width: "40px",
+												height: "40px",
+												borderRadius: "50%",
+											}} />
+											<div>
+												{authors[author].name} <br /> <Link href={githubUrl(authors[author].github)}><a>@{authors[author].github}</a></Link>
+											</div>
+										</li>
+									))}
+								</ul>
+								<hr />
+							</>
+						)}
+						{(frontMatter.tags.length!=0) && (
+							<div className="mt-3 mb-5 my-lg-0 mb-lg-5">
+								<strong className="fs-4 my-2">Tagi</strong>
+								<div className="flex flex-wrap">
+									{frontMatter.tags.map((tag, index) => (
+										<span className="me-1" key={index}>
+										{tag}
+										</span>
+									))}
+								</div>
+							</div>
+						)}
+
+						{toc && (
+							<>
+								<hr />
+								<div className="mt-3 mb-5 my-lg-0 mb-lg-5">
+									<strong className="fs-4 my-2">Na tej stronie</strong>
+									<nav id="TableOfContents">
+										<TOC toc={toc} />
+									</nav>
+								</div>
+							</>
+						)}
+
+					</div>
+
+					<div className="col-lg-8">
+						<div className="text-center d-flex justify-content-center align-items-center flex-column mb-5" style={{
+							height: "300px",
+							background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${thumbnail})`,
+							backgroundSize: "cover",
+							borderRadius: "5px",
+						}}>
+							<h1 className="mb-1 mb-lg-2 f1 fw-600 text-white"><b>{frontMatter.title}</b></h1>
+							{frontMatter.summary && (
+							<p className="description text-white">{frontMatter.summary}</p>
+							)}
+						</div>
+						<div className="col-lg-3 me-3 d-lg-none">		
+							{frontMatter.date&& (
+								<>
+									<span className="fs-5 d-flex align-items-center">
+										<i className="bi bi-calendar3 me-3"></i>
+										<time dateTime={frontMatter.date}>
+											{new Date(frontMatter.date).toLocaleDateString('pl-PL', postDateTemplate)}
+										</time>
+									</span>
+									<hr />
+								</>
+							)}
+						</div>
+
+						<article>{children}</article>
+
+						<div className="col-lg-3 me-3 d-print-none">
+							<a className="nav-link py-2 px-0 px-lg-2" target="_blank" rel="noopener noreferrer" href={`https://github.com/CheryX/posts/${fileName}.mdx`} >
+								<i className="fs-5 bi bi-github"></i> <small className="ms-2">Zobacz na Githubie</small>
+							</a>
+						</div>
+						<div className="col-lg-3 me-3 d-lg-none d-print-none">
+							<hr />
+							{frontMatter.authors && (
+								<>
+									{frontMatter.authors.map((author, index) => (
+										<div key={index} className="my-1 d-flex align-items-center">
+											<img src={authors[author].avatar} className="avatar me-1" alt={authors[author].name} style={{
+												width: "40px",
+												height: "40px",
+												borderRadius: "50%",
+											}} />
+											<div>
+												{authors[author].name} <br /> <Link href={githubUrl(authors[author].github)}><a>@{authors[author].github}</a></Link>
+											</div>
+										</div>
+									))}
+									<hr />
+								</>
+							)}
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	)
 }

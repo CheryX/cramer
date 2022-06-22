@@ -40,26 +40,26 @@ const Graph = ({ fun, p, height }) => {
         ctx.stroke()
 
         //? rendering graph
-        ctx.strokeStyle = "#FDFFFC"
+        ctx.strokeStyle = "#011627"
         ctx.lineWidth = "4"
         ctx.beginPath()
         for (let tempx = -w/2; tempx<w/2; tempx++) {
             let x = tempx/30
-            if (eval(fun)==Infinity) {
+            if (eval(fun)>15) {
                 ctx.stroke(); ctx.beginPath()
             } else {
-                ctx.lineTo(tempx+w/2,eval(fun)*30+h/2)
+                ctx.lineTo(tempx+w/2,-eval(fun)*30+h/2)
             }
         }
         ctx.stroke()
 
-        ctx.fillStyle = "#FDFFFC"
+        ctx.fillStyle = "#011627"
         if (p!=undefined) {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             p = JSON.parse(p)
             for (let i in p) {
                 ctx.beginPath()
-                ctx.arc(p[i][0]+w/2, p[i][1]+h/2, 8, 0, 2 * Math.PI);
-                console.log("jooooo xD ",p[i])
+                ctx.arc(p[i][0]*30+w/2, p[i][1]*-30+h/2, 8, 0, 2 * Math.PI);
                 ctx.fill()
             }
         }
@@ -67,7 +67,7 @@ const Graph = ({ fun, p, height }) => {
     }, [])
 
     return (
-        <canvas ref={canvasRef}  width="800" height={height==undefined ? 600 : height} style={{width:"100%"}}/>
+        <canvas ref={canvasRef}  width="800" height={height==undefined ? 600 : height} style={{width:"100%", borderRadius:"0.4rem", backgroundColor:"#fdfffc"}}/>
     )
 }
 

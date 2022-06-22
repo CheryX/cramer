@@ -1,49 +1,49 @@
+import PageSEO from "@/components/SEO"
+import Link from "next/link"
 import { useState } from 'react'
-import Pagination from '@/components/Pagination'
-import ArticleCard from '@/components/ArticleCard'
+import Header from "@/components/Header"
+import WideCard from "@/components/WideCard"
 
-export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
-  const [searchValue, setSearchValue] = useState('')
-  const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-  })
+export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] }) {
+    const [searchValue, setSearchValue] = useState('')
+    const filteredBlogPosts = posts.filter((frontMatter) => {
+      const searchContent = frontMatter.data.title + frontMatter.data.summary + frontMatter.data.tags.join(' ')
+      return searchContent.toLowerCase().includes(searchValue.toLowerCase())
+    })
 
-  // If initialDisplayPosts exist, display it if no searchValue is specified
-  const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+    const displayPosts = initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts;
+	let title;
+	if (tag == null) {
+		title = "Wszystkie notatki"
+	}
+	else {
+		title = `Notatki o tagu ${tag}`
+	}
 
-  return (
-    <>
-      <div>
-        <div className="container-fluid">
-          <div className="container px-4" id="custom-cards">
-            <h1 className="pb-2 text-center fw-bold ">
-              Wszystkie notatki
-            </h1> 
 
-            <form className="mt-5 mb-4" role="search">
-              <input
-                aria-label="Szukaj notatek"
-                type="text"
-                onChange={(e) => setSearchValue(e.target.value)}
-                className="form-control form-control-dark text-white bg-dark"
-                placeholder="Szukaj notatek"
-              />
-            </form>
-
-            <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
-
-              {!filteredBlogPosts.length && 'Nie znaleziono postów, proszę skontaktuj się z autorem strony'}
-              {displayPosts.map((frontMatter) => ArticleCard({frontMatter}) )}
-
-            </div>
-          </div>
-        </div>
-      </div>
-      {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-      )}
-    </>
-  )
+	return (
+		<>
+			<PageSEO title="Search" description="thinking" type="list" />
+			<Header type="posts" />
+			<div className="container">
+				<h1 className="mt-7">{title}</h1>
+				<form className="mt-5 mb-4" role="search">
+				<input
+					aria-label="Szukaj notatek"
+					type="text"
+					onChange={(e) => setSearchValue(e.target.value)}
+					className="form-control"
+					placeholder="Szukaj notatek"
+				/>
+				</form>
+				<hr />
+					{displayPosts.map((post) => (
+						<>
+							<WideCard data={post}/>
+							<div className="mb-5"></div>
+						</>
+					))}
+			</div>
+		</>
+	)
 }

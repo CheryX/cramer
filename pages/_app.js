@@ -1,30 +1,25 @@
 import 'katex/dist/katex.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import '@/css/theme.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import '@/css/globals.css'
 import '@/css/prism.css'
-import '@/css/tailwind.css'
-
-import { ThemeProvider } from 'next-themes'
+import '@/css/globals.css'
 import Head from 'next/head'
+import { useEffect } from "react";
 
-import siteMetadata from '@/data/siteMetadata'
-import LayoutWrapper from '@/components/LayoutWrapper'
-import { ClientReload } from '@/components/ClientReload'
-
-const isDevelopment = process.env.NODE_ENV === 'development'
-const isSocket = process.env.SOCKET
+// note to future contributors: its not too late to turn back
 
 export default function App({ Component, pageProps }) {
-  return (
-    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
-      <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-      </Head>
-      {isDevelopment && isSocket && <ClientReload />}
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
-    </ThemeProvider>
-  )
+	useEffect(() => {
+		import("bootstrap/dist/js/bootstrap");
+	  }, []);
+
+	return (
+		<>
+			<Head>
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+			</Head>
+
+			<Component {...pageProps} />
+		</>
+	)
 }
