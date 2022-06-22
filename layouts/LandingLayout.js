@@ -2,6 +2,7 @@
 import PostCard from "@/components/PostCard"
 import PageSEO from "@/components/SEO"
 import Tag from "@/components/Tag"
+import Link from "next/link"
 import Header from "@/components/Header"
 
 export default function LandingLayout({ posts, tags }) {
@@ -19,8 +20,13 @@ export default function LandingLayout({ posts, tags }) {
 					<h1 className="display-3 fw-bold lh-1 mb-5 mx-lg-7 my-md-5">Miejsce z darmowymi notatkami do szkoły</h1>
 					<p className="fs-5 lh-1 my-md-3 mx-lg-6 my-4 d-sm-block d-none">Platforma z notatkami zbudowana przez uczniów dla uczniów. Powtórz materiał przed ważnym sprawdzianem, utrwal umiejętności wykonując zadania.</p>
 					<div className="my-md-4">
-						<button key={1} type="button" className="btn btn-primary btn-lg py-2 px-4 me-1">Szukaj notatek</button>
-						<button key={2} type="button" className="btn btn-outline-secondary btn-lg py-2 px-4 me-1">Dodaj notatkę</button>
+						<Link href='/posts'>
+							<a type="button" className="btn btn-primary btn-lg py-2 px-4 me-1">Szukaj notatek</a>
+						</Link>
+						
+						<Link href='/contributing'>
+							<a type="button" className="btn btn-outline-secondary btn-lg py-2 px-4 me-1">Dodaj notatkę</a>
+						</Link>
 					</div>
 				</div>
 			</div>
