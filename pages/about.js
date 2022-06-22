@@ -2,9 +2,9 @@
 import { MDXRemote } from 'next-mdx-remote'
 import Head from 'next/head'
 import CustomLink from '@/components/CustomLink'
-import PostLayout from '@/layouts/PostLayout'
 import { renderMdx } from '@/lib/renderMdx'
 import Winogrona from '@/components/Winogrona'
+import CustomPostLayout from '@/layouts/CustomPostLayout'
 
 const components = {
 	a: CustomLink,
@@ -15,9 +15,9 @@ const components = {
 export default function Post({ source, frontMatter, posts }) {
 	return (
 		<>
-			<PostLayout frontMatter={frontMatter}>
+			<CustomPostLayout frontMatter={frontMatter}>
 				<MDXRemote {...source} components={components}  posts={posts} />
-			</PostLayout>
+			</CustomPostLayout>
 		</>
 	)
 }

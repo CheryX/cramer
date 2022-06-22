@@ -3,11 +3,10 @@ import formatDate from '@/lib/formatDate'
 
 const PostCard = ({ data }) => {
 
-		const { date, title, thumbnail, summary, tags } = data.data
+	const { date, title, thumbnail, summary, tags } = data.data
+	const slug = data.filePath ? data.filePath.replace(/\.mdx$/, '') : ''
 
-		const slug = data.filePath ? data.filePath.replace(/\.mdx$/, '') : ''
-
-		return (
+	return (
 
 		<div className="col">
 			<div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style={{
@@ -34,7 +33,7 @@ const PostCard = ({ data }) => {
 			</div>
 		</div>
 	
-		)
+	)
 }
 
 export default PostCard

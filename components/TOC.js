@@ -12,9 +12,9 @@ const TOC = ({
   )
 
   const tocList = (
-    <ul>
+    <ul className="list-unstyled">
       {filteredToc.map((heading) => (
-        <li key={heading.value}>
+        <li className="" key={heading.value}>
           <a href={heading.url}>{heading.value}</a>
         </li>
       ))}

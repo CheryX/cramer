@@ -1,6 +1,5 @@
 
 import { MDXRemote } from 'next-mdx-remote'
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import CustomLink from '@/components/CustomLink'
 import { postFilePaths } from '@/lib/mdxUtils'

@@ -63,6 +63,7 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 
 						{toc && (
 							<>
+								<hr />
 								<div className="mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-muted">
 									<strong className="h6 my-2">Na tej stronie</strong>
 									<hr className="my-2" />
