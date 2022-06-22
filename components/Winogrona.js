@@ -6,8 +6,6 @@ const Winogrona = (props) => {
   const [color, setColor] = useState("red");
   const [text, setText] = useState("czerwone");
 
-  console.log(props)
-
   const handleClick = () => {
     if(color == "red") {
       setColor("blue");

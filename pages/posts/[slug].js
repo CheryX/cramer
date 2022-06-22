@@ -16,7 +16,11 @@ const Heading1 = ({ children }) => {
 	const idText = children.replace(/ /g, "-").toLowerCase();
   
 	return <h1 id={idText}>{children}</h1>;
-  };
+};
+
+const Blockquote = ({ children }) => {
+	return <blockquote className="blockquote border-start border-3 border-primary ps-2 ps-md-4 me-md-2 fs-6 py-md-2  ms-2 my-md-4 bg-primary bg-opacity-10">{children}</blockquote>
+}
 
   
 const components = {
@@ -24,7 +28,8 @@ const components = {
 	a: CustomLink,
 	table: Table,
 	img: CustomImage,
-	h1: Heading1
+	h1: Heading1,
+	blockquote: Blockquote
 }
 
 export default function Post({ source, frontMatter, posts, fileName, toc }) {

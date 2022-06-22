@@ -10,6 +10,8 @@ const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, children, posts, fileName, toc }) {
+	let thumbnail = frontMatter.thumbnail || "/images/bg.jpg"
+
 	return (
 		<>
 			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
@@ -49,8 +51,8 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 							</>
 						)}
 						{(frontMatter.tags.length!=0) && (
-							<div className="mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5">
-								<strong className="h6 my-2 text-muted">Tagi</strong>
+							<div className="mt-3 mb-5 my-lg-0 mb-lg-5">
+								<strong className="fs-4 my-2">Tagi</strong>
 								<div className="flex flex-wrap">
 									{frontMatter.tags.map((tag, index) => (
 										<span className="me-1" key={index}>
@@ -64,9 +66,8 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 						{toc && (
 							<>
 								<hr />
-								<div className="mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-muted">
-									<strong className="h6 my-2">Na tej stronie</strong>
-									<hr className="my-2" />
+								<div className="mt-3 mb-5 my-lg-0 mb-lg-5">
+									<strong className="fs-4 my-2">Na tej stronie</strong>
 									<nav id="TableOfContents">
 										<TOC toc={toc} />
 									</nav>
@@ -79,7 +80,7 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 					<div className="col-lg-8">
 						<div className="text-center d-flex justify-content-center align-items-center flex-column mb-5" style={{
 							height: "300px",
-							background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${frontMatter.thumbnail})`,
+							background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${thumbnail})`,
 							backgroundSize: "cover",
 							borderRadius: "5px",
 						}}>

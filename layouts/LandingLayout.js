@@ -17,7 +17,7 @@ export default function LandingLayout({ posts, tags }) {
 			<div className="container-fluid p-0 bg-landing pb-2 mb-lg-7 mb-5">
 				<Header type="home" />
 				<div className="container px-xxl-8 py-lg-7 pt-3 pb-5 text-md-center d-flex flex-column align-items-md-center justify-content-md-center ">
-					<h1 className="display-3 fw-bold lh-1 mb-5 mx-lg-7 my-md-5">Miejsce z darmowymi notatkami do szkoły</h1>
+					<h1 className="display-3 fw-bold lh-1 mb-5 mx-lg-7 my-md-5">Miejsce z wolnymi notatkami do szkoły</h1>
 					<p className="fs-5 lh-1 my-md-3 mx-lg-6 my-4 d-sm-block d-none">Platforma z notatkami zbudowana przez uczniów dla uczniów. Powtórz materiał przed ważnym sprawdzianem, utrwal umiejętności wykonując zadania.</p>
 					<div className="my-md-4">
 						<Link href='/posts'>

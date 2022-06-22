@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,400&display=swap');
 
-* {
+h1, h2, h3, h4, p {
     font-family: 'Lato', sans-serif;
 }
 
@@ -26,4 +26,26 @@
         border: none;
         background: #fff;
     }
+}
+
+.contains-task-list {
+    list-style: none;
+}
+
+/* XD (piłeś, nie programuj, nawet jeśli nie piłeś) */
+#footnote-label::after {
+    display: inline !important;
+    content: "Przypisy";
+    font-size: 2rem;
+}
+
+#footnote-label {
+    font-size: 0px;
+}
+
+nav li {
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav li:hover {
+    transform: scale(1.1);
 }

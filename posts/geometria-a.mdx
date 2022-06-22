@@ -24,14 +24,14 @@ W geometrii płaskiej korzystamy z aksjomatów *Euklidesa*, stanowią one podsta
 ### Punkt
 
 Punkt to jest najprostszy objekt w geometrii, ma on tylko koordynaty. Zapisuje się go na układzie współrzędnych w postaci kropki, oraz oznacza się go dużą literą.[^punkt]
-
-![](/static/images/math/Punkt.png)
+<Graph p="[[2,3]]" height="300px" />
 
 ### Prosta
 
 Prosta to jest kolejny prosty objekt, który jest nieskończoną linią poprowadzona przez 2 punkty.[^prosta]
 
-![](/static/images/math/Prosta.png)
+<Graph fun="0.5*x+2" p="[[-4,0],[0,2]]" height="300px" />
+
 
 > Przez 2 dowolne punkty można przeprowadzić **tylko** jedną prostą.
 
@@ -39,15 +39,14 @@ Prosta to jest kolejny prosty objekt, który jest nieskończoną linią poprowad
 
 Odcinek to jest część prostej który ma dwa końce oznaczony punktami.
 
-![](/static/images/math/Odcinek.png)
+<Graph fun="if( x>-4 && x<4 ) {2}" p="[[-4,2], [4,2]]" height="300px" />
 
 > Odcinek **nie** ma początku, ma 2 końce
 
 ### Półprosta
 
 Półprosta to jest część prostej, która zaczyna się na punkcie.
-
-![](/static/images/math/Półprosta.png)
+<Graph fun="Math.sqrt(Math.abs(x-3)/(x-3))*0.5*x" p="[[3,1.5]]" height="300px" />
 
 ### Kąt
 
