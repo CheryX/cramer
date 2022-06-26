@@ -1,15 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import PageSEO from "@/components/SEO"
-import Link from "next/link"
-import authors from "@/lib/authors"
-import Image from "next/image"
-import TOC from "@/components/TOC"
 import Header from "@/components/Header"
 
-const githubUrl = (username) => `https://github.com/${username}`
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
-
-export default function CustomPostLayout({ frontMatter, children, posts, fileName, toc, type }) {
+export default function CustomPostLayout({ frontMatter, children, type }) {
 	let thumbnail = frontMatter.thumbnail || "/images/bg.jpg"
 
 	return (

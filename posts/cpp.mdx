@@ -417,9 +417,67 @@ Witaj Piotrek
 
 ---
 
-1. Funkcja wypisująca uśmiechy o dowolnej szerokości oraz wysokości 
-2. Funkcja sprawdzająca czy liczba jest pierwsza
-3. Funkcja pokazująca tabliczke mnożenia
+<AccordionGroup>
+    <Accordion title="Funkcja wypisująca uśmiechy o dowolnej szerokości oraz wysokości">
+        ```cpp
+        #include <iostream>
+        using namespace std;
+        
+        void usmiechy(int w, int h) {
+            for (int i = 0; i < h; i++) {
+                for (int j = 0; j < w; j++) {
+                    cout << " :) ";
+                }
+                cout << "\n";
+            } 
+        }
+
+        int main() {
+            usmiechy(4, 3);
+        }
+        ```
+    </Accordion>
+    <Accordion title="Funkcja sprawdzająca czy liczba jest pierwsza">
+        ```cpp
+        #include <iostream>
+        using namespace std;
+        
+        bool pierwsza(int n) {
+            if (n <= 1) return false;
+
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) return false;
+            }
+        
+            return true;
+        }
+
+        int main() {
+            pierwsza(51) ? cout << "Liczba jest pierwsza" : cout << "Liczba nie jest pierwsza";
+        }
+        ```
+    </Accordion>
+    <Accordion title="Funkcja pokazująca tabliczke mnożenia">
+        ```cpp
+        #include <iostream>
+        using namespace std;
+        
+        void tabliczka() {
+            for (int i = 1; i <= 10; i++) {
+                for (int j = 1; j <= 10; j++) {
+                    cout << i*j << " ";
+                }
+                cout << "\n";
+            } 
+        }
+
+        int main() {
+            tabliczka();
+        }
+        ```
+    </Accordion>
+</AccordionGroup>
+
 
 [^cpp]: [Wikipedia - C++](https://en.wikipedia.org/wiki/C%2B%2B)
 [^cke]: [Wybór języków na mature](https://cke.gov.pl/images/_KOMUNIKATY/20190806%20Komunikat%20o%20egzaminie%20z%20informatyki.pdf)

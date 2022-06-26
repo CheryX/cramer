@@ -2,16 +2,42 @@
 import PageSEO from "@/components/SEO"
 import Link from "next/link"
 import authors from "@/lib/authors"
-import Image from "next/image"
-import TOC from "@/components/TOC"
 import Header from "@/components/Header"
+
+import { renderToString } from "react-dom/server";
+
 
 const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, children, posts, fileName, toc }) {
+export default function PostLayout({ frontMatter, children, fileName }) {
 	let thumbnail = frontMatter.thumbnail || "/images/bg.jpg"
 
+	const contentString = renderToString(children);
+
+	const getHeadings = (source) => {
+		let regex = /<h1 id="[^"]*">(.*?)<\/h1>/g;
+
+		if (source.match(regex)) {
+		  return source.match(regex).map((heading) => {
+			let headingText = heading.replace("<h1>", "").replace("</h1>", "");
+			headingText = headingText.replace(/<(.|\n)*?>/g, '');
+
+			const link = "#" + headingText.replace(/ /g, "_").toLowerCase();
+	
+			return {
+			  text: headingText,
+			  link,
+			};
+		  });
+		}
+	
+		return [];
+	};
+
+	const headings = getHeadings(contentString);
+
+	  
 	return (
 		<>
 			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
@@ -63,17 +89,20 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 							</div>
 						)}
 
-						{toc && (
+						{headings.length > 0 ? (
 							<>
 								<hr />
-								<div className="mt-3 mb-5 my-lg-0 mb-lg-5">
-									<strong className="fs-4 my-2">Na tej stronie</strong>
-									<nav id="TableOfContents">
-										<TOC toc={toc} />
-									</nav>
-								</div>
+								<strong className="fs-4 my-2">Na tej stronie</strong>
+								<ul className="list-unstyled">
+								{headings.map((heading) => (
+									<li key={heading.text}>
+									<a href={heading.link}>{heading.text}</a>
+									</li>
+								))}
+								</ul>
 							</>
-						)}
+						) : null}
+
 
 					</div>
 
