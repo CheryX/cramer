@@ -106,7 +106,7 @@ export default function PostLayout({ frontMatter, children, posts, fileName, toc
 						<article>{children}</article>
 
 						<div className="col-lg-3 me-3 d-print-none">
-							<a className="nav-link py-2 px-0 px-lg-2" target="_blank" rel="noopener noreferrer" href={`https://github.com/CheryX/posts/${fileName}.mdx`} >
+							<a className="nav-link py-2 px-0 px-lg-2" target="_blank" rel="noopener noreferrer" href={`https://github.com/CheryX/cramer/tree/master/posts/${fileName}.mdx`} >
 								<i className="fs-5 bi bi-github"></i> <small className="ms-2">Zobacz na Githubie</small>
 							</a>
 						</div>
