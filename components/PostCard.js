@@ -10,9 +10,7 @@ const PostCard = ({ data }) => {
 
 		<div className="col">
 			<div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style={{
-				 background:
-					'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), '+`url(${thumbnail})`
-			}}>
+				background: 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), '+`url(${thumbnail})`}}>
 				<div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
 						<a href={`/posts/${slug}`} className='text-white text-decoration-none'>
 							<h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ">
@@ -30,6 +28,7 @@ const PostCard = ({ data }) => {
 						</li>
 					</ul>
 				</div>
+
 			</div>
 		</div>
 	

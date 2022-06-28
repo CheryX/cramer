@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useState } from 'react'
 import Header from "@/components/Header"
 import WideCard from "@/components/WideCard"
+import PostCard from "@/components/PostCard"
 
 export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] }) {
     const [searchValue, setSearchValue] = useState('')
@@ -26,23 +27,21 @@ export default function ListLayout({ posts, tags, tag, initialDisplayPosts = [] 
 			<PageSEO title="Search" description="thinking" type="list" />
 			<Header type="posts" />
 			<div className="container">
-				<h1 className="mt-7">{title}</h1>
-				<form className="mt-5 mb-4" role="search">
-				<input
-					aria-label="Szukaj notatek"
-					type="text"
-					onChange={(e) => setSearchValue(e.target.value)}
-					className="form-control"
-					placeholder="Szukaj notatek"
-				/>
+				<h1 className="fw-bold display-5 mt-lg-8">{title}</h1>
+				
+
+				<form className="mb-4 mb-md-7" role="search">
+					<input
+						aria-label="Szukaj notatek" type="text"
+						onChange={(e) => setSearchValue(e.target.value)}
+						className="form-control bg-white" placeholder="Szukaj notatek"
+					/>
 				</form>
-				<hr />
-					{displayPosts.map((post) => (
-						<>
-							<WideCard data={post}/>
-							<div className="mb-5"></div>
-						</>
-					))}
+
+				<div className="row row-cols-1 row-cols-lg-2 align-items-stretch g-4">
+					{posts.map((data) => WideCard({data}) )}
+				</div>
+
 			</div>
 		</>
 	)

@@ -25,7 +25,7 @@ export default function Header({ type }) {
 					<div className="offcanvas offcanvas-end" tabIndex="-1" id="bdNavbar" aria-labelledby="bdNavbarLabel">
 
 						<div className="offcanvas-header">
-							<h5 className="offcanvas-title" id="bdNavbarLabel">Offcanvas</h5>
+							<h5 className="offcanvas-title" id="bdNavbarLabel">Cramer</h5>
 							<button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 						</div>
 

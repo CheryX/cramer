@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Tag from '@/components/Tag'
 import formatDate from '@/lib/formatDate'
 
-const PostCard = ({ data }) => {
+const WideCard = ({ data }) => {
 
 		const { date, title, thumbnail, summary, tags } = data.data
 
@@ -9,38 +10,35 @@ const PostCard = ({ data }) => {
 
 		return (
 
-		<div className="col">
-			<a href={`/posts/${slug}`} className='text-decoration-none'>
-				<div className="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-					<div className="row justify-content-start">
-						<div className='col d-none d-lg-block' style={{
-							background:
-							'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), '+`url(${thumbnail})`
-						}}></div>
-						<div className="col p-5 pb-3 text-shadow-1">
-								<h2 className=" mb-4 display-6 lh-1 fw-bold ">
-								{title}
-								</h2>
-							<ul className="d-flex list-unstyled mt-auto">
-								<li className="d-flex align-items-center me-3">
-									<i className="bi bi-tags mx-1"></i>
-									<small>{tags.map((tag, index) => (<span key={index}><Tag key={index} text={tag}/> </span>))}</small>
-								</li>
-								<li className="d-flex align-items-center">
-									<i className="bi bi-calendar3 mx-1"></i>
-									<small><time dateTime={date}>{formatDate(date)}</time></small>
-								</li>
-							</ul>
+			<div className="col">
+				<a href={`/posts/${slug}`} className='text-decoration-none'>
+					<div className="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative bg-white">
+
+						<div className="col p-5 d-flex flex-column position-static">
+
+							<strong className="d-inline-block mb-2 text-success">
+								<i className="bi bi-tags mx-1"></i>
+								<Tag text={tags[0]}/>
+							</strong>
+
+							<h3 className="mb-0 fw-bold ">{title}</h3>
+
+							<div className="mb-1 text-muted">
+								<time dateTime={date}>{formatDate(date)}</time>
+							</div>
+
+							<p className="mb-auto">{summary}</p>
+							<a href={`/posts/${slug}`} className="stretched-link">Czytaj dalej</a>
 						</div>
-						<div className='col p-5 pb-3 text-shadow-1 d-none d-sm-block'>
-							{summary}
+
+						<div className="col-auto d-none d-lg-block">
+							<img src={thumbnail} className="cropImg" width={200} height={250} alt="Thumbnail" />
 						</div>
+
 					</div>
-				</div>
-			</a>
-		</div>
-	
+				</a>
+			</div>
 		)
 }
 
-export default PostCard
+export default WideCard
