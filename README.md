@@ -7,4 +7,4 @@ Każdy może dodać notatkę do tego projektu pod warunkiem, że nie narusza ona
 * [Serwer discord](https://discord.gg/gHBzHTr6JD)
 * [Dokumentacja](https://notes.tobiasbot.ovh/contributing)
 
-![Logo](https://user-images.githubusercontent.com/58445363/176502696-10b58cac-4678-4b70-8e14-8ddeef483145.png)
+![Group 2](https://user-images.githubusercontent.com/58445363/176503322-79130a6e-d093-44c3-9f3c-6129c833b69e.png)
