@@ -1,5 +1,4 @@
 import 'katex/dist/katex.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 
 export default function App({ Component, pageProps }) {
 	return (
