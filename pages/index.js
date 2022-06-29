@@ -1,9 +1,21 @@
-import LandingLayout from '@/layouts/LandingLayout'
 import { getAllPostsData, getAllTags } from '@/lib/notesData'
 
 export default function Index({ posts, tags }) {
 	return (
-		<LandingLayout posts={posts} tags={tags} />
+		<>
+			<ul>
+				{posts.map((data, index) => {
+					return <li key={index}>{data.data.title}</li>
+				} )}
+			</ul>
+
+			<ul>
+				{tags.map((t, index) => {
+					return <li key={index}>{t}</li>
+				})}
+			</ul>
+
+		</>
 	)
 }
 
