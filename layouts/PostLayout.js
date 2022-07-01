@@ -1,20 +1,20 @@
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, children, fileName }) {
+export default function PostLayout({ postData, children, }) {
 	  
 	return (
 		<>
 			
-			{frontMatter.date&& (
-				<time dateTime={frontMatter.date}>
-					{new Date(frontMatter.date).toLocaleDateString('pl-PL', postDateTemplate)}
+			{postData.date&& (
+				<time dateTime={postData.date}>
+					{new Date(postData.date).toLocaleDateString('pl-PL', postDateTemplate)}
 				</time>
 			)}
 			
-			{frontMatter.tags.map((tag, index) => tag)}
+			{postData.tags.map((tag, index) => tag)}
 
-			<h1>{frontMatter.title}</h1>
-			<p>{frontMatter.summary}</p>
+			<h1>{postData.title}</h1>
+			<p>{postData.summary}</p>
 
 			<article>{children}</article>
 

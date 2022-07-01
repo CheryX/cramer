@@ -1,14 +1,21 @@
 
 import { MDXRemote } from 'next-mdx-remote'
-import { postFilePaths } from '@/lib/mdxUtils'
-import PostLayout from '@/layouts/PostLayout'
-import { renderMdx } from '@/lib/renderMdx'
+import renderMdx from '@/lib/renderMdx'
 
+import fs from 'fs'
+import path from 'path'
+
+import PostLayout from '@/layouts/PostLayout'
+
+// List of custom components
 const components = {};
 
-export default function Post({ source, frontMatter, posts, fileName}) {
+
+const POSTS_PATH = path.join(process.cwd(), 'posts')
+
+export default function Post({ source, postData, posts, fileName}) {
 	return (
-		<PostLayout frontMatter={frontMatter} posts={posts} fileName={fileName}>
+		<PostLayout postData={postData} posts={posts} fileName={fileName}>
 			<MDXRemote {...source} components={components} />
 		</PostLayout>
 	)
@@ -19,6 +26,12 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
+
+	const postFilePaths = fs
+		.readdirSync(POSTS_PATH)
+		.filter((path) => /\.mdx?$/.test(path))
+
+
 	const paths = postFilePaths
 		.map((path) => path.replace(/\.mdx?$/, ''))
 		.map((slug) => ({ params: { slug } }))

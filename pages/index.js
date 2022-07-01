@@ -5,7 +5,7 @@ export default function Index({ posts, tags }) {
 		<>
 			<ul>
 				{posts.map((data, index) => {
-					return <li key={index}>{data.data.title}</li>
+					return <li key={index}>{data.title}</li>
 				} )}
 			</ul>
 
