@@ -6,7 +6,13 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderWidth: {
+        '1': '1px',
+        '3': '3px',
+        '5': '5px'
+      }
+    },
   },
   plugins: [],
 }
