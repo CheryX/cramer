@@ -6,7 +6,6 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta charSet="utf-8" />
-					<meta content="width=device-width, initial-scale=1" name="viewport" />
 				</Head>
 
 				<body>

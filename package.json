@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
+    "bootstrap-icons": "^1.8.3",
     "katex": "^0.16.0",
     "next": "latest",
     "next-mdx-remote": "^4.0.3",
@@ -15,8 +16,7 @@
     "rehype-prism-plus": "^1.4.0",
     "remark-footnotes": "^4.0.1",
     "remark-gfm": "^3.0.1",
-    "remark-math": "^5.1.1",
-    "tailwindcss": "^3.1.4"
+    "remark-math": "^5.1.1"
   },
   "browser": {
     "fs": false,
@@ -25,6 +25,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
   }
 }
