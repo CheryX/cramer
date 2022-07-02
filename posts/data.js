@@ -11,6 +11,18 @@ let electruuu = {
     github: 'electruuu'
 }
 
+//To możesz ignorować
+const subjects = [
+    {name: "Matematyka", icon: "fa-square-root-variable"},
+    {name: "Polski", icon: "fa-book-open"},
+    {name: "Angielski", icon: "fa-language"},
+    {name: "Informatyka", icon: "fa-code"},
+    {name: "Fizyka", icon: "fa-globe"},
+    {name: "Biologia", icon: "fa-dna"},
+    {name: "Chemia", icon: "fa-flask-vial"},
+    {name: "Niemiecki", icon: "fa-language"},
+]
+
 // Tutaj dodaj posty
 export default {
     "cpp": {
@@ -25,7 +37,7 @@ export default {
     },
     "rodzaj-rzeczownika": {
         title: 'Rodzaj rzeczownika',
-        slug: 'rodzaj-rzeczownik.mdx',
+        slug: 'rodzaj-rzeczownika.mdx',
         date: '2022-05-16',
         tags: ['niemiecki', 'gramatyka'],
         authors: [cheryx],
@@ -33,3 +45,4 @@ export default {
         thumbnail: 'https://images.unsplash.com/photo-1598965057003-1e9092d37b77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
     }
 }
+export { subjects } 

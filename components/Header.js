@@ -8,16 +8,20 @@ export default function Header({page, searchOptions}) {
 	return (
 		<header className="dark:text-white p-3">
 			<div className="flex items-center justify-between max-w-screen-xl mx-auto">
-				<div className="flex items-center">
-					<img src='/Favicon.png' className="inline"/> <span className="text-3xl font-extrabold ml-2 hidden md:inline">CRAMER</span>
-				</div>
+				<Link href='/'>
+					<a>
+						<div className="flex items-center">
+						<	img src='/Favicon.png' className="inline"/> <span className="text-3xl font-extrabold ml-2 hidden md:inline">CRAMER</span>
+						</div>
+					</a>
+				</Link>
 
 				<div>
-					<Link href={'/'}><a className={`px-3 mx-1 h-100 ${page=="index" && selected}`}>Home</a></Link>
-					<Link href={'/posts'}><a className={`px-3 mx-1 h-100 ${page=="notes" && selected}`}>Notatki</a></Link>
+					<Link href={'/'}><a className={`hidden md:inline px-3 mx-1 h-100 ${page=="index" && selected}`}>Home</a></Link>
+					<Link href={'/posts'}><a className={`hidden md:inline px-3 mx-1 h-100 ${page=="notes" && selected}`}>Notatki</a></Link>
 					<Link href={'/contributing'}><a className={`hidden md:inline px-3 mx-1 mr-5 h-100 ${page=="added" && selected}`}>Dodaj notatkę</a></Link>
 
-					<Search className="hidden md:inline-block"
+					<Search
 						onChange={searchOptions.onChange}
 						onKey={searchOptions.onKey}
 						value={searchOptions.value}

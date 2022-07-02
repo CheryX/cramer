@@ -1,6 +1,8 @@
 import { getAllPostsData, getAllTags } from '@/lib/notesData'
 import Header from '@/components/Header';
 import { useState } from 'react'
+import PostCard from '@/components/PostCard';
+import { subjects } from 'posts/data';
 
 export default function Index({ posts, tags }) {
 	const [searchValue, setSearchValue] = useState('')
@@ -13,26 +15,38 @@ export default function Index({ posts, tags }) {
 
 	return (
 		<>
-			<Header page='index' searchOptions={{
-				onChange: (e) => setSearchValue(e.target.value),
-				onKey: (e) => onKey(e)
-			}}/>
+			<div id='landing' className='bg-custom'>
+				<Header page='index' searchOptions={{
+					onChange: (e) => setSearchValue(e.target.value),
+					onKey: (e) => onKey(e)
+				}}/>
 
-			<h2 className='text-2xl'>Posts</h2>
+				<div className='md:py-24 py-12'>
+					<h1 className="text-4xl lg:text-6xl font-extrabold max-w-screen-md md:text-center mx-5 md:mx-auto">Miejsce z darmowymi notatkami do szkoły</h1>
+					<p className='lg:text-xl md:text-center max-w-screen-md mx-5 md:mx-auto my-5 lg:my-10'>Platforma z notatkami zbudowana przez uczniów dla uczniów. Powtórz materiał przed ważnym sprawdzianem, utrwal umiejętności wykonując zadania.</p>
+				</div>
 
-			<ul>
-				{posts.map((data, index) => {
-					return <li key={index}>{data.title}</li>
+			</div>
+
+			<div id='posts' className='sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:max-w-screen-2xl mx-auto md:mt-5'>
+				{posts.slice(0, 12).map((data, index) => {
+					return <span key={index}><PostCard post={data}/></span>
 				} )}
-			</ul>
+			</div>
 
-			<h2 className='text-2xl'>Tags</h2>
+			<h2 className='text-5xl font-extrabold text-center mt-16'>Przedmioty</h2>
+			<p className='text-center text-xl font-medium mt-3'>Szukaj notatek przez przedmiot</p>
 
-			<ul>
-				{tags.map((t, index) => {
-					return <li key={index}>{t}</li>
+			<div id='subjects' className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-8 lg:max-w-screen-xl mx-auto my-10 md:my-20 gap-4'>
+				{subjects.map((data, index) => {
+					return (
+						<div key={index} className='flex flex-col'>
+							<i className={`fa-solid ${data.icon} text-center fa-4x mb-5`}></i>
+							<p className='text-center text-2xl font-bold'>{data.name}</p>
+						</div>
+					)
 				})}
-			</ul>
+			</div>
 
 		</>
 	)
