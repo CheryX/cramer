@@ -9,7 +9,7 @@ Projekt Cramer to jest projekt który ma na celu pomóc uczniom szkół w Polsce
 ## Jak dodać post?
 
 * Dla osób umiejących posługiwać się Githubem:
-    1. Dodaj siebie w pliku `/posts/authors.js`
+    1. Dodaj siebie oraz post w pliku `/posts/data.js`
     2. Dodaj nowy plik w folderze `/posts` o formacie `.mdx`
     3. Stwórz nowego pull requesta
 * Dla osób zaczynających z Githubem:

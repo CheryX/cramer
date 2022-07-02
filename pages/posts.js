@@ -1,6 +1,8 @@
 import { getAllPostsData, getAllTags } from '@/lib/notesData'
 import Header from '@/components/Header'
 import { useState } from 'react'
+import PostCard from '@/components/PostCard'
+import SearchComponent from '@/components/Search'
 
 export default function Index({ posts, title }) {
 	let [searchValue, setSearchValue] = useState(title)
@@ -22,17 +24,15 @@ export default function Index({ posts, title }) {
 				value: title
 			}}/>
 
-			<h1 className='text-3xl'>Szukaj notatek</h1>
+			<h2 className='text-5xl font-extrabold text-center mt-16'>Wszystkie notatki</h2>
+			<p className='text-center text-xl font-medium mt-3 mx-10'>Pole wyszukiwania znajduje się w prawym górnym rogu</p>
 
-			<hr />
-
-			<h1 className='text-2xl'>Znalezione posty:</h1>
-
-			<ul className='list-decimal'>
+			<div id='posts' className='sm:grid sm:grid-cols-2 xl:grid-cols-4 lg:max-w-screen-2xl mx-auto md:mt-5 mb-20'>
 				{filteredBlogPosts.map((data, index) => {
-					return <li key={index}>{data.title}</li>
+					return <span key={index}><PostCard post={data}/></span>
 				} )}
-			</ul>
+			</div>
+
 
 		</>
 	)

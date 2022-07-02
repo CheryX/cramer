@@ -11,7 +11,7 @@ export default function Header({page, searchOptions}) {
 				<Link href='/'>
 					<a>
 						<div className="flex items-center">
-						<	img src='/Favicon.png' className="inline"/> <span className="text-3xl font-extrabold ml-2 hidden md:inline">CRAMER</span>
+						<img src='/Favicon.png' className="inline"/> <span className="text-3xl font-extrabold ml-2 hidden md:inline">CRAMER</span>
 						</div>
 					</a>
 				</Link>

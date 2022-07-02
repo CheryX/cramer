@@ -18,7 +18,7 @@ export default function Index() {
 			}}/>
 
 			<h1 className="text-6xl text-center font-black mt-60">404 not found</h1>
-			<p className='text-3xl text-center font-bold'>Nie znaleziono strony :{'('}</p>
+			<p className='text-3xl text-center font-bold mb-60'>Nie znaleziono strony :{'('}</p>
 
 		</>
 	)
