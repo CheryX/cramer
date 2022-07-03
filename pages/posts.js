@@ -2,7 +2,6 @@ import { getAllPostsData, getAllTags } from '@/lib/notesData'
 import Header from '@/components/Header'
 import { useState } from 'react'
 import PostCard from '@/components/PostCard'
-import SearchComponent from '@/components/Search'
 
 export default function Index({ posts, title }) {
 	let [searchValue, setSearchValue] = useState(title)
@@ -30,9 +29,13 @@ export default function Index({ posts, title }) {
 			<div id='posts' className='sm:grid sm:grid-cols-2 xl:grid-cols-4 lg:max-w-screen-2xl mx-auto md:mt-5 mb-20'>
 				{filteredBlogPosts.map((data, index) => {
 					return <span key={index}><PostCard post={data}/></span>
-				} )}
+				})}
+
 			</div>
 
+			{
+				(filteredBlogPosts.length == 0) && <p className='text-center mb-20 text-3xl font-bold'>Brak postów, spróbuj użyć innych słów oraz tagów.</p> 
+			}
 
 		</>
 	)

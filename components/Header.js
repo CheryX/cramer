@@ -6,7 +6,7 @@ export default function Header({page, searchOptions}) {
 	const selected = 'py-3 border-b-3 border-b-black dark:border-b-white font-bold'
 	
 	return (
-		<header className="dark:text-white p-3">
+		<header className="dark:text-white p-3 print:hidden">
 			<div className="flex items-center justify-between max-w-screen-xl mx-auto">
 				<Link href='/'>
 					<a>
@@ -18,8 +18,12 @@ export default function Header({page, searchOptions}) {
 
 				<div>
 					<Link href={'/'}><a className={`hidden md:inline px-3 mx-1 h-100 ${page=="index" && selected}`}>Home</a></Link>
-					<Link href={'/posts'}><a className={`hidden md:inline px-3 mx-1 h-100 ${page=="notes" && selected}`}>Notatki</a></Link>
-					<Link href={'/contributing'}><a className={`hidden md:inline px-3 mx-1 mr-5 h-100 ${page=="added" && selected}`}>Dodaj notatkę</a></Link>
+					<Link href={'/posts'}><a className={`hidden md:inline mr-5 lg:mr-1 px-3 mx-1 h-100 ${page=="notes" && selected}`}>Notatki</a></Link>
+					<Link href={'https://github.com/CheryX/cramer#jak-dodać-post'}>
+						<a className={`hidden lg:inline px-3 mx-1 mr-5 h-100 text-primary-600 dark:text-primary-500`}>
+							<i className="fa-solid fa-link"></i> Dodaj notatkę
+						</a>
+					</Link>
 
 					<Search
 						onChange={searchOptions.onChange}

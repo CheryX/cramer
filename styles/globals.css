@@ -12,3 +12,7 @@
         background: linear-gradient(97.79deg, #15172E 0%, #10122B 100%);
     }
 }
+
+.footnotes {
+    @apply print:hidden
+}

@@ -8,7 +8,7 @@ export default function Search({onChange, onKey, value, className}) {
 				onChange={onChange}
 				onKeyUp={onKey}
 				defaultValue={value}
-				className="bg-transparent border-transparent font-medium placeholder:text-primary-600 dark:text-primary-200 outline-transparent py-1 text-primary-500 dark:focus:text-primary-200 focus:text-slate-700 duration-200 focus:outline-none"
+				className="bg-transparent border-transparent font-medium placeholder:text-primary-600 dark:text-primary-200 outline-transparent py-1 text-primary-600 dark:focus:text-primary-200 focus:text-slate-700 duration-200 focus:outline-none"
 			/> 
 		</div>
 	)

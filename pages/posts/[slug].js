@@ -6,9 +6,17 @@ import fs from 'fs'
 import path from 'path'
 
 import PostLayout from '@/layouts/PostLayout'
+import Blockquote from '@/components/base/Blockquote'
+import Table, { Td, Th, Thead } from '@/components/base/Table'
+import { h1, h2, h3 } from '@/components/base/Headers'
 
 // List of custom components
-const components = {};
+const components = {
+	blockquote: Blockquote,
+	table: Table,
+	th: Th, thead: Thead, td: Td,
+	h1, h2, h3
+};
 
 
 const POSTS_PATH = path.join(process.cwd(), 'posts')
