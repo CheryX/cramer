@@ -1,8 +1,10 @@
 export default function Footer() {
 
 	return (
-		<footer className="flex items-center justify-between max-w-screen-xl mx-auto border-t-primary-500 border-t-1 py-3 px-6 print:hidden">
-			Nie kradnij za dużo kodu {new Date().getFullYear()}
+		<footer className="dark:text-white p-3 print:hidden bg-custom">
+			<div className="flex items-center justify-between max-w-screen-xl mx-auto">
+				Nie kradnij za dużo kodu {new Date().getFullYear()}
+			</div>
 		</footer>
 	)
 }

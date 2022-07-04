@@ -9,13 +9,14 @@ import PostLayout from '@/layouts/PostLayout'
 import Blockquote from '@/components/base/Blockquote'
 import Table, { Td, Th, Thead } from '@/components/base/Table'
 import { h1, h2, h3 } from '@/components/base/Headers'
+import Accordion from '@/components/base/Accordion'
 
 // List of custom components
 const components = {
 	blockquote: Blockquote,
 	table: Table,
 	th: Th, thead: Thead, td: Td,
-	h1, h2, h3
+	h1, h2, h3, Accordion
 };
 
 

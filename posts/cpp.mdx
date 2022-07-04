@@ -287,123 +287,118 @@ Witaj Piotrek
 
 # Zadania
 
-<AccordionGroup>
-    <Accordion title='Wypisz na ekran "Hello World!"'>
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            cout << "Hello World!";
-        }
-        ```
-    </Accordion>
-    <Accordion title='Program który wpisuje dane z klawiatury i wypisuje je na ekran'>
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            int a;
-            cin >> a;
-            cout << a;
-        }
-        ```
-    </Accordion>
-    <Accordion title='Program który pyta o imię i wypisuje na ekran "Witaj, [imię]!"'>
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            string name;
-            cout << "Podaj imię: ";
-            cin >> name;
-            cout << "Witaj, " << name << "!";
-        }
-        ```
-    </Accordion>
-</AccordionGroup>
+<Accordion title='Wypisz na ekran "Hello World!"'>
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        cout << "Hello World!";
+    }
+    ```
+</Accordion>
+<Accordion title='Program który wpisuje dane z klawiatury i wypisuje je na ekran'>
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        int a;
+        cin >> a;
+        cout << a;
+    }
+    ```
+</Accordion>
+<Accordion title='Program który pyta o imię i wypisuje na ekran "Witaj, [imię]!"'>
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        string name;
+        cout << "Podaj imię: ";
+        cin >> name;
+        cout << "Witaj, " << name << "!";
+    }
+    ```
+</Accordion>
+
 
 ---
 
-<AccordionGroup>
-    <Accordion title="Program który wypisze czy liczba jest parzysta.">
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            cout << "Podaj liczbę: ";
-            int a;
-            cin >> a;
-            if (a % 2 == 0) {
-                cout << "Liczba jest parzysta." << endl;
-            } else {
-                cout << "Liczba jest nieparzysta." << endl;
-            }
+<Accordion title="Program który wypisze czy liczba jest parzysta.">
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        cout << "Podaj liczbę: ";
+        int a;
+        cin >> a;
+        if (a % 2 == 0) {
+            cout << "Liczba jest parzysta." << endl;
+        } else {
+            cout << "Liczba jest nieparzysta." << endl;
         }
-        ```
-    </Accordion>
-    <Accordion title="Program który sprawdza czy osoba jest pełnoletnia.">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            cout << "Podaj wiek: ";
-            int a;
-            cin >> a;
-            if (a >= 18) {
-                cout << "Jesteś pełnoletni." << endl;
-            } else {
-                cout << "Jesteś niepełnoletni." << endl;
-            }
-        }
-        ```
-    </Accordion>
-</AccordionGroup>
-
----
-
-<AccordionGroup>
-    <Accordion title="Program który wypisze liczby od 0 do 10.">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            for (int i = 0; i <= 10; i++) {
-                cout << i << " ";
-            }
-        }
-        ```
-    </Accordion>
-    <Accordion title="Program który wypisze liczby od 0 do 10.">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            for (int i = 10; i >= 0; i--) {
-                cout << i << " ";
-            }
-        }
-        ```
-    </Accordion>
-    <Accordion title="Program który wypisze parzyste liczby od 0 do 100">
+    }
+    ```
+</Accordion>
+<Accordion title="Program który sprawdza czy osoba jest pełnoletnia.">
     ```cpp
     #include <iostream>
     using namespace std;
     
     int main() {
-        for (int i = 0; i <= 50; i++) {
-            cout << i*2 << " ";
+        cout << "Podaj wiek: ";
+        int a;
+        cin >> a;
+        if (a >= 18) {
+            cout << "Jesteś pełnoletni." << endl;
+        } else {
+            cout << "Jesteś niepełnoletni." << endl;
         }
     }
     ```
-    </Accordion>
-</AccordionGroup>
+</Accordion>
+
+---
+
+<Accordion title="Program który wypisze liczby od 0 do 10.">
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        for (int i = 0; i <= 10; i++) {
+            cout << i << " ";
+        }
+    }
+    ```
+</Accordion>
+<Accordion title="Program który wypisze liczby od 0 do 10.">
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        for (int i = 10; i >= 0; i--) {
+            cout << i << " ";
+        }
+    }
+    ```
+</Accordion>
+<Accordion title="Program który wypisze parzyste liczby od 0 do 100">
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 0; i <= 50; i++) {
+        cout << i*2 << " ";
+    }
+}
+```
+</Accordion>
 
 ---
 

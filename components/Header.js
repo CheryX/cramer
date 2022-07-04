@@ -19,8 +19,8 @@ export default function Header({page, searchOptions}) {
 				<div>
 					<Link href={'/'}><a className={`hidden md:inline px-3 mx-1 h-100 ${page=="index" && selected}`}>Home</a></Link>
 					<Link href={'/posts'}><a className={`hidden md:inline mr-5 lg:mr-1 px-3 mx-1 h-100 ${page=="notes" && selected}`}>Notatki</a></Link>
-					<Link href={'https://github.com/CheryX/cramer#jak-dodać-post'}>
-						<a className={`hidden lg:inline px-3 mx-1 mr-5 h-100 text-primary-600 dark:text-primary-500`}>
+					<Link href={'https://github.com/CheryX/cramer#jak-dodać-post'} passHref>
+						<a target="_blank" className={`hidden lg:inline px-3 mx-1 mr-5 h-100 text-primary-600 dark:text-primary-500`}>
 							<i className="fa-solid fa-link"></i> Dodaj notatkę
 						</a>
 					</Link>

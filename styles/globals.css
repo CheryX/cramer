@@ -16,3 +16,11 @@
 .footnotes {
     @apply print:hidden
 }
+
+#footnotes {
+    @apply hidden
+}
+
+.footnotes > ol {
+    @apply list-decimal
+}
