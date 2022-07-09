@@ -16,6 +16,9 @@ function removeAccents(str) {
 function parseID(id) {
 
 	let newID = removeAccents(id.toLowerCase().replaceAll(' ', '-'));
+	newID = newID.replaceAll('?', '')
+	newID = newID.replaceAll(',', '')
+	newID = newID.replaceAll('.', '')
 	return newID;
 	
 }

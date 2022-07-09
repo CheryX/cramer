@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import { useState } from 'react'
 import PageSEO from '@/components/SEO'
+
 export default function Index() {
 	const [searchValue, setSearchValue] = useState('')
 

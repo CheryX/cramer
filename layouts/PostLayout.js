@@ -15,8 +15,6 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 		}
 	}
 
-	console.log(toc)
-
 	return (
 		<>
 			<PageSEO title={postData.title} description={postData.summary} type="post" />
@@ -26,8 +24,24 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 				onKey: (e) => onKey(e)
 			}}/>
 
-			<div className='max-w-6xl mx-10 lg:mx-auto md:flex mt-10'>
+			<div className='max-w-6xl mx-10 lg:mx-auto md:flex flex-row-reverse mt-10'>
 
+				<div className='print:hidden md:fixed md:right-10 mb-20'>
+					<div className=''>
+
+						<h5 className='font-bold text-lg'>Na tej stronie</h5>
+						<ol>
+							{toc.map((heading) => (
+								<li key={heading.content} className={`ml-${parseInt(heading.lvl)*4}`}>
+									<Link href={`#${heading.slug}`}>
+										<a>{heading.content}</a>
+									</Link>
+								</li>
+							))}
+						</ol>
+
+					</div>
+				</div>
 
 				<article className='md:w-3/4 mr-auto'>
 
@@ -61,20 +75,6 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 
 				</article>
 
-				<div className='md:w-1/4 print:hidden md:fixed md:right-0'>
-					<h5 className='font-bold text-lg'>Na tej stronie</h5>
-
-					<ol>
-						{toc.map((heading) => (
-							<li key={heading.content}>
-								<Link href={`#${heading.slug}`}>
-									<a>{heading.content}</a>
-								</Link>
-							</li>
-						))}
-					</ol>
-
-				</div>
 			</div>
 
 		</>
