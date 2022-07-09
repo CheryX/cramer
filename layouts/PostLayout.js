@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ postData, children, }) {
+export default function PostLayout({ postData, children, posts, fileName, toc }) {
 	
 	const [searchValue, setSearchValue] = useState('')
 
@@ -13,6 +13,8 @@ export default function PostLayout({ postData, children, }) {
 			window.location.replace(`/posts?q=${searchValue}`);
 		}
 	}
+
+	console.log(toc)
 
 	return (
 		<>
@@ -23,11 +25,8 @@ export default function PostLayout({ postData, children, }) {
 
 			<div className='max-w-6xl mx-10 lg:mx-auto md:flex mt-10'>
 
-				<div className='md:w-1/4 print:hidden fixed'>
-					Na tej stronce
-				</div>
 
-				<article className='md:w-3/4 ml-auto'>
+				<article className='md:w-3/4 mr-auto'>
 
 					<h1 className='text-4xl font-bold mb-1'>{postData.title}</h1>
 					
@@ -59,6 +58,20 @@ export default function PostLayout({ postData, children, }) {
 
 				</article>
 
+				<div className='md:w-1/4 print:hidden md:fixed md:right-0'>
+					<h5 className='font-bold text-lg'>Na tej stronie</h5>
+
+					<ol>
+						{toc.map((heading) => (
+							<li key={heading.content}>
+								<Link href={`#${heading.slug}`}>
+									<a>{heading.content}</a>
+								</Link>
+							</li>
+						))}
+					</ol>
+
+				</div>
 			</div>
 
 		</>

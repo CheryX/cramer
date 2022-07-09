@@ -8,6 +8,7 @@
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
     "katex": "^0.16.0",
+    "markdown-toc": "^1.2.0",
     "next": "latest",
     "next-mdx-remote": "^4.0.3",
     "rehype-highlight": "^5.0.2",

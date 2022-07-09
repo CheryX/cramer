@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 class MyDocument extends Document {
 	render() {
 		return (
-			<Html lang="en">
+			<Html lang="en" className='scroll-smooth'>
 				<Head>
 					<meta charSet="utf-8" />
 					<script src="https://kit.fontawesome.com/3959075aa6.js" crossOrigin="anonymous"></script>

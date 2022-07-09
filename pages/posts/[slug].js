@@ -30,9 +30,9 @@ const components = {
 
 const POSTS_PATH = path.join(process.cwd(), 'posts')
 
-export default function Post({ source, postData, posts, fileName}) {
+export default function Post({ source, postData, posts, fileName, toc}) {
 	return (
-		<PostLayout postData={postData} posts={posts} fileName={fileName}>
+		<PostLayout postData={postData} posts={posts} fileName={fileName} toc={toc}>
 			<MDXRemote {...source} components={components} />
 		</PostLayout>
 	)
