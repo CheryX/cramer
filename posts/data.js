@@ -1,7 +1,7 @@
 
 // Jeśli chcesz podpisać się pod postem, możesz się tutaj dopisać.
 let cheryx = {
-    name: 'CheryX',
+    name: 'Maciej Musielik',
     avatar: 'https://avatars.githubusercontent.com/u/58445363?s=40&v=4',
     github: 'cheryx'
 }

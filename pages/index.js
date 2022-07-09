@@ -4,6 +4,7 @@ import { useState } from 'react'
 import PostCard from '@/components/PostCard';
 import { subjects } from 'posts/data';
 import Link from 'next/link';
+import PageSEO from '@/components/SEO'
 
 export default function Index({ posts, tags }) {
 	const [searchValue, setSearchValue] = useState('')
@@ -16,6 +17,8 @@ export default function Index({ posts, tags }) {
 
 	return (
 		<>
+			<PageSEO title="Projekt Cramer" description="Projekt Cramer to miejsce z darmowymi notatkami które możesz wykorzystać do nauki np. przed sprawdzianem" />
+			
 			<div id='landing' className='bg-custom'>
 				<Header page='index' searchOptions={{
 					onChange: (e) => setSearchValue(e.target.value),

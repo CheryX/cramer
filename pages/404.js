@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import { useState } from 'react'
-
+import PageSEO from '@/components/SEO'
 export default function Index() {
 	const [searchValue, setSearchValue] = useState('')
 
@@ -12,6 +12,8 @@ export default function Index() {
 
 	return (
 		<>
+			<PageSEO title="Projekt Cramer - 404" description="Nie znaleziono strony" type="error" />
+
 			<Header page='index' searchOptions={{
 				onChange: (e) => setSearchValue(e.target.value),
 				onKey: (e) => onKey(e)

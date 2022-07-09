@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from '@/components/Header';
+import PageSEO from "@/components/SEO"
 import Link from 'next/link';
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -18,6 +19,8 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 
 	return (
 		<>
+			<PageSEO title={postData.title} description={postData.summary} type="post" />
+
 			<Header page='notes' searchOptions={{
 				onChange: (e) => setSearchValue(e.target.value),
 				onKey: (e) => onKey(e)

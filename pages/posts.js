@@ -2,6 +2,7 @@ import { getAllPostsData, getAllTags } from '@/lib/notesData'
 import Header from '@/components/Header'
 import { useState } from 'react'
 import PostCard from '@/components/PostCard'
+import PageSEO from '@/components/SEO'
 
 export default function Index({ posts, title }) {
 	let [searchValue, setSearchValue] = useState(title)
@@ -17,6 +18,8 @@ export default function Index({ posts, title }) {
 
 	return (
 		<>
+			<PageSEO title="Projekt Cramer" description={`Szukaj postów "${title}"`} type="list" />
+
 			<Header page='notes' searchOptions={{
 				onChange: (e) => setSearchValue(e.target.value),
 				onKey: (e) => onKey(e),
