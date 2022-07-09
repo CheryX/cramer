@@ -14,9 +14,9 @@ export default function Accordion({title, children}) {
 				<i className={`fa-solid fa-angle-up ${!expanded && "rotate-180"} duration-500 inline-block`}></i>
 			</div>
 
-			{expanded && (<div className='dark:border-t-primary-500 border-t'>
+			<div className={`dark:border-t-primary-500 px-5 lg:px-16 overflow-hidden duration-75 max-h-0 ${expanded && 'max-h-full py-5 border-t'} box-border`}>
 				{children}
-			</div>) }
+			</div>
 		</div>
 	);
 }

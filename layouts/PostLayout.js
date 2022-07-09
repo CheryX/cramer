@@ -22,7 +22,7 @@ export default function PostLayout({ postData, children, }) {
 
 			<div className='max-w-5xl mx-10 lg:mx-auto md:flex mt-10'>
 
-				<div className='md:w-1/4'>
+				<div className='md:w-1/4 print:hidden'>
 					Na tej stronce
 				</div>
 
@@ -41,7 +41,7 @@ export default function PostLayout({ postData, children, }) {
 						{children}
 					</div>
 
-					<div className='flex items-center mb-10'>
+					<div className='flex items-center mb-10 print:hidden'>
 						<i className="fa-solid fa-tag text-xl mr-1"></i> {postData.tags.map((tag, index) => <span className='text-lg ml-1'>{tag}</span>)}
 					</div>
 

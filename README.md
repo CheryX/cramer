@@ -25,7 +25,7 @@ Pytanie typu Boolean | `<BoolQ>` | Pytanie prawda fałsz
 Pytanie ABCD | `<Question>` | Pytanie z wieloma odpowiedzami
 Pytanie otwarte | `<WriteQuestion>` | Pytanie otwarte z przykładową poprawną odpowiedzią
 Accordion | `<Accordion>` | Ukryte pole tekstowe
-Graph | `<Graph>` | (Interaktywny) graf pokazujący funkcje oraz punkty
+Graph | `<Graph>` | Graf pokazujący funkcje oraz punkty
 Soon™
 
 ## FAQ

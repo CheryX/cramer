@@ -25,6 +25,14 @@ const subjects = [
 
 // Tutaj dodaj posty
 export default {
+    "wzory": {
+        title: 'Przekształcanie wzorów',
+        slug: 'wzory.mdx',
+        date: '2022-07-09',
+        tags: ['matematyka', 'fizyka', 'wzory', 'algebra'],
+        summary: 'Naucz się jak szybko przekształcać wzory, od wzoru na prędkość do wyprowadzania równania kwadratowego.',
+        authors: [cheryx]
+    },
     "cpp": {
         title: 'Wstęp do C++',
         slug: 'cpp.mdx',
