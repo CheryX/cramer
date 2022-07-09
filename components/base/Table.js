@@ -26,7 +26,7 @@ export function Th({ children }) {
 
 export function Td({ children }) {
 	return (
-		<td className="border border-primary-200 dark:border-primary-600 p-3 text-primary-800 dark:text-primary-500">
+		<td className="border border-primary-200 dark:border-primary-600 p-3 text-primary-800 dark:text-primary-300">
 			{children}
 		</td>
 	)

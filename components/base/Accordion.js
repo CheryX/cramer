@@ -6,13 +6,17 @@ export default function Accordion({title, children}) {
 
 	return (
 		<div className='dark:border-primary-500 border rounded-md my-5'>
-			<div onClick={() => setExpanded(!expanded)} className='p-5 border-b-primary-500 border-b cursor-pointer'>
-				<h5>
+			<div onClick={() => setExpanded(!expanded)} className='py-3 px-6 cursor-pointer flex justify-between items-center hover:bg-slate-800 duration-500'>
+				<h5 className='inline-block'>
 					{title}
 				</h5>
+
+				<i className={`fa-solid fa-angle-up ${!expanded && "rotate-180"} duration-500 inline-block`}></i>
 			</div>
 
-			{expanded && children && (<div>{children}</div>) }
+			{expanded && (<div className='dark:border-t-primary-500 border-t'>
+				{children}
+			</div>) }
 		</div>
 	);
 }

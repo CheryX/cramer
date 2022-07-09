@@ -29,7 +29,7 @@ export default {
         title: 'Wstęp do C++',
         slug: 'cpp.mdx',
         date: '2022-05-20',
-        tags: ['informatyka', 'c++'],
+        tags: ['informatyka', 'c++', 'cpp'],
         summary: 'Podstawowe informacje o C++',
         thumbnail: 'https://images.unsplash.com/photo-1635775017492-1eb935a082a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
         authors: [cheryx, electruuu],

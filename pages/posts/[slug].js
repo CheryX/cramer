@@ -10,13 +10,18 @@ import Blockquote from '@/components/base/Blockquote'
 import Table, { Td, Th, Thead } from '@/components/base/Table'
 import { h1, h2, h3 } from '@/components/base/Headers'
 import Accordion from '@/components/base/Accordion'
+import Code from '@/components/base/Code'
+import Break from '@/components/base/Break'
+import Graph from '@/components/Graph'
 
 // List of custom components
 const components = {
 	blockquote: Blockquote,
 	table: Table,
 	th: Th, thead: Thead, td: Td,
-	h1, h2, h3, Accordion
+	h1, h2, h3, Accordion, Graph,
+	code: Code,
+	hr: Break,
 };
 
 

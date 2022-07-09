@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -13,15 +16,7 @@ module.exports = {
         '5': '5px'
       },
       colors: {
-        primary: {
-          '900': '#0c0f27',
-          '800': '#1e1e41',
-          '600': '#595989',
-          '500': '#A8A8DF',
-          '200': '#B9B9E9',
-          '150': '#d4d9ef',
-          '100': '#ebedff'
-        }
+        primary: colors.slate
       }
     },
   },

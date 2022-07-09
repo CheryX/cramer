@@ -10,7 +10,7 @@ class MyDocument extends Document {
 					<script src="https://kit.fontawesome.com/3959075aa6.js" crossOrigin="anonymous"></script>
 				</Head>
 
-				<body className='text-primary-800 dark:bg-primary-900 dark:text-primary-100 bg-primary-100'>
+				<body className='text-primary-900 dark:bg-primary-900 dark:text-primary-100 bg-primary-100'>
 					<Main />
 					<Footer />
 					<NextScript />
