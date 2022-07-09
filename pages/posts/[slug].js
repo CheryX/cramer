@@ -13,6 +13,7 @@ import Accordion from '@/components/base/Accordion'
 import Code from '@/components/base/Code'
 import Break from '@/components/base/Break'
 import Graph from '@/components/Graph'
+import { Ordered, Unordered } from '@/components/base/Lists'
 
 // List of custom components
 const components = {
@@ -22,6 +23,8 @@ const components = {
 	h1, h2, h3, Accordion, Graph,
 	code: Code,
 	hr: Break,
+	ol: Ordered,
+	ul: Unordered
 };
 
 
