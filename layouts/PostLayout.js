@@ -24,15 +24,15 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 				onKey: (e) => onKey(e)
 			}}/>
 
-			<div className='max-w-7xl mx-10 lg:mx-auto md:flex mt-10'>
+			<div className='max-w-7xl mx-10 lg:mx-auto lg:flex mt-10'>
 
-				<div className='print:hidden lg:fixed z-20 lg:top-[3.8125rem] lg:bottom-0 lg:right-[max(0px,calc(50%-45rem))] overflow-y-auto lg:pt-10 pb-10'>
+				<div className='print:hidden lg:fixed z-20 lg:top-[3.8125rem] lg:bottom-0 lg:right-[max(0px,calc(50%-45rem))] lg:overflow-y-auto lg:pt-10 pb-10'>
 					<div className=''>
 
-						<h5 className='font-bold text-xl'>Na tej stronie</h5>
+						<h5 className='font-bold text-2xl mb-2'>Na tej stronie</h5>
 						<ol>
 							{toc.map((heading) => (
-								<li key={heading.content}>
+								<li key={heading.content} className={`toc-${heading.lvl}`}>
 									<Link href={`#${heading.slug}`}>
 										<a>{heading.content}</a>
 									</Link>
