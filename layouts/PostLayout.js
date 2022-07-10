@@ -24,15 +24,15 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 				onKey: (e) => onKey(e)
 			}}/>
 
-			<div className='max-w-6xl mx-10 lg:mx-auto md:flex flex-row-reverse mt-10'>
+			<div className='max-w-7xl mx-10 lg:mx-auto md:flex mt-10'>
 
-				<div className='print:hidden md:fixed md:right-10 mb-20'>
+				<div className='print:hidden lg:fixed z-20 lg:top-[3.8125rem] lg:bottom-0 lg:right-[max(0px,calc(50%-45rem))] overflow-y-auto lg:pt-10 pb-10'>
 					<div className=''>
 
-						<h5 className='font-bold text-lg'>Na tej stronie</h5>
+						<h5 className='font-bold text-xl'>Na tej stronie</h5>
 						<ol>
 							{toc.map((heading) => (
-								<li key={heading.content} className={`ml-${parseInt(heading.lvl)*4}`}>
+								<li key={heading.content}>
 									<Link href={`#${heading.slug}`}>
 										<a>{heading.content}</a>
 									</Link>
@@ -43,7 +43,7 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 					</div>
 				</div>
 
-				<article className='md:w-3/4 mr-auto'>
+				<article className='md:w-4/5 md:relative'>
 
 					<h1 className='text-4xl font-bold mb-1'>{postData.title}</h1>
 					

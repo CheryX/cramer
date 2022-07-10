@@ -6,7 +6,7 @@ export default function Header({page, searchOptions}) {
 	const selected = 'py-3 border-b-3 border-b-black dark:border-b-white font-bold'
 	
 	return (
-		<header className="dark:text-white p-3 print:hidden border-b border-b-primary-200 dark:border-b-primary-800 sticky top-0 bg-primary-100 dark:bg-primary-900 bg-opacity-70">
+		<header className="z-50 dark:text-white p-3 print:hidden border-b border-b-primary-200 dark:border-b-primary-800 sticky top-0 bg-primary-100/70 dark:bg-primary-900/70">
 			<div className="flex items-center justify-between max-w-screen-xl mx-auto">
 				<Link href='/'>
 					<a>
