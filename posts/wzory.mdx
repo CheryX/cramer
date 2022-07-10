@@ -98,7 +98,58 @@ $$
 
 Zwykle nie dowiesz się jak to wyprowadzić, ale jest to bardzo dobre ćwiczenie na przekształcanie wzorów.
 
+### Metoda 1
+
+<Accordion title="Krok 1. Uproszczenie">
+
+$$
+ax^2+bx+c=0 |:a
+$$
+
+$$
+x^2+\frac{b}{a}x+\frac{c}{a}=0 |-\frac{c}{a}
+$$
+
+
+$$
+x^2+\frac{b}{a}x=-\frac{c}{a}
+$$
+
+</Accordion>
+
+<Accordion title="Krok 2. Rozszerzanie ułamków oraz wzór skróconego mnożenia">
+
+$$
+x^2+\frac{b}{a}x=-\frac{c}{a} | +\frac{b^2}{4a^2}
+$$
+
+$$
+x^2+\frac{b}{a}x+\frac{b^2}{4a^2}=\frac{b^2}{4a^2}-\frac{c}{a}
+$$
+
+$$
+(x+\frac{b}{2a})^2=\frac{b^2}{4a^2}-\frac{4ac}{4a^2}
+$$
+
+$$
+(x+\frac{b}{2a})^2=\frac{b^2-4ac}{4a^2}
+$$
+
+$$
+x+\frac{b}{2a}=\frac{\pm \sqrt{b^2-4ac}}{2a}
+$$
+
+$$
+x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}
+$$
+
+</Accordion>
+
+### Metoda 2: Przesuwanie wykresu
+
+> Ta metoda została wzięta z tego filmu https://youtu.be/N-KXStupwsc?t=735 [^1]
 <Accordion title="Krok 1. Przesuwanie wykresu">
+
 
 $$
 ax^2+bx+c=0 |:a
@@ -143,7 +194,7 @@ x=\pm \sqrt{\frac{b^2-4ac}{4a^2}}
 $$
 
 $$
-x=\frac{\pm \sqrt{b^2-4ac}}{4a^2}
+x=\frac{\pm \sqrt{b^2-4ac}}{2a}
 $$
 </Accordion>
 
@@ -152,10 +203,13 @@ $$
 Pod koniec odwracamy operacje z kroku 1, czyli pod $x$ podstawiamy $x+\frac{b}{2a}$
 
 $$
-x+\frac{b}{2a}=\frac{\pm \sqrt{b^2-4ac}}{4a^2}
+x+\frac{b}{2a}=\frac{\pm \sqrt{b^2-4ac}}{2a}
 $$
 
 $$
-x=\frac{-b\pm \sqrt{b^2-4ac}}{4a^2}
+x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}
 $$
+
 </Accordion>
+
+[^1]: [Metoda wyprowadzania równania kwadratowego przez przesuwanie wykresu](https://youtu.be/N-KXStupwsc?t=735)

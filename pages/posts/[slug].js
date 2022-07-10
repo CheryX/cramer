@@ -14,6 +14,7 @@ import Code from '@/components/base/Code'
 import Break from '@/components/base/Break'
 import Graph from '@/components/Graph'
 import { Ordered, Unordered } from '@/components/base/Lists'
+import Link from '@/components/base/Link'
 
 // List of custom components
 const components = {
@@ -24,7 +25,8 @@ const components = {
 	code: Code,
 	hr: Break,
 	ol: Ordered,
-	ul: Unordered
+	ul: Unordered,
+	a: Link
 };
 
 
