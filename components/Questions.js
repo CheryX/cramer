@@ -11,7 +11,7 @@ export function TrueFalse({ children: explanation, title, correct }) {
 	let answers = ['Prawda', 'Fałsz']
 
 	return (
-		<div className="my-10 p-10 px-20 border-primary-600 dark:border-primary-300 border">
+		<div className="my-10 p-5 lg:p-10 lg:px-20 border-primary-600 dark:border-primary-300 border">
 			<h5 className="text-2xl font-bold">{title}</h5>
 
 			<div className="my-2">
@@ -50,7 +50,7 @@ export function MultipleOptions({ children: explanation, title, answers, correct
 	};
 
 	return (
-		<div className="my-10 p-10 px-20 border-primary-600 dark:border-primary-300 border">
+		<div className="my-10 p-5 lg:p-10 lg:px-20 border-primary-600 dark:border-primary-300 border">
 			<h5 className="text-2xl font-bold">{title}</h5>
 
 			<div className="my-2">

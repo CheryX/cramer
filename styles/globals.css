@@ -36,3 +36,7 @@
 .toc-1 {
     @apply text-xl
 }
+
+.math {
+    @apply overflow-x-scroll
+}
