@@ -15,13 +15,14 @@ import Break from '@/components/base/Break'
 import Graph from '@/components/Graph'
 import { Ordered, Unordered } from '@/components/base/Lists'
 import Link from '@/components/base/Link'
+import { MultipleOptions, TrueFalse } from '@/components/Questions'
 
 // List of custom components
 const components = {
 	blockquote: Blockquote,
 	table: Table,
 	th: Th, thead: Thead, td: Td,
-	h1, h2, h3, Accordion, Graph,
+	h1, h2, h3, Accordion, Graph, TrueFalse, MultipleOptions,
 	code: Code,
 	hr: Break,
 	ol: Ordered,

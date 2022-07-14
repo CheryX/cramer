@@ -21,9 +21,9 @@ Posty mogą mieć własne componenty aby uprzyjemnić czas czytania postu np. pr
 
 Nazwa | Zapis | Opis
 -|-|-
-Pytanie typu Boolean | `<BoolQ>` | Pytanie prawda fałsz
-Pytanie ABCD | `<Question>` | Pytanie z wieloma odpowiedzami
-Pytanie otwarte | `<WriteQuestion>` | Pytanie otwarte z przykładową poprawną odpowiedzią
+Pytanie typu Boolean | `<TrueFalse>` | Pytanie prawda fałsz
+Pytanie ABCD... | `<MultipleOptions>` | Pytanie z wieloma odpowiedzami
+Pytanie otwarte | `<WriteQuestion>` | Pytanie otwarte z przykładową poprawną odpowiedzią (Wkrótce)
 Accordion | `<Accordion>` | Ukryte pole tekstowe
 Graph | `<Graph>` | Graf pokazujący funkcje oraz punkty
 Soon™
