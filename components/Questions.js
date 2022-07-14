@@ -22,12 +22,12 @@ export function TrueFalse({ children: explanation, title, correct }) {
 				))}
 			</div>
 			
-			<button type="submit" onClick={submit} className="text-lg bg-primary-700 inline-block py-2 px-5 hover:bg-primary-600 duration-150 mr-4">Sprawdź odpowiedź</button>	
+			<button type="submit" onClick={submit} className="text-lg bg-primary-300 dark:bg-primary-700 inline-block py-2 px-5 hover:bg-primary-400 dark:hover:bg-primary-600 duration-150 mr-4">Sprawdź odpowiedź</button>	
 
 			{anwsered==1 && (
 				<>
 					<span className="text-lg text-green-500">Dobrze!</span>
-					<div className="bg-primary-800 px-10 py-5 my-5">
+					<div className="bg-primary-200 dark:bg-primary-800 px-10 py-5 my-5">
 						<h5 className="text-2xl font-bold">Wyjaśnienie</h5>
 						{explanation}
 					</div>
