@@ -1,43 +1,43 @@
 
 import { MDXRemote } from 'next-mdx-remote'
-import Head from 'next/head'
-import CustomLink from '@/components/CustomLink'
-import { postFilePaths } from '@/lib/mdxUtils'
+import renderMdx from '@/lib/renderMdx'
+
+import fs from 'fs'
+import path from 'path'
+
 import PostLayout from '@/layouts/PostLayout'
-import { renderMdx } from '@/lib/renderMdx'
-import Winogrona from '@/components/Winogrona'
-import { Accordion, AccordionGroup } from '@/components/base/Accordion'
+import Blockquote from '@/components/base/Blockquote'
+import Table, { Td, Th, Thead } from '@/components/base/Table'
+import { h1, h2, h3 } from '@/components/base/Headers'
+import Accordion from '@/components/base/Accordion'
+import Code from '@/components/base/Code'
+import Break from '@/components/base/Break'
 import Graph from '@/components/Graph'
-import Table from '@/components/CustomTable'
-import CustomImage from '@/components/CustomImage'
+import { Ordered, Unordered } from '@/components/base/Lists'
+import Link from '@/components/base/Link'
+import { MultipleOptions, TrueFalse } from '@/components/Questions'
 
-const Heading1 = ({ children }) => {
-	const idText = children.replace(/ /g, "_").toLowerCase();
-  
-	return <h1 id={idText}>{children}</h1>;
-  };
-  
-const Blockquote = ({ children }) => {
-	return <blockquote className="blockquote border-start border-3 border-primary ps-2 ps-md-4 me-md-2 fs-6 py-md-2  ms-2 my-md-4 bg-primary bg-opacity-10">{children}</blockquote>
-}
-
-  
+// List of custom components
 const components = {
-	Winogrona, Accordion, Head, AccordionGroup, Graph,
-	a: CustomLink,
+	blockquote: Blockquote,
 	table: Table,
-	img: CustomImage,
-	h1: Heading1,
-	blockquote: Blockquote
-}
+	th: Th, thead: Thead, td: Td,
+	h1, h2, h3, Accordion, Graph, TrueFalse, MultipleOptions,
+	code: Code,
+	hr: Break,
+	ol: Ordered,
+	ul: Unordered,
+	a: Link
+};
 
-export default function Post({ source, frontMatter, posts, fileName}) {
+
+const POSTS_PATH = path.join(process.cwd(), 'posts')
+
+export default function Post({ source, postData, posts, fileName, toc}) {
 	return (
-		<>
-			<PostLayout frontMatter={frontMatter} posts={posts} fileName={fileName}>
-				<MDXRemote {...source} components={components} />
-			</PostLayout>
-		</>
+		<PostLayout postData={postData} posts={posts} fileName={fileName} toc={toc}>
+			<MDXRemote {...source} components={components} />
+		</PostLayout>
 	)
 }
 
@@ -46,6 +46,12 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
+
+	const postFilePaths = fs
+		.readdirSync(POSTS_PATH)
+		.filter((path) => /\.mdx?$/.test(path))
+
+
 	const paths = postFilePaths
 		.map((path) => path.replace(/\.mdx?$/, ''))
 		.map((slug) => ({ params: { slug } }))

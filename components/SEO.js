@@ -1,7 +1,6 @@
 import Head from 'next/head' 
 
 export default function PageSEO({ type='normal', title, description, image, url }) {
-	title = `${title} - Projekt Cramer`; 
 
 	let color;
 	switch (type) {
@@ -46,4 +45,3 @@ export default function PageSEO({ type='normal', title, description, image, url 
 		</Head>
 	)
 }
-	

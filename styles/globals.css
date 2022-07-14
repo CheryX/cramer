@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom {
+    background: linear-gradient(180deg,hsla(0,0%,100%,0),transparent .01%,rgba(0,0,0,.05)),linear-gradient(99.82deg,#ded6ff 25.28%,#e9ebff 46.46%,#e3e6ff 65.54%);
+    mix-blend-mode: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bg-custom {
+        background: linear-gradient(97.79deg, #15172E 0%, #10122B 100%);
+    }
+}
+
+.footnotes {
+    @apply print:hidden
+}
+
+#footnotes {
+    @apply hidden
+}
+
+.footnotes > ol {
+    @apply list-decimal
+}
+
+.toc-3, .toc-4, .toc-5, .toc-6 {
+    @apply hidden
+}
+
+.toc-2 {
+    @apply list-[square] ml-8 dark:text-primary-400 text-primary-800
+}
+
+.toc-1 {
+    @apply text-xl
+}

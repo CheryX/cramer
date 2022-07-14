@@ -1,32 +1,22 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export function Accordion({title, children }) {
-	const [isActive, setIsActive] = useState(true);
+export default function Accordion({title, children}) {
 
-	let collapse = isActive ? 'collapse' : 'collapse show';
-	let collapseIcon = isActive ? 'collapsed' : '';
+	const [expanded, setExpanded] = useState(false);
 
 	return (
-		<div className="accordion-item">
-			<h2 className="accordion-header">
-				<button className={`accordion-button ${collapseIcon}`} type="button" data-bs-toggle="collapse" aria-expanded="true" onClick={() => setIsActive(!isActive)}>
-				{title}
-				</button>
-			</h2>
-			<div className={`accordion-collapse ${collapse} d-print-block`}>
-				<div className="accordion-body">
-					{children}
-				</div>
+		<div className='border-primary-400 dark:border-primary-500 border rounded-md my-5'>
+			<div onClick={() => setExpanded(!expanded)} className='py-3 px-6 cursor-pointer flex justify-between items-center hover:bg-slate-200 dark:hover:bg-slate-800 duration-500'>
+				<h5 className='inline-block'>
+					{title}
+				</h5>
+
+				<i className={`fa-solid fa-angle-up ${!expanded && "rotate-180"} duration-500 inline-block`}></i>
 			</div>
 
-		</div>
-	);
-}
-
-export function AccordionGroup({children}) {
-	return (
-		<div className="accordion">
-			{children}
+			<div className={`border-t-primary-400 dark:border-t-primary-500 px-5 lg:px-16 overflow-hidden duration-75 max-h-0 ${expanded && 'max-h-full py-5 border-t'} box-border`}>
+				{children}
+			</div>
 		</div>
 	);
 }

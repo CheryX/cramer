@@ -1,167 +1,82 @@
-/* eslint-disable @next/next/no-img-element */
+import { useState } from 'react'
+import Header from '@/components/Header';
 import PageSEO from "@/components/SEO"
-import Link from "next/link"
-import authors from "@/lib/authors"
-import Header from "@/components/Header"
+import Link from 'next/link';
 
-import { renderToString } from "react-dom/server";
-
-
-const githubUrl = (username) => `https://github.com/${username}`
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, children, fileName }) {
-	let thumbnail = frontMatter.thumbnail || "/images/bg.jpg"
-
-	const contentString = renderToString(children);
-
-	const getHeadings = (source) => {
-		let regex = /<h1 id="[^"]*">(.*?)<\/h1>/g;
-
-		if (source.match(regex)) {
-		  return source.match(regex).map((heading) => {
-			let headingText = heading.replace("<h1>", "").replace("</h1>", "");
-			headingText = headingText.replace(/<(.|\n)*?>/g, '');
-
-			const link = "#" + headingText.replace(/ /g, "_").toLowerCase();
+export default function PostLayout({ postData, children, posts, fileName, toc }) {
 	
-			return {
-			  text: headingText,
-			  link,
-			};
-		  });
+	const [searchValue, setSearchValue] = useState('')
+
+	function onKey(e) {
+		if (e.key == "Enter") {
+			window.location.replace(`/posts?q=${searchValue}`);
 		}
-	
-		return [];
-	};
+	}
 
-	const headings = getHeadings(contentString);
-
-	  
 	return (
 		<>
-			<PageSEO title={frontMatter.title} description={frontMatter.description} type="post" />
-			<Header type="posts" />
-			<div className="d-flex align-items-center justify-content-center mt-7">
-				<div className="container row g-2 justify-content-center">
-					<div className="col-lg-3 me-3 d-none d-print-none d-lg-block">		
+			<PageSEO title={postData.title} description={postData.summary} type="post" />
 
-						{frontMatter.date&& (
-							<>
-								<span className="fs-5 d-flex align-items-center">
-									<i className="bi bi-calendar3 me-3"></i>
-									<time dateTime={frontMatter.date}>
-										{new Date(frontMatter.date).toLocaleDateString('pl-PL', postDateTemplate)}
-									</time>
-								</span>
-								<hr />
-							</>
-						)}
-						{frontMatter.authors && (
-							<>
-								<ul className="list-unstyled">
-									{frontMatter.authors.map((author, index) => (
-										<li key={index} className="my-1 d-flex align-items-center">
-											<img src={authors[author].avatar} className="avatar me-1" alt={authors[author].name} style={{
-												width: "40px",
-												height: "40px",
-												borderRadius: "50%",
-											}} />
-											<div>
-												{authors[author].name} <br /> <Link href={githubUrl(authors[author].github)}><a>@{authors[author].github}</a></Link>
-											</div>
-										</li>
-									))}
-								</ul>
-								<hr />
-							</>
-						)}
-						{(frontMatter.tags.length!=0) && (
-							<div className="mt-3 mb-5 my-lg-0 mb-lg-5">
-								<strong className="fs-4 my-2">Tagi</strong>
-								<div className="flex flex-wrap">
-									{frontMatter.tags.map((tag, index) => (
-										<span className="me-1" key={index}>
-										{tag}
-										</span>
-									))}
-								</div>
-							</div>
-						)}
+			<Header page='notes' searchOptions={{
+				onChange: (e) => setSearchValue(e.target.value),
+				onKey: (e) => onKey(e)
+			}}/>
 
-						{headings.length > 0 ? (
-							<>
-								<hr />
-								<strong className="fs-4 my-2">Na tej stronie</strong>
-								<ul className="list-unstyled">
-								{headings.map((heading) => (
-									<li key={heading.text}>
-									<a href={heading.link}>{heading.text}</a>
-									</li>
-								))}
-								</ul>
-							</>
-						) : null}
+			<div className='max-w-7xl mx-10 xl:mr-auto xl:flex mt-10'>
 
+				<div className='print:hidden xl:w-1/5 xl:fixed z-20 xl:top-[3.8125rem] xl:bottom-0 xl:right-[max(0px,calc(50%-45rem))] xl:overflow-y-auto xl:pt-10 pb-10'>
+					<div className=''>
 
-					</div>
+						<h5 className='font-bold text-2xl mb-2'>Na tej stronie</h5>
+						<ol>
+							{toc.map((heading) => (
+								<li key={heading.content} className={`toc-${heading.lvl}`}>
+									<Link href={`#${heading.slug}`}>
+										<a>{heading.content}</a>
+									</Link>
+								</li>
+							))}
+						</ol>
 
-					<div className="col-lg-8">
-						<div className="text-center d-flex justify-content-center align-items-center flex-column mb-5" style={{
-							height: "300px",
-							background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${thumbnail})`,
-							backgroundSize: "cover",
-							borderRadius: "5px",
-						}}>
-							<h1 className="mb-1 mb-lg-2 f1 fw-600 text-white"><b>{frontMatter.title}</b></h1>
-							{frontMatter.summary && (
-							<p className="description text-white">{frontMatter.summary}</p>
-							)}
-						</div>
-						<div className="col-lg-3 me-3 d-lg-none">		
-							{frontMatter.date&& (
-								<>
-									<span className="fs-5 d-flex align-items-center">
-										<i className="bi bi-calendar3 me-3"></i>
-										<time dateTime={frontMatter.date}>
-											{new Date(frontMatter.date).toLocaleDateString('pl-PL', postDateTemplate)}
-										</time>
-									</span>
-									<hr />
-								</>
-							)}
-						</div>
-
-						<article>{children}</article>
-
-						<div className="col-lg-3 me-3 d-print-none">
-							<a className="nav-link py-2 px-0 px-lg-2" target="_blank" rel="noopener noreferrer" href={`https://github.com/CheryX/cramer/tree/master/posts/${fileName}.mdx`} >
-								<i className="fs-5 bi bi-github"></i> <small className="ms-2">Zobacz na Githubie</small>
-							</a>
-						</div>
-						<div className="col-lg-3 me-3 d-lg-none d-print-none">
-							<hr />
-							{frontMatter.authors && (
-								<>
-									{frontMatter.authors.map((author, index) => (
-										<div key={index} className="my-1 d-flex align-items-center">
-											<img src={authors[author].avatar} className="avatar me-1" alt={authors[author].name} style={{
-												width: "40px",
-												height: "40px",
-												borderRadius: "50%",
-											}} />
-											<div>
-												{authors[author].name} <br /> <Link href={githubUrl(authors[author].github)}><a>@{authors[author].github}</a></Link>
-											</div>
-										</div>
-									))}
-									<hr />
-								</>
-							)}
-						</div>
 					</div>
 				</div>
+
+				<article className='xl:w-4/5 mx-auto md:relative'>
+
+					<h1 className='text-4xl font-bold mb-1'>{postData.title}</h1>
+					
+					
+					<time dateTime={postData.date}>
+						<div className='flex items-center my-2'>
+							<i className="fa-regular fa-calendar text-xl mr-2"></i> {new Date(postData.date).toLocaleDateString('pl-PL', postDateTemplate)}
+						</div>
+					</time>
+
+					<div className='my-5'>
+						{children}
+					</div>
+
+					<hr className='my-5 border-primary-200 dark:border-primary-800' />
+
+					<div className='flex items-center justify-between'>
+						<div className='flex items-center mb-10 print:hidden text-primary-500'>
+							<i className="fa-solid fa-tag text-lg mr-1"></i> {postData.tags.map((tag, index) => <span className='text-md ml-1'>{tag}</span>)}
+						</div>
+
+						<div className='flex items-center mb-10 print:hidden text-primary-500'>
+							<i className="fa-brands fa-github text-lg mr-1"></i>
+							<Link href={`https://github.com/CheryX/cramer/blob/master/posts/${postData.slug}`}>
+								<a className='text-md ml-1'>Edytuj na GitHubie</a>
+							</Link> 
+						</div>
+					</div>
+
+				</article>
+
 			</div>
+
 		</>
 	)
 }

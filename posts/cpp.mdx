@@ -1,23 +1,4 @@
----
-title: C++ Wstęp
-date: '2022-05-20'
-tags: [informatyka, c++]
-summary: Podstawowe informacje o C++
-thumbnail: 'https://images.unsplash.com/photo-1635775017492-1eb935a082a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-authors: ['cheryx', 'electruuu']
-featured: true
----
-
 **C++** jest popularnym językiem programowaia który został stworzony w 1979 jako *C z klasami*, teraz ten język jest używany w programowaniu ważnych części kodu, systemów operacyjnych oraz wiele więcej.[^cpp] Język ten jest tak popularny że trafił na liste dozwolonych języków na maturze rozszerzonej z informatyki.[^cke] Ten język nie jest stworzony dla osób zaczynającym z programowaniem, a nawet można stwierdzić że jest to po prostu *strzelanie w stopę*[^garbage]. Jeśli planujesz napisać dobrze maturę z informatyki, to polecam skorzystać z przyjemniejszych oraz łatwiejszych języków programowania.[^stackoverflow]
-
-<figure>
-  <blockquote className="blockquote">
-    <p>C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.</p>
-  </blockquote>
-  <figcaption className="blockquote-footer">
-    <cite title="Source Title">Bjarne Stroustrup</cite>
-  </figcaption>
-</figure>
 
 # Instalowanie wymaganych progamów
 
@@ -293,191 +274,113 @@ int main() {
 Witaj Piotrek
 ```
 
----
-
 # Zadania
 
-<AccordionGroup>
-    <Accordion title='Wypisz na ekran "Hello World!"'>
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            cout << "Hello World!";
+<Accordion title='Wypisz na ekran "Hello World!"'>
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        cout << "Hello World!";
+    }
+    ```
+</Accordion>
+<Accordion title='Program który wpisuje dane z klawiatury i wypisuje je na ekran'>
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        int a;
+        cin >> a;
+        cout << a;
+    }
+    ```
+</Accordion>
+<Accordion title='Program który pyta o imię i wypisuje na ekran "Witaj, [imię]!"'>
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        string name;
+        cout << "Podaj imię: ";
+        cin >> name;
+        cout << "Witaj, " << name << "!";
+    }
+    ```
+</Accordion>
+<Accordion title="Program który wypisze czy liczba jest parzysta.">
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        cout << "Podaj liczbę: ";
+        int a;
+        cin >> a;
+        if (a % 2 == 0) {
+            cout << "Liczba jest parzysta." << endl;
+        } else {
+            cout << "Liczba jest nieparzysta." << endl;
         }
-        ```
-    </Accordion>
-    <Accordion title='Program który wpisuje dane z klawiatury i wypisuje je na ekran'>
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            int a;
-            cin >> a;
-            cout << a;
-        }
-        ```
-    </Accordion>
-    <Accordion title='Program który pyta o imię i wypisuje na ekran "Witaj, [imię]!"'>
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            string name;
-            cout << "Podaj imię: ";
-            cin >> name;
-            cout << "Witaj, " << name << "!";
-        }
-        ```
-    </Accordion>
-</AccordionGroup>
-
----
-
-<AccordionGroup>
-    <Accordion title="Program który wypisze czy liczba jest parzysta.">
-        ``` cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            cout << "Podaj liczbę: ";
-            int a;
-            cin >> a;
-            if (a % 2 == 0) {
-                cout << "Liczba jest parzysta." << endl;
-            } else {
-                cout << "Liczba jest nieparzysta." << endl;
-            }
-        }
-        ```
-    </Accordion>
-    <Accordion title="Program który sprawdza czy osoba jest pełnoletnia.">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            cout << "Podaj wiek: ";
-            int a;
-            cin >> a;
-            if (a >= 18) {
-                cout << "Jesteś pełnoletni." << endl;
-            } else {
-                cout << "Jesteś niepełnoletni." << endl;
-            }
-        }
-        ```
-    </Accordion>
-</AccordionGroup>
-
----
-
-<AccordionGroup>
-    <Accordion title="Program który wypisze liczby od 0 do 10.">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            for (int i = 0; i <= 10; i++) {
-                cout << i << " ";
-            }
-        }
-        ```
-    </Accordion>
-    <Accordion title="Program który wypisze liczby od 0 do 10.">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        int main() {
-            for (int i = 10; i >= 0; i--) {
-                cout << i << " ";
-            }
-        }
-        ```
-    </Accordion>
-    <Accordion title="Program który wypisze parzyste liczby od 0 do 100">
+    }
+    ```
+</Accordion>
+<Accordion title="Program który sprawdza czy osoba jest pełnoletnia.">
     ```cpp
     #include <iostream>
     using namespace std;
     
     int main() {
-        for (int i = 0; i <= 50; i++) {
-            cout << i*2 << " ";
+        cout << "Podaj wiek: ";
+        int a;
+        cin >> a;
+        if (a >= 18) {
+            cout << "Jesteś pełnoletni." << endl;
+        } else {
+            cout << "Jesteś niepełnoletni." << endl;
         }
     }
     ```
-    </Accordion>
-</AccordionGroup>
-
----
-
-<AccordionGroup>
-    <Accordion title="Funkcja wypisująca uśmiechy o dowolnej szerokości oraz wysokości">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        void usmiechy(int w, int h) {
-            for (int i = 0; i < h; i++) {
-                for (int j = 0; j < w; j++) {
-                    cout << " :) ";
-                }
-                cout << "\n";
-            } 
+</Accordion>
+<Accordion title="Program który wypisze liczby od 0 do 10.">
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        for (int i = 0; i <= 10; i++) {
+            cout << i << " ";
         }
-
-        int main() {
-            usmiechy(4, 3);
+    }
+    ```
+</Accordion>
+<Accordion title="Program który wypisze liczby od 0 do 10.">
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    
+    int main() {
+        for (int i = 10; i >= 0; i--) {
+            cout << i << " ";
         }
-        ```
-    </Accordion>
-    <Accordion title="Funkcja sprawdzająca czy liczba jest pierwsza">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        bool pierwsza(int n) {
-            if (n <= 1) return false;
+    }
+    ```
+</Accordion>
+<Accordion title="Program który wypisze parzyste liczby od 0 do 100">
+```cpp
+#include <iostream>
+using namespace std;
 
-            for (int i = 2; i < n; i++) {
-                if (n % i == 0) return false;
-            }
-        
-            return true;
-        }
-
-        int main() {
-            pierwsza(51) ? cout << "Liczba jest pierwsza" : cout << "Liczba nie jest pierwsza";
-        }
-        ```
-    </Accordion>
-    <Accordion title="Funkcja pokazująca tabliczke mnożenia">
-        ```cpp
-        #include <iostream>
-        using namespace std;
-        
-        void tabliczka() {
-            for (int i = 1; i <= 10; i++) {
-                for (int j = 1; j <= 10; j++) {
-                    cout << i*j << " ";
-                }
-                cout << "\n";
-            } 
-        }
-
-        int main() {
-            tabliczka();
-        }
-        ```
-    </Accordion>
-</AccordionGroup>
-
+int main() {
+    for (int i = 0; i <= 50; i++) {
+        cout << i*2 << " ";
+    }
+}
+```
+</Accordion>
 
 [^cpp]: [Wikipedia - C++](https://en.wikipedia.org/wiki/C%2B%2B)
 [^cke]: [Wybór języków na mature](https://cke.gov.pl/images/_KOMUNIKATY/20190806%20Komunikat%20o%20egzaminie%20z%20informatyki.pdf)

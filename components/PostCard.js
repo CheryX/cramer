@@ -1,38 +1,29 @@
-import Tag from '@/components/Tag'
-import formatDate from '@/lib/formatDate'
+import Link from "next/link"
 
-const PostCard = ({ data }) => {
-
-	const { date, title, thumbnail, summary, tags } = data.data
-	const slug = data.filePath ? data.filePath.replace(/\.mdx$/, '') : ''
+export default function PostCard({post}) {
+	const card = { background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), '+`url(${post.thumbnail})` }
+	let author = post.authors[0].name
+	if (post.authors.length > 1) author += " & inni"
+	
+	let title = post.title.substring(0,40)
+	if (post.title.length > 40) title += "..."
 
 	return (
+		<Link href={`/posts/${post.slug.replaceAll('.mdx', '')}`}>
+			<a>
+				<div style={card} className="m-5 p-5 rounded-md">
+					<p className="text-right text-slate-300"> <i className="fa-regular mr-1 fa-calendar"></i> {post.date} </p>
+					
+					<div className="h-20 flex items-end">
+						<h2 className="text-3xl font-bold align-bottom text-primary-100" aria-label={post.title}>{title}</h2>
+					</div>
 
-		<div className="col">
-			<div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style={{
-				background: 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), '+`url(${thumbnail})`}}>
-				<div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-						<a href={`/posts/${slug}`} className='text-white text-decoration-none'>
-							<h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ">
-							{title}
-							</h2>
-						</a>
-					<ul className="d-flex list-unstyled mt-auto">
-						<li className="d-flex align-items-center me-3">
-							<i className="bi bi-tags mx-1"></i>
-							<small>{tags.map((tag, index) => (<span key={index}><Tag key={index} text={tag} color="white" /> </span>))}</small>
-						</li>
-						<li className="d-flex align-items-center">
-							<i className="bi bi-calendar3 mx-1"></i>
-							<small><time dateTime={date}>{formatDate(date)}</time></small>
-						</li>
-					</ul>
+					<div className="flex items-center mt-2">
+						<img src={post.authors[0].avatar} className="inline-block rounded-full mr-2" width={35}/>
+						<span className="font-medium text-lg text-primary-100">{author}</span>
+					</div>
 				</div>
-
-			</div>
-		</div>
-	
+			</a>
+		</Link>
 	)
 }
-
-export default PostCard
