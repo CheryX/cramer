@@ -64,7 +64,7 @@ export default {
     "systematyka-zwiazkow": {
         title: 'Systematyka związków nieorganicznych',
         date: '2022-05-16',
-        tags: ['chemia', 'zwiazki'],
+        tags: ['chemia', 'zwiazki', 'tlenki', 'kwasy', 'sole'],
         authors: [cheryx],
         slug: 'systematyka-zwiazkow.mdx',
         summary: 'Tlenki, Wodorki, Wodorotlenki, Kwasy oraz Sole w jednym miejscu',
@@ -76,7 +76,7 @@ export default {
         summary: 'Rozwiązywanie układów równań',
         date: '2022-05-17',
         slug: "uklady-rownan.mdx",
-        tags: ['matematyka', 'funkcje'],
+        tags: ['matematyka', 'funkcje', 'uklady'],
         thumbnail: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
     },
     "wybrane-funkcje": {
@@ -101,7 +101,7 @@ export default {
         title: 'Zbiory Liczbowe',
         slug: 'zbiory.mdx',
         date: '2022-05-20',
-        tags: ['matematyka'],
+        tags: ['matematyka', 'zbiory'],
         summary: 'Definicja zbioru, suma, różnica zbioru, część wspólna',
         authors: [cheryx],
         thumbnail: 'https://images.unsplash.com/photo-1529078155058-5d716f45d604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'

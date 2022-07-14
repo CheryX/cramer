@@ -16,6 +16,7 @@ import Graph from '@/components/Graph'
 import { Ordered, Unordered } from '@/components/base/Lists'
 import Link from '@/components/base/Link'
 import { MultipleOptions, TrueFalse } from '@/components/Questions'
+import BBImage from '@/components/base/BBImage'
 
 // List of custom components
 const components = {
@@ -27,7 +28,8 @@ const components = {
 	hr: Break,
 	ol: Ordered,
 	ul: Unordered,
-	a: Link
+	a: Link,
+	BBI: BBImage
 };
 
 
