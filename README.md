@@ -28,8 +28,6 @@ Accordion | `<Accordion>` | Ukryte pole tekstowe
 Graph | `<Graph>` | Graf pokazujący funkcje oraz punkty
 Soon™
 
-> Pytania zostaną dodane wkrótce
-
 ## FAQ
 
 *Q: Mam jakieś pytanie, gdzie moge je zadać?*
