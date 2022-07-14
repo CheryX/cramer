@@ -40,3 +40,7 @@ A: Stwórz nowe pytanie na https://github.com/CheryX/cramer/discussions
 *Q: Potrzebuje notatki, a jej nie ma, jak mogę zaproponować notatkę?*
 
 A: Stwórz nowy issue na https://github.com/CheryX/cramer/issues
+=======
+## Przydatne linki:
+* [Serwer discord](https://discord.gg/gHBzHTr6JD)
+* Dokumentacja (Wkrótce)
