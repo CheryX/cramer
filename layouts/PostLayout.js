@@ -24,9 +24,9 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 				onKey: (e) => onKey(e)
 			}}/>
 
-			<div className='max-w-7xl mx-10 lg:mx-auto lg:flex mt-10'>
+			<div className='max-w-7xl mx-10 xl:mx-auto xl:flex mt-10'>
 
-				<div className='print:hidden lg:fixed z-20 lg:top-[3.8125rem] lg:bottom-0 lg:right-[max(0px,calc(50%-45rem))] lg:overflow-y-auto lg:pt-10 pb-10'>
+				<div className='print:hidden xl:w-1/5 xl:fixed z-20 xl:top-[3.8125rem] xl:bottom-0 xl:right-[max(0px,calc(50%-45rem))] xl:overflow-y-auto xl:pt-10 pb-10'>
 					<div className=''>
 
 						<h5 className='font-bold text-2xl mb-2'>Na tej stronie</h5>
@@ -43,7 +43,7 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 					</div>
 				</div>
 
-				<article className='md:w-4/5 md:relative'>
+				<article className='xl:w-4/5 md:relative'>
 
 					<h1 className='text-4xl font-bold mb-1'>{postData.title}</h1>
 					
