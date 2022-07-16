@@ -53,7 +53,7 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 						</div>
 					</time>
 
-					<div className='my-5 mx-5 '>
+					<div className='my-5'>
 						{children}
 					</div>
 

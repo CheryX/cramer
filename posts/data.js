@@ -26,11 +26,11 @@ const subjects = [
 // Tutaj dodaj posty
 export default {
     "trygonometria": {
-        title: 'Trygonometria kąta ostrego',
+        title: 'Trygonometria',
         slug: 'trygonometria.mdx',
         date: '2022-07-16',
         tags: ['matematyka', 'fizyka', 'trygonometria'],
-        summary: 'Podstawowe informacje o funkcjach sin, cos oraz tg na przykładzie kąta ostrego',
+        summary: 'Podstawowe informacje o funkcjach sin, cos oraz tg na przykładzie kąta ostrego. Twierdzenie sinusów oraz cosinusów (Twierdzenie pitagorasa+)',
         authors: [cheryx]
     },
     "wzory": {
