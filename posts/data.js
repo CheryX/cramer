@@ -25,6 +25,14 @@ const subjects = [
 
 // Tutaj dodaj posty
 export default {
+    "trygonometria": {
+        title: 'Trygonometria kąta ostrego',
+        slug: 'trygonometria.mdx',
+        date: '2022-07-16',
+        tags: ['matematyka', 'fizyka', 'trygonometria'],
+        summary: 'Podstawowe informacje o funkcjach sin, cos oraz tg na przykładzie kąta ostrego',
+        authors: [cheryx]
+    },
     "wzory": {
         title: 'Przekształcanie wzorów',
         slug: 'wzory.mdx',

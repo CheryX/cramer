@@ -24,10 +24,10 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 				onKey: (e) => onKey(e)
 			}}/>
 
-			<div className='max-w-7xl mx-10 xl:mr-auto xl:flex mt-10'>
+			<div className='max-w-screen-2xl mx-auto xl:flex'>
 
-				<div className='print:hidden xl:w-1/5 xl:fixed z-20 xl:top-[3.8125rem] xl:bottom-0 xl:right-[max(0px,calc(50%-45rem))] xl:overflow-y-auto xl:pt-10 pb-10'>
-					<div className=''>
+				<div className='print:hidden xl:min-w-fit mx-10 xl:px-5 xl:border-r dark:xl:border-r-primary-800 pt-10'>
+					<div className='xl:top-32 xl:sticky'>
 
 						<h5 className='font-bold text-2xl mb-2'>Na tej stronie</h5>
 						<ol>
@@ -43,10 +43,9 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 					</div>
 				</div>
 
-				<article className='xl:w-4/5 mx-auto md:relative'>
+				<article className='xl:w-auto mx-5 md:mx-20 xl:mx-auto md:relative pt-10'>
 
 					<h1 className='text-4xl font-bold mb-1'>{postData.title}</h1>
-					
 					
 					<time dateTime={postData.date}>
 						<div className='flex items-center my-2'>
@@ -54,14 +53,14 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 						</div>
 					</time>
 
-					<div className='my-5'>
+					<div className='my-5 mx-5 '>
 						{children}
 					</div>
 
 					<hr className='my-5 border-primary-200 dark:border-primary-800' />
 
-					<div className='flex items-center justify-between'>
-						<div className='flex items-center mb-10 print:hidden text-primary-500'>
+					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between'>
+						<div className='flex items-center xl:mb-10 mb-5 print:hidden text-primary-500'>
 							<i className="fa-solid fa-tag text-lg mr-1"></i> {postData.tags.map((tag, index) => <span className='text-md ml-1'>{tag}</span>)}
 						</div>
 
