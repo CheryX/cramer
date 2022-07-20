@@ -38,6 +38,16 @@ export default function Index({ posts, tags }) {
 				} )}
 			</div>
 
+			<div className='flex justify-center mb-20 mt-5'>
+				<Link href='posts'>
+					<a>
+					<div className='py-2 px-10 text-xl rounded-sm bg-primary-300 hover:bg-primary-400 dark:bg-primary-600 dark:hover:bg-primary-500 duration-200'>
+						Pokaż więcej
+					</div>
+					</a>
+				</Link>
+			</div>
+
 			<h2 className='text-5xl font-extrabold text-center mt-16'>Przedmioty</h2>
 			<p className='text-center text-xl font-medium mt-3'>Szukaj notatek przez przedmiot</p>
 

@@ -3,13 +3,20 @@
 let cheryx = {
     name: 'Maciej Musielik',
     avatar: 'https://avatars.githubusercontent.com/u/58445363?s=40&v=4',
-    github: 'cheryx'
+    github: 'CheryX'
 }
 let electruuu = {
     name: 'Electruuu',
     avatar: 'https://avatars.githubusercontent.com/u/60323922?s=64&v=4',
     github: 'electruuu'
 }
+let template = {
+    name: 'Imie lub nick',
+    avatar: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfTZtmsTaijY%2Fhqdefault.jpg&f=1&nofb=1', 
+    github: 'kontonagitubie'
+}
+
+
 
 //To możesz ignorować
 const subjects = [
@@ -25,6 +32,14 @@ const subjects = [
 
 // Tutaj dodaj posty
 export default {
+    // "algorytmy": {
+    //     title: 'Algorytmy',
+    //     slug: 'algorytmy.mdx',
+    //     date: '2022-07-20',
+    //     tags: ['informatyka', 'algorytmy', 'programowanie'],
+    //     summary: 'Zrozumienie jak działają algorytmy na przykładzie schematów blokowych',
+    //     authors: [cheryx]
+    // },
     "trygonometria": {
         title: 'Trygonometria',
         slug: 'trygonometria.mdx',
@@ -32,7 +47,7 @@ export default {
         tags: ['matematyka', 'fizyka', 'trygonometria'],
         summary: 'Podstawowe informacje o funkcjach sin, cos oraz tg na przykładzie kąta ostrego. Twierdzenie sinusów oraz cosinusów (Twierdzenie pitagorasa+)',
         authors: [cheryx],
-        thumbnail: 'http://c.mmusielik.xyz/posts/sincircleexpl.png'
+        thumbnail: 'https://c.mmusielik.xyz/posts/sincircleexpl.png'
     },
     "wzory": {
         title: 'Przekształcanie wzorów',
@@ -40,7 +55,8 @@ export default {
         date: '2022-07-09',
         tags: ['matematyka', 'fizyka', 'wzory', 'algebra'],
         summary: 'Naucz się jak szybko przekształcać wzory, od wzoru na prędkość do wyprowadzania równania kwadratowego.',
-        authors: [cheryx]
+        authors: [cheryx],
+        thumbnail: 'https://c.mmusielik.xyz/posts/wzory.png'
     },
     "cpp": {
         title: 'Wstęp do C++',
@@ -86,7 +102,7 @@ export default {
         date: '2022-05-17',
         slug: "uklady-rownan.mdx",
         tags: ['matematyka', 'funkcje', 'uklady'],
-        thumbnail: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
+        thumbnail: 'https://c.mmusielik.xyz/posts/uklady.png'
     },
     "wybrane-funkcje": {
         title: 'Wybrane funkcje',
@@ -95,7 +111,7 @@ export default {
         slug: 'wybrane-funkcje.mdx',
         summary: 'Funkcja kwadratowa, logarytmiczna oraz proporcjonalność odwrotna',
         authors: [cheryx],
-        thumbnail: 'https://images.unsplash.com/photo-1635070040809-d434392ae756?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
+        thumbnail: 'https://c.mmusielik.xyz/posts/wybranef.png'
     },
     "wyrazenia-algebraiczne": {
         title: 'Wyrażenia Algebraiczne',
@@ -104,7 +120,7 @@ export default {
         tags: ['matematyka', 'algebra'],
         summary: 'Potęgi, logarytmy oraz wzory skróconego mnożenia',
         authors: [cheryx],
-        thumbnail: 'https://images.unsplash.com/photo-1653074281018-c08f358059ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
+        thumbnail: 'https://c.mmusielik.xyz/posts/algebra.png'
     },
     "zbiory": {
         title: 'Zbiory Liczbowe',
@@ -113,7 +129,7 @@ export default {
         tags: ['matematyka', 'zbiory'],
         summary: 'Definicja zbioru, suma, różnica zbioru, część wspólna',
         authors: [cheryx],
-        thumbnail: 'https://images.unsplash.com/photo-1529078155058-5d716f45d604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80'
+        thumbnail: 'https://c.mmusielik.xyz/posts/zbiory.png'
     }
 
 }

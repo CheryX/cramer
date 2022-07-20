@@ -62,6 +62,22 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 					<hr className='my-5 border-primary-200 dark:border-primary-800' />
 
 					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between'>
+						{postData.authors && postData.authors.map((author, index) => (
+							<div className='flex items-center' key={index}>
+								<img src={author.avatar} className="rounded-full mr-2" width={40} height={40}/>
+								<div>
+									<span className="font-medium text-primary-100 p-0 m-0 block">{author.name}</span>
+									<Link href={`https://github.com/${author.github}`}>
+										<a className="text-sm text-teal-500 p-0 m-0 block">@{author.github}</a>
+									</Link>
+								</div>
+							</div>
+						))}
+					</div>
+
+					<hr className='my-5 border-primary-200 dark:border-primary-800' />
+
+					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between'>
 						<div className='flex items-center xl:mb-10 mb-5 print:hidden text-primary-500'>
 							<i className="fa-solid fa-tag text-lg mr-1"></i> {postData.tags.map((tag, index) => (
 								<Link href={`/posts?q=${tag}`}>
