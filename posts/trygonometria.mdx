@@ -98,7 +98,7 @@ $$
 \tg(60°) = \ctg(30°) = \frac{x\sqrt{3}}{x} = \sqrt{3}
 $$
 
-Dla kątów $0°$ oraz $90°$, niestety to jest niemożliwe aby narysować trójkąt. Ale można się domyśleć, na przykład: przy zmniejszaniu kąta zmniejsza się $o$, to przy $o = 0$, $\sin(0°) \frac{0}{h} = 0$ 
+Wyjaśnienie miar kątów dla $0°$ oraz $90°$ jest w temacie *Sinus i cosinus na okręgu*.
 
 Z powyższych wyników można stworzyć tabelkę:
 
@@ -108,6 +108,52 @@ $\sin$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$
 $\cos$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ 
 $\tg$  | $0$ | $\frac{\sqrt{3}}{3}$ | $1$ | $\sqrt{3}$ | brak
 $\ctg$ | brak | $\sqrt{3}$ | $1$ | $\frac{\sqrt{3}}{3}$ | $0$
+
+# Sinus i cosinus na okręgu
+
+Jeśli narysujesz koło ze wzoru $x^2+y^2=1$, to łącząc dowolny punkt okręgu z początkiem układu można zbudować trójkąt.
+
+<BBI src="/posts/sincircle.png" width="1/2" />
+
+Wiedząc że $h = 0$, to:
+
+$$
+\sin(\alpha) = \frac{o}{1} = o
+$$
+
+$$
+\cos(\alpha) = \frac{a}{1} = a
+$$
+
+<BBI src="/posts/sincircleexpl.png" width="1/2" />
+
+Z tego można zapisać równanie:
+
+$$
+\sin^2(\theta) + \cos^2(\theta) = 1
+$$
+
+> Zapis $\sin^2(\theta)$ oznacza to samo co $(\sin(\theta))^2$ 
+
+Stąd też widać, że pod kątem $0°$:
+
+$$
+\sin(0) = \cos(90°) = 0
+$$
+
+$$
+\cos(0) = \sin(90°) = 1
+$$
+
+$$
+\tg(0) = \frac{\sin(0)}{\cos(0)} = 0
+$$
+
+$$
+\ctg(0) = \frac{\cos(90°)}{\sin(90°)} = 0
+$$
+
+Nie istnieje $\tg(90°)$ ani $\ctg(0°)$, ponieważ by to wymagało dzielenia przez $0$.
 
 # Twierdzenie sinusów oraz cosinusów
 
@@ -125,7 +171,7 @@ $$
 Twierdzenie cosinusów to jest rozszerzona wersja twierdzenia Pitagorasa, ponieważ działa na każdy trójkąt.
 
 $$
-c^2=a^2+b^2-2ab*cos(\theta)
+c^2=a^2+b^2-2ab*\cos(\theta)
 $$
 
 # Zadania
@@ -163,6 +209,8 @@ Gratulacje! Możesz teraz użyć tych informacji aby łatwo znaleźć portal do 
 > Ten wzór można jeszcze skrócić do $a = \csc{\theta}*\sin{\alpha}*d$
 
 </Accordion>
+
+
 
 [^1]: [Trygonometria - Wikipedia](https://en.wikipedia.org/wiki/Trigonometry)
 [^2]: [Twierdzenie Sinusów](https://en.wikipedia.org/wiki/Law_of_sines)

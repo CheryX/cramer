@@ -53,6 +53,8 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 						</div>
 					</time>
 
+					<span className='lg:w-1/2'/>
+
 					<div className='my-5'>
 						{children}
 					</div>
@@ -61,7 +63,11 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 
 					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between'>
 						<div className='flex items-center xl:mb-10 mb-5 print:hidden text-primary-500'>
-							<i className="fa-solid fa-tag text-lg mr-1"></i> {postData.tags.map((tag, index) => <span className='text-md ml-1'>{tag}</span>)}
+							<i className="fa-solid fa-tag text-lg mr-1"></i> {postData.tags.map((tag, index) => (
+								<Link href={`/posts?q=${tag}`}>
+									<a className='text-md ml-1'>{tag}</a>
+								</Link>
+							))}
 						</div>
 
 						<div className='flex items-center mb-10 print:hidden text-primary-500'>

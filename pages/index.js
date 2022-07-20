@@ -32,7 +32,7 @@ export default function Index({ posts, tags }) {
 
 			</div>
 
-			<div id='posts' className='sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:max-w-screen-2xl mx-auto md:mt-5'>
+			<div id='posts' className='sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:max-w-screen-2xl mx-auto md:mt-5'>
 				{posts.slice(0, 12).map((data, index) => {
 					return <span key={index}><PostCard post={data}/></span>
 				} )}

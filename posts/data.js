@@ -31,7 +31,8 @@ export default {
         date: '2022-07-16',
         tags: ['matematyka', 'fizyka', 'trygonometria'],
         summary: 'Podstawowe informacje o funkcjach sin, cos oraz tg na przykładzie kąta ostrego. Twierdzenie sinusów oraz cosinusów (Twierdzenie pitagorasa+)',
-        authors: [cheryx]
+        authors: [cheryx],
+        thumbnail: 'http://c.mmusielik.xyz/posts/sincircleexpl.png'
     },
     "wzory": {
         title: 'Przekształcanie wzorów',
