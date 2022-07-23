@@ -15,7 +15,7 @@ import Break from '@/components/base/Break'
 import Graph from '@/components/Graph'
 import { Ordered, Unordered } from '@/components/base/Lists'
 import Link from '@/components/base/Link'
-import { MultipleOptions, TrueFalse } from '@/components/Questions'
+import Question from '@/components/Question'
 import BBImage from '@/components/base/BBImage'
 
 // List of custom components
@@ -23,7 +23,7 @@ const components = {
 	blockquote: Blockquote,
 	table: Table,
 	th: Th, thead: Thead, td: Td,
-	h1, h2, h3, Accordion, Graph, TrueFalse, MultipleOptions,
+	h1, h2, h3, Accordion, Graph, Question,
 	code: Code,
 	hr: Break,
 	ol: Ordered,

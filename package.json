@@ -1,12 +1,10 @@
 {
-  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start -p 4000"
   },
   "dependencies": {
-    "@svgr/webpack": "^6.2.1",
     "katex": "^0.16.0",
     "markdown-toc": "^1.2.0",
     "next": "latest",

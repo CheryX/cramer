@@ -53,20 +53,22 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 						</div>
 					</time>
 
-					<span className='lg:w-1/2'/>
+					<span className='lg:w-1/2 lg:float-left hidden'/>
+					<span className='lg:w-1/3 lg:float-none hidden'/>
+					<span className='lg:w-2/3 lg:float-right hidden'/>
 
 					<div className='my-5'>
 						{children}
 					</div>
 
-					<hr className='my-5 border-primary-200 dark:border-primary-800' />
+					<hr className='my-5 border-primary-200 dark:border-primary-800 print:hidden' />
 
-					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between'>
+					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between print:hidden'>
 						{postData.authors && postData.authors.map((author, index) => (
 							<div className='flex items-center' key={index}>
 								<img src={author.avatar} className="rounded-full mr-2" width={40} height={40}/>
 								<div>
-									<span className="font-medium text-primary-100 p-0 m-0 block">{author.name}</span>
+									<span className="font-medium text-primary-700 dark:text-primary-100 p-0 m-0 block">{author.name}</span>
 									<Link href={`https://github.com/${author.github}`}>
 										<a className="text-sm text-teal-500 p-0 m-0 block">@{author.github}</a>
 									</Link>
@@ -75,7 +77,9 @@ export default function PostLayout({ postData, children, posts, fileName, toc })
 						))}
 					</div>
 
-					<hr className='my-5 border-primary-200 dark:border-primary-800' />
+					{postData.authors && (
+						<hr className='my-5 border-primary-200 dark:border-primary-800 print:hidden' />
+					) }
 
 					<div className='ml-5 xl:ml-0 xl:flex items-center justify-between'>
 						<div className='flex items-center xl:mb-10 mb-5 print:hidden text-primary-500'>

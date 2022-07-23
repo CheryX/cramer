@@ -1,5 +1,16 @@
 
-// Jeśli chcesz podpisać się pod postem, możesz się tutaj dopisać.
+// Krok 1: (Opcjonalne) Dodaj autora
+
+/*
+Dodaj autora w następujący sposób:
+
+let id = {
+    name: 'Pseudonim lub imie',
+    avatar: 'Link do zdjęcia',
+    github: 'Nazwa profilu na Githubie'
+}
+*/
+
 let cheryx = {
     name: 'Maciej Musielik',
     avatar: 'https://avatars.githubusercontent.com/u/58445363?s=40&v=4',
@@ -10,15 +21,8 @@ let electruuu = {
     avatar: 'https://avatars.githubusercontent.com/u/60323922?s=64&v=4',
     github: 'electruuu'
 }
-let template = {
-    name: 'Imie lub nick',
-    avatar: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfTZtmsTaijY%2Fhqdefault.jpg&f=1&nofb=1', 
-    github: 'kontonagitubie'
-}
 
-
-
-//To możesz ignorować
+// Lista postów znajdująca się na stronie głównej (możesz to ignorować).
 const subjects = [
     {name: "Matematyka", icon: "fa-square-root-variable"},
     {name: "Polski", icon: "fa-book-open"},
@@ -32,14 +36,14 @@ const subjects = [
 
 // Tutaj dodaj posty
 export default {
-    // "algorytmy": {
-    //     title: 'Algorytmy',
-    //     slug: 'algorytmy.mdx',
-    //     date: '2022-07-20',
-    //     tags: ['informatyka', 'algorytmy', 'programowanie'],
-    //     summary: 'Zrozumienie jak działają algorytmy na przykładzie schematów blokowych',
-    //     authors: [cheryx]
-    // },
+    "algorytmy": {
+        title: 'Algorytmy',
+        slug: 'algorytmy.mdx',
+        date: '2022-07-20',
+        tags: ['informatyka', 'algorytmy', 'programowanie'],
+        summary: 'Zrozumienie jak działają algorytmy na przykładzie schematów blokowych',
+        authors: [cheryx]
+    },
     "trygonometria": {
         title: 'Trygonometria',
         slug: 'trygonometria.mdx',

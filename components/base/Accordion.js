@@ -10,11 +10,11 @@ export default function Accordion({title, children}) {
 				<h5 className='inline-block'>
 					{title}
 				</h5>
-
-				<i className={`fa-solid fa-angle-up ${!expanded && "rotate-180"} duration-500 inline-block`}></i>
+				
+				<i className={`fa-solid fa-angle-up ${!expanded && "rotate-180"} print:rotate-180 duration-500 inline-block`}></i>
 			</div>
 
-			<div className={`border-t-primary-400 dark:border-t-primary-500 px-5 lg:px-16 overflow-hidden duration-75 max-h-0 ${expanded && 'max-h-full py-5 border-t'} box-border`}>
+			<div className={`border-t-primary-400 dark:border-t-primary-500 px-5 lg:px-16 overflow-hidden duration-75 max-h-0 ${expanded && 'max-h-full py-5 border-t'} print:max-h-full print:py-5 print:border-t box-border`}>
 				{children}
 			</div>
 		</div>

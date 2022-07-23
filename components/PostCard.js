@@ -22,7 +22,7 @@ export default function PostCard({post}) {
 					</div>
 
 					<div className="flex items-center mt-1">
-						<i className="fa-solid mr-1 fa-tags text-lg"></i>
+						<i className="fa-solid mr-1 fa-tags text-lg text-primary-100"></i>
 
 						{post.tags && ( <span className="font-medium text-primary-100">{post.tags.slice(0, 2).join(', ')}</span> )}
 					</div>
