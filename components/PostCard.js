@@ -1,10 +1,10 @@
-import PostLayout from "@/layouts/PostLayout"
 import Link from "next/link"
 
 export default function PostCard({post}) {
 	const card = {
 		background: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-		center / cover no-repeat url(${post.thumbnail})`
+		center / cover no-repeat url(${post.thumbnail}),
+		black`
 	}
 	
 	let title = post.title.substring(0,40)
@@ -14,7 +14,7 @@ export default function PostCard({post}) {
 	return (
 		<Link href={`/posts/${post.slug.replaceAll('.mdx', '')}`}>
 			<a>
-				<div style={card} className="m-5 p-5 rounded-md">
+				<div style={card} className="m-2 p-5 rounded-md">
 					<p className="text-right text-slate-300"> <i className="fa-regular mr-1 fa-calendar"></i> {post.date} </p>
 					
 					<div className="h-20 flex items-end">

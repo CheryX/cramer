@@ -36,14 +36,15 @@ const subjects = [
 
 // Tutaj dodaj posty
 export default {
-    "algorytmy": {
-        title: 'Algorytmy',
-        slug: 'algorytmy.mdx',
-        date: '2022-07-20',
-        tags: ['informatyka', 'algorytmy', 'programowanie'],
-        summary: 'Zrozumienie jak działają algorytmy na przykładzie schematów blokowych',
-        authors: [cheryx]
-    },
+    // Soon™
+    // "algorytmy": {
+    //     title: 'Algorytmy',
+    //     slug: 'algorytmy.mdx',
+    //     date: '2022-07-20',
+    //     tags: ['informatyka', 'algorytmy', 'programowanie'],
+    //     summary: 'Zrozumienie jak działają algorytmy na przykładzie schematów blokowych',
+    //     authors: [cheryx]
+    // },
     "trygonometria": {
         title: 'Trygonometria',
         slug: 'trygonometria.mdx',

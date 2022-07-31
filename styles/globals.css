@@ -3,14 +3,7 @@
 @tailwind utilities;
 
 .bg-custom {
-    background: linear-gradient(180deg,hsla(0,0%,100%,0),transparent .01%,rgba(0,0,0,.05)),linear-gradient(99.82deg,#ded6ff 25.28%,#e9ebff 46.46%,#e3e6ff 65.54%);
-    mix-blend-mode: normal;
-}
-
-@media (prefers-color-scheme: dark) {
-    .bg-custom {
-        background: linear-gradient(97.79deg, #15172E 0%, #10122B 100%);
-    }
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-800 dark:to-blue-800
 }
 
 .footnotes { @apply print:hidden }
