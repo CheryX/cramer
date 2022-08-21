@@ -1,7 +1,5 @@
-import 'katex/dist/katex.css'
-import '@/styles/globals.css'
-import '@/styles/prism.css'
 import Head from 'next/head'
+import '@/styles/main.css'
 
 export default function App({ Component, pageProps }) {
 	return (

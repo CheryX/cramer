@@ -1,0 +1,122 @@
+---
+title: 'Wybrane funkcje'
+date: '2022-05-17'
+tags: ['matematyka', 'funkcje']
+excerpt: 'Funkcja kwadratowa, logarytmiczna oraz proporcjonalność odwrotna'
+authors: [cheryx]
+thumbnail: '/static/posts/wybranef.png'
+---
+
+# Równanie kwadratowe
+
+Równanie kwadratowe to jest równanie algebraiczne z jedną nie wiadomą, którą można zapisać w formie:
+
+$$f(x) = ax^2 + bx + c$$
+
+Gdzie $a\neq 0$[^wzor]. Kształt na układzie współrzędnych jest parabolą.
+
+## Czym jest parabola
+
+Parabola to jest kształt na układzie współrzędnych, który otrzymujemy m.in przy użyciu funkcji kwadratowej. Wygląda on następująco
+
+<Graph fun="x**2 - 2" height="300px" />
+
+
+Parabola składa się z:
+
+* wierzchołka - oznaczany punktem $W(p, q)$
+* ramion - ich kierunek zależy od współczynnika $a$. Jeśli jest dodatni to ramiona są skierowane do góry w przeciwnym wypadku do dołu.
+
+## Postać kanoniczna
+
+Postać kanoniczna to jest to inna postać równania kwadratowego, która jest opisana wzorem:
+
+$$f(x) = a(x-p)^2 + q$$
+
+Gdzie $[p, q]$ to punkty wierzchołka paraboli, lub oficjalnie translacja od punktu $(0,0)$.
+
+
+## Przekształcanie postaci kanonicznej do ogólnej
+
+Jest to bardzo prosty proces, który wymaga tylko użycia wzorów skróconego mnożenia:
+
+$$f(x) = a(x-p)^2 + q$$
+
+$$f(x) = a * (x^2 - 2pq + p^2) + q$$
+
+$$f(x) = ax^2 - 2apq + ap^2 + q$$
+
+Przykład z liczbami:
+
+$$f(x) = 5(x-3)^2 + 8$$
+
+$$f(x) = 5 * (x^2 - 6x + 9) + 8$$
+
+$$f(x) = 5x^2 - 30x + 53$$
+
+A z powrotem:
+
+$$f(x) = 5(x^2 - 6x) + 53$$
+
+$$f(x) = 5(x^2 - 6x + 9 - 9) + 53$$
+
+$$f(x) = 5(x-3)^2 + 8$$
+
+# Proporcjonalność odwrotna
+
+Proporcjonalność odwrotna to jest stałą zależność pomiędzy dwoma niewiadomymi.
+
+$$x*y=const~a$$
+
+$$y=\frac{a}{x}$$
+
+<Graph fun="1/x" />
+
+Gdzie $x$ i $y$ to niewiadome, a $const~a$ to jest stała liczba. Przykładem proporcjonalności odwrotnej są:
+
+| x | 1 | 2 | 3 | 4 | 6 | 9
+| - | - | - | - | - | - | -
+| y | 36 | 18 | 12 | 9 | 6 | 4
+| a | 36 | 36 | 36 | 36 | 36 | 36
+
+## Wykres proporcjonalności odwrotnej
+
+Wykresem proporcjonalności odwrotnej jest hiperbola
+
+Cechami hiperboli są
+
+* brak miejsc zerowych
+* dwie gałęzie
+
+# Inne funkcje
+
+Są jeszcze funkcje logarytmiczne oraz wykładnicze, obie te funkcje są krótkie i proste.
+
+## Funckja logarytmiczna
+
+<Graph fun="Math.log(x)" />
+
+Funkcje logarytmiczną można opisać wzorem:
+
+$$
+f(x) = log_a(x)
+$$
+
+Gdzie:
+* $a > 0 \land a \neq 1$
+* $x > 0$
+
+Dziedziną takiej funkcji jest $R_+$
+
+## Funkcja wykładnicza
+
+<Graph fun="2**x" />
+
+Jest to funkcja opisana wzorem:
+
+$$
+f(x) = n^x
+$$
+
+
+[^wzor]: [Równanie kwadratowe](https://en.wikipedia.org/wiki/Quadratic_equation)

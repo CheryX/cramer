@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing-bg {
+    @apply bg-landing bg-cover bg-center bg-fixed
+}
+
+.full-center {
+    @apply flex items-center justify-center
+}
+
+.landing {
+    @apply min-h-screen full-center landing-bg
+}
+
+.landing-inner {
+    @apply full-center min-h-screen w-full bg-teal-700/60 backdrop-blur-md flex
+}

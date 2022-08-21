@@ -1,47 +1,39 @@
-import Head from 'next/head' 
+import Head from "next/head";
 
-export default function PageSEO({ type='normal', title, description, image, url }) {
-
-	let color;
-	switch (type) {
-		case 'normal':
-			color = 'Default';
-			break;
-		case 'post':
-			color = 'Cyan';
-			break;
-		case 'list':
-			color = 'Blue';
-			break;
-		case 'error':
-			color = 'Red';
-			break;
-	}
-
-	return (
+/* idk if thats important */
+export function ArticleSEO({author, date, section}) {
+	return ( 
 		<Head>
-
-			{/* Default */}
-			<title>{title}</title>
-			<meta name="title" content={title} />
-			<meta name="description" content={description} />
-			<meta content="width=device-width, initial-scale=1" name="viewport" />
-
-			{/* Open Graph / Facebook */}
-			<meta property="og:type" content="website" />
-			<meta property="og:title" content={title}/>
-			<meta property="og:description" content={description} />
-			<meta property="og:image" content={image} />
-
-			{/* Twitter */}
-			<meta property="twitter:card" content="summary_large_image" />
-			<meta property="twitter:title" content={title} />
-			<meta property="twitter:description" content={description} />
-			<meta property="twitter:image" content={image} />
-
-			{/* Favicon */}
-			<link rel="icon" href={`/favicons/${color}.svg`} />
-
+			<meta property="article:published_time" content={date} />
+			<meta property="article:author" content={author} />
+			<meta property="article:section" content={section} />
 		</Head>
-	)
+	);
+}
+
+export default function SEO({title, keywords, description, ogUrl}) {
+	return ( 
+		<Head>
+			<meta name="googlebot" content="notranslate" />
+			<meta name="color-scheme" content="dark" />
+
+			<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+			<meta name="keywords" content={keywords}></meta>
+			<meta name="description" content={description}></meta>
+			
+			<meta property="og:title" content={title} />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content={ogUrl} />
+			<meta property="og:image" itemprop="image" content="/static/favicon.png" />
+			<meta charSet="utf-8"></meta>
+			<link rel="icon" href="/static/favicon.png"></link>
+			<title>{title}</title>
+		</Head>
+	);
+}
+
+SEO.defaultProps = {
+	title: "Projekt Cramer",
+	keywords: "cramer, notatki, szkola, nauka",
+	description: "Projekt Cramer to miejsce z darmowymi notatkami które możesz wykorzystać do nauki np. przed sprawdzianem",
 }

@@ -1,53 +1,32 @@
-import { getAllPostsData, getAllTags } from '@/lib/notesData'
-import Header from '@/components/Header'
-import { useState } from 'react'
-import PostCard from '@/components/PostCard'
-import PageSEO from '@/components/SEO'
+import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { getAllPostsData } from '@/lib/notesData'
+import Link from 'next/link';
 
-export default function Index({ posts, title }) {
-	let [searchValue, setSearchValue] = useState(title)
-
-	let filteredBlogPosts = posts.filter((posts) => {
-		const searchContent = posts.title + posts.summary + posts.tags.join(' ')
-		return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-	})
-
-	function onKey(e) {
-		(e.key == "Enter") && window.location.replace(`/posts?q=${searchValue}`);
-	}
+export default function Index({ posts }) {
 
 	return (
-		<>
-			<PageSEO title="Projekt Cramer" description={`Szukaj postów "${title}"`} type="list" />
+		<Layout>
+			<SEO ogUrl={`https://c.mmusielik.xyz/posts`} />
 
-			<Header page='notes' searchOptions={{
-				onChange: (e) => setSearchValue(e.target.value),
-				onKey: (e) => onKey(e),
-				value: title
-			}}/>
+			{posts.map((post, index) => {
+				return <span className='py-4 block' key={index}>
 
-			<h2 className='text-5xl font-extrabold text-center mt-16'>Wszystkie notatki</h2>
-			<p className='text-center text-xl font-medium mt-3 mx-10'>Pole wyszukiwania znajduje się w prawym górnym rogu</p>
+					<Link href={'/posts/' + post.filePath.replace('.mdx', '')}>
+						<a>
+							<h1 className='text-3xl font-bold'>{post.data.title}</h1>
+							<p>{post.data.excerpt}</p>
+						</a>
+					</Link>
+				
+				</span>
+			})}
 
-			<div id='posts' className='sm:grid sm:grid-cols-2 xl:grid-cols-4 lg:max-w-screen-2xl mx-auto md:mt-5 mb-20'>
-				{filteredBlogPosts.map((data, index) => {
-					return <span key={index}><PostCard post={data}/></span>
-				})}
-
-			</div>
-
-			{
-				(filteredBlogPosts.length == 0) && <p className='text-center mb-20 text-3xl font-bold'>Brak postów, spróbuj użyć innych słów oraz tagów.</p> 
-			}
-
-		</>
+		</Layout>
 	)
 }
 
-export function getServerSideProps(context) {
+export function getServerSideProps() {
 	const posts = getAllPostsData();
-	const title = context.query.q || "";
-
-	return { props: { posts, title } }
-
+	return { props: { posts } }
 }

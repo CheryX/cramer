@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Projekt Cramer]]></title>
+        <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
+        <link>https://c.mmusielik.xyz/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 21 Aug 2022 10:54:15 GMT</lastBuildDate>
+        <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 21 Aug 2022 10:54:15 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
+        <language><![CDATA[pl]]></language>
+        <item>
+            <title><![CDATA[Hello World!]]></title>
+            <description><![CDATA[Heheheha]]></description>
+            <link>https://c.mmusielik.xyz/posts/hello</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/hello</guid>
+            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

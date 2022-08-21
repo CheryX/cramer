@@ -1,59 +1,61 @@
-
-import { MDXRemote } from 'next-mdx-remote'
-import renderMdx from '@/lib/renderMdx'
-
+import Layout from '@/components/Layout'
+import SEO, { ArticleSEO } from '@/components/SEO'
 import fs from 'fs'
+import matter from 'gray-matter'
+import { MDXRemote } from 'next-mdx-remote'
+import { serialize } from 'next-mdx-remote/serialize'
 import path from 'path'
+import { postFilePaths, POSTS_PATH } from '../../lib/notesData'
+import data from '@/data/data'
 
-import PostLayout from '@/layouts/PostLayout'
-import Blockquote from '@/components/base/Blockquote'
-import Table, { Td, Th, Thead } from '@/components/base/Table'
-import { h1, h2, h3 } from '@/components/base/Headers'
-import Accordion from '@/components/base/Accordion'
-import Code from '@/components/base/Code'
-import Break from '@/components/base/Break'
-import Graph from '@/components/Graph'
-import { Ordered, Unordered } from '@/components/base/Lists'
-import Link from '@/components/base/Link'
-import Question from '@/components/Question'
-import BBImage from '@/components/base/BBImage'
+const components = [];
 
-// List of custom components
-const components = {
-	blockquote: Blockquote,
-	table: Table,
-	th: Th, thead: Thead, td: Td,
-	h1, h2, h3, Accordion, Graph, Question,
-	code: Code,
-	hr: Break,
-	ol: Ordered,
-	ul: Unordered,
-	a: Link,
-	BBI: BBImage
-};
+Object.defineProperty(String.prototype, 'capitalize', {
+	value: function() {
+	  return this.charAt(0).toUpperCase() + this.slice(1);
+	},
+	enumerable: false
+});
 
+export default function PostPage({ source, frontMatter, slug }) {
 
-const POSTS_PATH = path.join(process.cwd(), 'posts')
+	let authors = frontMatter.authors
+	authors = authors.map(e => data.authors[e].name).join(', ')
 
-export default function Post({ source, postData, posts, fileName, toc}) {
 	return (
-		<PostLayout postData={postData} posts={posts} fileName={fileName} toc={toc}>
+		<Layout>
+			<SEO title={frontMatter.title} description={frontMatter.description} ogUrl={`https://c.mmusielik.xyz/posts/${slug}`} />
+			<ArticleSEO author={authors} date={frontMatter.date} section={frontMatter.tags[0].capitalize()} />
 			<MDXRemote {...source} components={components} />
-		</PostLayout>
+		</Layout>
 	)
 }
 
 export const getStaticProps = async ({ params }) => {
-	return renderMdx(params.slug);
+	const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`)
+	const source = fs.readFileSync(postFilePath)
+
+	const { content, data } = matter(source)
+
+	const mdxSource = await serialize(content, {
+
+		mdxOptions: {
+			remarkPlugins: [],
+			rehypePlugins: [],
+		},
+		scope: data,
+	})
+
+	return {
+		props: {
+			source: mdxSource,
+			frontMatter: data,
+			slug: params.slug
+		},
+	}
 }
 
 export const getStaticPaths = async () => {
-
-	const postFilePaths = fs
-		.readdirSync(POSTS_PATH)
-		.filter((path) => /\.mdx?$/.test(path))
-
-
 	const paths = postFilePaths
 		.map((path) => path.replace(/\.mdx?$/, ''))
 		.map((slug) => ({ params: { slug } }))

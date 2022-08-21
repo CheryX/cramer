@@ -4,7 +4,7 @@ let posts = getAllPostsData();
 export default (req, res) => {
 
   function parseSearch(post) {
-    let search = `${post.title.toLowerCase()} ${post.summary.toLowerCase()}`
+    let search = `${post.data.title.toLowerCase()} ${post.data.excerpt.toLowerCase()}`
     for (let tag of post.tags) {
       search += " "+tag
     }

@@ -1,37 +1,12 @@
-import Link from "next/link"
-import Search from "./Search"
-import * as React from "react";
+import Link from "next/link";
 
-export default function Header({page, searchOptions}) {
-	const selected = 'py-3 border-b-3 border-b-black dark:border-b-white font-bold'
-	
-	return (
-		<header className="z-50 p-2 print:hidden border-b border-b-primary-200 dark:border-b-primary-700 sticky top-0 bg-blue-50/80 dark:bg-primary-900/80 shadow-sm">
-			<div className="flex items-center justify-between max-w-screen-xl mx-auto">
-				<Link href='/'>
-					<a>
-						<div className="flex items-center">
-						<img src='/Favicon.png' className="inline"/> <span className="text-3xl font-extrabold ml-2 hidden md:inline">CRAMER</span>
-						</div>
-					</a>
-				</Link>
+export default function Header() {
+    return (
+        <nav className="flex p-4 border-b">
 
-				<div>
-					<Link href={'/'}><a className={`hidden md:inline px-3 mx-1 h-100 ${page=="index" && selected}`}>Home</a></Link>
-					<Link href={'/posts'}><a className={`hidden md:inline mr-5 lg:mr-1 px-3 mx-1 h-100 ${page=="notes" && selected}`}>Notatki</a></Link>
-					<Link href={'https://github.com/CheryX/cramer#jak-dodać-post'} passHref>
-						<a target="_blank" className={`hidden lg:inline px-3 mx-1 mr-5 h-100 text-primary-600 dark:text-primary-500`}>
-							<i className="fa-solid fa-link"></i> Dodaj notatkę
-						</a>
-					</Link>
+            <Link href={'/'}><a className="mx-5"> Home </a></Link>
+            <Link href={'/posts'}><a className="mx-5"> Search </a></Link>
 
-					<Search
-						onChange={searchOptions.onChange}
-						onKey={searchOptions.onKey}
-						value={searchOptions.value}
-					/>
-				</div>
-			</div>
-		</header>
-	)
+        </nav>
+    )
 }
