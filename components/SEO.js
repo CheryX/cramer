@@ -4,6 +4,7 @@ import Head from "next/head";
 export function ArticleSEO({author, date, section}) {
 	return ( 
 		<Head>
+			<meta property="og:type" content="article" />
 			<meta property="article:published_time" content={date} />
 			<meta property="article:author" content={author} />
 			<meta property="article:section" content={section} />
@@ -16,6 +17,7 @@ export default function SEO({title, keywords, description, ogUrl}) {
 		<Head>
 			<meta name="googlebot" content="notranslate" />
 			<meta name="color-scheme" content="dark" />
+			<meta name="theme-color" content="#3F80FF" />
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 			<meta name="keywords" content={keywords}></meta>
@@ -25,7 +27,11 @@ export default function SEO({title, keywords, description, ogUrl}) {
 			<meta property="og:type" content="website" />
 			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
+
 			<meta property="og:image" itemProp="image" content="/static/favicon.png" />
+			<meta property="og:image:width" content="300" />
+			<meta property="og:image:height" content="300" />
+
 			<meta charSet="utf-8"></meta>
 			<link rel="icon" href="/static/favicon.png"></link>
 			<title>{title}</title>

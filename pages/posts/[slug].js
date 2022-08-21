@@ -24,7 +24,7 @@ export default function PostPage({ source, frontMatter, slug }) {
 
 	return (
 		<Layout>
-			<SEO title={frontMatter.title} description={frontMatter.description} ogUrl={`https://c.mmusielik.xyz/posts/${slug}`} />
+			<SEO title={frontMatter.title} description={frontMatter.excerpt} ogUrl={`https://c.mmusielik.xyz/posts/${slug}`} />
 			<ArticleSEO author={authors} date={frontMatter.date} section={frontMatter.tags[0].capitalize()} />
 			<MDXRemote {...source} components={components} />
 		</Layout>
