@@ -10,12 +10,9 @@ import data from '@/data/data'
 
 const components = [];
 
-Object.defineProperty(String.prototype, 'capitalize', {
-	value: function() {
-	  return this.charAt(0).toUpperCase() + this.slice(1);
-	},
-	enumerable: false
-});
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 export default function PostPage({ source, frontMatter, slug }) {
 
@@ -25,7 +22,7 @@ export default function PostPage({ source, frontMatter, slug }) {
 	return (
 		<Layout>
 			<SEO title={frontMatter.title} description={frontMatter.excerpt} ogUrl={`https://c.mmusielik.xyz/posts/${slug}`} />
-			<ArticleSEO author={authors} date={frontMatter.date} section={frontMatter.tags[0].capitalize()} />
+			<ArticleSEO author={authors} date={frontMatter.date} section={capitalize(frontMatter.tags[0])} />
 			<MDXRemote {...source} components={components} />
 		</Layout>
 	)
