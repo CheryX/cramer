@@ -4,7 +4,7 @@ import Head from "next/head";
 export function ArticleSEO({author, date, section}) {
 	return ( 
 		<Head>
-			<meta property="og:type" content="article" />
+			<meta content="article" property="og:type" data-rh="true" />
 			<meta property="article:published_time" content={date} />
 			<meta property="article:author" content={author} />
 			<meta property="article:section" content={section} />
@@ -28,9 +28,9 @@ export default function SEO({title, keywords, description, ogUrl}) {
 			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
 
-			<meta property="og:image" itemProp="image" content="/static/favicon.png" />
-			<meta property="og:image:width" content="300" />
-			<meta property="og:image:height" content="300" />
+			<meta property="og:image" content="/static/favicons/Blue.svg" />
+			<meta property="og:image:width" content="250" />
+			<meta property="og:image:height" content="250" />
 
 			<meta charSet="utf-8"></meta>
 			<link rel="icon" href="/static/favicon.png"></link>
