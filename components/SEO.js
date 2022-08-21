@@ -23,8 +23,9 @@ export default function SEO({title, keywords, description, ogUrl}) {
 			
 			<meta property="og:title" content={title} />
 			<meta property="og:type" content="website" />
+			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
-			<meta property="og:image" itemprop="image" content="/static/favicon.png" />
+			<meta property="og:image" itemProp="image" content="/static/favicon.png" />
 			<meta charSet="utf-8"></meta>
 			<link rel="icon" href="/static/favicon.png"></link>
 			<title>{title}</title>
