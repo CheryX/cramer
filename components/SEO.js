@@ -28,7 +28,7 @@ export default function SEO({title, keywords, description, ogUrl}) {
 			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
 
-			<meta property="og:image" content="/static/favicons/Blue.svg" />
+			<meta property="og:image" itemProp="image" content="/static/favicon.png" />
 			<meta property="og:image:width" content="250" />
 			<meta property="og:image:height" content="250" />
 
