@@ -1,13 +1,7 @@
-module.exports = {
-    webpack(config) {
-      config.module.rules.push({
-        test: /\.svg$/,
-      });
-  
-      return config;
-    },
-    images: {
-        domains: ['avatars.githubusercontent.com', 'images.unsplash.com'],
-    },
-};
-  
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+}
+
+module.exports = nextConfig
