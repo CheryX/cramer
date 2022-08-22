@@ -22,12 +22,12 @@ export default function SEO({title, description, ogUrl}: Props) {
 			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
 
-			<meta property="og:image" itemProp="image" content="/favicon.ico" />
+			<meta property="og:image" itemProp="image" content="favicon.ico" />
 			<meta property="og:image:width" content="250" />
 			<meta property="og:image:height" content="250" />
 
 			<meta charSet="utf-8"></meta>
-			<link rel="icon" href="/static/favicon.png"></link>
+			<link rel="icon" href="favicon.ico"></link>
 			<title>{title}</title>
 		</Head>
 	);
