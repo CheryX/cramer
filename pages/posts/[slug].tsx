@@ -8,6 +8,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { PostData, postFilePaths, POSTS_PATH } from '../../data/postData'
 import { GetStaticProps } from 'next'
+import SEO from '../../components/SEO'
 
 const components: any = [];
 
@@ -25,7 +26,10 @@ export default function PostPage({ source, frontMatter, slug }: Props) {
 
 	return (
 		<Layout>
+			
+			<SEO title={frontMatter.title} description={frontMatter.excerpt} ogUrl={`https://c.mmusielik.xyz/posts/${slug}`} />
 			<MDXRemote {...source} components={components} />
+
 		</Layout>
 	)
 }

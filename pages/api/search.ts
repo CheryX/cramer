@@ -1,4 +1,4 @@
-import { getAllPostsData, Post, PostData } from "../../data/postData"
+import { getAllPostsData } from "../../data/postData"
 import type { NextApiRequest, NextApiResponse } from 'next'
 let posts = getAllPostsData();
 
@@ -8,7 +8,7 @@ type Data = {
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
 
-	function parseSearch(post: PostData) {
+	function parseSearch(post: any) {
 		return `${post.title.toLowerCase()} ${post.excerpt.toLowerCase()} ${post.tags.join(' ')}`;
 	}
 

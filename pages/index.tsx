@@ -1,13 +1,14 @@
 import type { NextPage } from 'next'
-import Layout from '../components/Layout'
+import SEO from '../components/SEO';
 import { getAllPostsData } from '../data/postData';
 import generateRSS from '../data/rss';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <main>
+      <SEO ogUrl={`https://c.mmusielik.xyz/`} />
       Hello, World!
-    </Layout>
+    </main>
   )
 }
 
