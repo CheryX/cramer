@@ -4,16 +4,16 @@
         <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
         <link>https://c.mmusielik.xyz/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 21 Aug 2022 11:20:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Aug 2022 20:45:57 GMT</lastBuildDate>
         <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 21 Aug 2022 11:20:23 GMT</pubDate>
+        <pubDate>Mon, 22 Aug 2022 20:45:57 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
         <language><![CDATA[pl]]></language>
         <item>
             <title><![CDATA[Hello World!]]></title>
             <description><![CDATA[Heheheha]]></description>
-            <link>https://c.mmusielik.xyz/posts/hello</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/hello</guid>
+            <link>https://c.mmusielik.xyz/posts/example</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/example</guid>
             <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>

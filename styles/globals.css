@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    @apply flex px-10 border-b
+}
+
+.header > a {
+    @apply p-4
+}
+
+footer {
+    @apply flex px-14 py-4 border-t
+}
+
+main {
+    @apply p-14
+}
