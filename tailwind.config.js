@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'landing': "url(./static/school.jpg)",
+        'landing': "url(/static/school.jpg)",
       },
       colors: {
         primary: {
