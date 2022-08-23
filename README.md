@@ -44,6 +44,10 @@ A: Stwórz nowe pytanie na https://github.com/CheryX/cramer/discussions
 
 A: Stwórz nowy issue na https://github.com/CheryX/cramer/issues
 
+*Q: Czemu nasz wygląd zmienia się co 40 sekund?*
+
+A: [https://www.youtube.com/watch?v=SugMFf9uns8](https://www.youtube.com/watch?v=SugMFf9uns8)
+
 ## Przydatne linki:
 * [Serwer discord](https://discord.gg/gHBzHTr6JD)
 * Dokumentacja (Wkrótce)

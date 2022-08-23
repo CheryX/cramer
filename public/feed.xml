@@ -4,16 +4,44 @@
         <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
         <link>https://c.mmusielik.xyz/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 23 Aug 2022 00:04:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Aug 2022 11:50:12 GMT</lastBuildDate>
         <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 23 Aug 2022 00:04:56 GMT</pubDate>
+        <pubDate>Tue, 23 Aug 2022 11:50:12 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
         <language><![CDATA[pl]]></language>
         <item>
             <title><![CDATA[Hello World!]]></title>
             <description><![CDATA[Heheheha]]></description>
+            <link>https://c.mmusielik.xyz/posts/WHY</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/WHY</guid>
+            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello World!]]></title>
+            <description><![CDATA[Heheheha]]></description>
             <link>https://c.mmusielik.xyz/posts/example</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/example</guid>
+            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Wstęp do C++]]></title>
+            <description><![CDATA[Podstawowe informacje o C++]]></description>
+            <link>https://c.mmusielik.xyz/posts/me</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/me</guid>
+            <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello World!]]></title>
+            <description><![CDATA[Heheheha]]></description>
+            <link>https://c.mmusielik.xyz/posts/really</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/really</guid>
+            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello World!]]></title>
+            <description><![CDATA[Heheheha]]></description>
+            <link>https://c.mmusielik.xyz/posts/why</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/why</guid>
             <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>

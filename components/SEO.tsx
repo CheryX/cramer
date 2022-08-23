@@ -10,7 +10,7 @@ export default function SEO({title, description, ogUrl}: Props) {
 	return ( 
 		<Head>
 			<meta name="googlebot" content="notranslate" />
-			<meta name="color-scheme" content="dark" />
+			{/* <meta name="color-scheme" content="dark" /> */}
 			<meta name="theme-color" content="#3F80FF" />
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
@@ -21,6 +21,7 @@ export default function SEO({title, description, ogUrl}: Props) {
 			<meta property="og:type" content="website" />
 			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
+			<meta property="og:site_name" content="Projekt Cramer" />
 
 			<meta property="og:image" itemProp="image" content="/cramer/favicon.png" />
 			{/* <meta property="og:image" itemProp="image" content="/favicon.png" /> */}
@@ -28,7 +29,7 @@ export default function SEO({title, description, ogUrl}: Props) {
 			<meta property="og:image:height" content="250" />
 
 			<meta charSet="utf-8"></meta>
-			<link rel="icon" href="./favicon.ico"></link>
+			<link rel="icon" href="./favicon.png"></link>
 			<title>{title}</title>
 		</Head>
 	);
@@ -36,5 +37,5 @@ export default function SEO({title, description, ogUrl}: Props) {
 
 SEO.defaultProps = {
 	title: "Projekt Cramer",
-	description: "Projekt Cramer to miejsce z darmowymi notatkami które możesz wykorzystać do nauki np. przed sprawdzianem",
+	description: "Projekt Cramer to miejsce z darmowymi notatkami które możesz wykorzystać do nauki np. przed sprawdzianem.",
 }

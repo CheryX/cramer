@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
-    @apply flex px-10 border-b
+.landing-bg { @apply bg-landing bg-cover bg-center bg-fixed }
+.landing-height { @apply min-h-fit lg:min-h-[90vh] }
+
+#landing {
+    @apply landing-height flex items-center justify-center landing-bg
 }
 
-.header > a {
-    @apply p-4
+.layer-blur {
+    @apply landing-height flex items-center justify-evenly w-full
+
+    py-10 px-5 md:px-10
+    
+    bg-gradient-to-r from-primary-700/70 to-blue-500/70
+    backdrop-blur-[0.5rem]
+
 }
 
-footer {
-    @apply flex px-14 py-4 border-t
+.brand-logo {
+    @apply w-16 md:w-24 shadow-sm
 }
 
-main {
-    @apply p-14
+.title {
+    @apply text-white text-5xl md:text-6xl font-black ml-2 lg:ml-4
+}
+
+#top-posts > h1 {
+    @apply text-center font-extrabold my-16 text-5xl
 }

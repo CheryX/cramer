@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'landing': "url(/static/school.jpg)",
+      },
       colors: {
         primary: {
           950: "#052C33",
@@ -52,5 +55,4 @@ module.exports = {
       }
     },
   },
-  plugins: [],
 }
