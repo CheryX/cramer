@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'landing': "url(/static/school.jpg)",
+        'landing': "url(https://cheryx.github.io/cramer/static/school.jpg)",
       },
       colors: {
         primary: {
