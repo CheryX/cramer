@@ -22,7 +22,8 @@ export default function SEO({title, description, ogUrl}: Props) {
 			<meta property="og:description" content={description} />
 			<meta property="og:url" content={ogUrl} />
 
-			<meta property="og:image" itemProp="image" content="./favicon.png" />
+			<meta property="og:image" itemProp="image" content="/cramer/favicon.png" />
+			{/* <meta property="og:image" itemProp="image" content="/favicon.png" /> */}
 			<meta property="og:image:width" content="250" />
 			<meta property="og:image:height" content="250" />
 
