@@ -18,7 +18,7 @@ const Home: NextPage = () => {
             <div>
 
               <div className="flex items-center">
-                <img src='/favicon.png' alt='Logo' className='brand-logo'/>
+                <img src='./favicon.png' alt='Logo' className='brand-logo'/>
                 <span className='title'>CRAMER</span>
               </div>
 
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             </div>
 
             <div className='hidden lg:block'>
-              <img src='/static/person.svg' alt='A person studying' className='w-[25rem]' />
+              <img src='./static/person.svg' alt='A person studying' className='w-[25rem]' />
             </div>
 
         </div>
