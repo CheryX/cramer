@@ -22,9 +22,7 @@ const Home: NextPage = () => {
                 <span className='title'>CRAMER</span>
               </div>
 
-              <p className='text-white text-2xl italic'>Czyli jak przeżyć w szkole.*</p>
-              <small className='text-sm text-gray-300'>* - Nie gwarantujemy że zdasz</small>
-
+              <p className='text-white text-2xl italic mt-4'>Czyli jak przeżyć w szkole.</p>
             </div>
 
             <div className='hidden lg:block'>
