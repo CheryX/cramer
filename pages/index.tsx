@@ -18,7 +18,7 @@ const Home: NextPage = () => {
             <div>
 
               <div className="flex items-center">
-                <img src='./favicon.png' alt='Logo' className='brand-logo'/>
+                <Image src={'./favicon.png'} alt='Logo' className='brand-logo' width={100} height={100}/>
                 <span className='title'>CRAMER</span>
               </div>
 
