@@ -4,9 +4,9 @@
         <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
         <link>https://c.mmusielik.xyz/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 24 Aug 2022 12:15:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Aug 2022 13:03:49 GMT</lastBuildDate>
         <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 24 Aug 2022 12:15:09 GMT</pubDate>
+        <pubDate>Wed, 24 Aug 2022 13:03:49 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
         <language><![CDATA[pl]]></language>
         <item>
@@ -14,6 +14,13 @@
             <description><![CDATA[Heheheha]]></description>
             <link>https://c.mmusielik.xyz/posts/WHY</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/WHY</guid>
+            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello World!]]></title>
+            <description><![CDATA[Heheheha]]></description>
+            <link>https://c.mmusielik.xyz/posts/eqqre</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/eqqre</guid>
             <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>

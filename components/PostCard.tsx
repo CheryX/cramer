@@ -6,14 +6,19 @@ import Header from './Header'
 type Props = {
     title: string,
     excerpt: string,
-    tags?: string[]
+    tags?: string[],
+    slug: string
 }
 
-export default function PostCard(frontMatter: Props) {
+export default function PostCard({title, excerpt, tags, slug}: Props) {
 	return (
-		<div className='p-5 w-70 outline h-60 mx-5'>
-			<h1 className='font-bold text-xl'>{frontMatter.title}</h1>
-			<p>{frontMatter.excerpt}</p>
-		</div>	
+		<Link href={`/posts/${slug}`}>
+            <a>
+                <div className='p-5 w-80 outline h-32 lg:h-40 mx-5'>
+                    <h1 className='font-bold text-xl'>{title}</h1>
+                    <p>{excerpt}</p>
+                </div>	
+            </a>
+        </Link>
 	)
 }
