@@ -10,13 +10,22 @@ type Props = {
     slug: string
 }
 
+function parseLongText(str: string): string {
+    
+    let newStr = str.slice(0,100);
+    if (str.length > 100) newStr += "...";
+
+    return newStr
+    
+}
+
 export default function PostCard({title, excerpt, tags, slug}: Props) {
 	return (
 		<Link href={`/posts/${slug}`}>
             <a>
                 <div className='p-5 w-80 outline h-32 lg:h-40 mx-5'>
                     <h1 className='font-bold text-xl'>{title}</h1>
-                    <p>{excerpt}</p>
+                    <p>{parseLongText(excerpt)}</p>
                 </div>	
             </a>
         </Link>

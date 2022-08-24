@@ -10,7 +10,7 @@
 }
 
 .nav-item {
-    @apply flex items-center justify-center p-5 lg:mx-5
+    @apply flex items-center justify-center p-5 lg:p-4 lg:mx-5
 }
 
 .landing-page > nav > ul {

@@ -4,31 +4,31 @@
         <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
         <link>https://c.mmusielik.xyz/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 24 Aug 2022 13:03:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Aug 2022 13:11:14 GMT</lastBuildDate>
         <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 24 Aug 2022 13:03:49 GMT</pubDate>
+        <pubDate>Wed, 24 Aug 2022 13:11:14 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
         <language><![CDATA[pl]]></language>
         <item>
-            <title><![CDATA[Hello World!]]></title>
-            <description><![CDATA[Heheheha]]></description>
+            <title><![CDATA[Stars soon^tm?]]></title>
+            <description><![CDATA[Nunc accumsan ante nibh, sit amet facilisis est iaculis in. Ut commodo rhoncus blandit. In enim mauris, blandit sit amet consequat in, gravida vitae felis. Nullam vehicula erat a turpis mattis, in lobortis augue tempor. Cras blandit, diam vel viverra porttitor, mauris urna vehicula neque, vel posuere ex est ac elit. Integer ornare, velit non eleifend porta, felis leo fringilla lacus, sed vehicula nulla leo quis erat. Curabitur ut est ante. Donec commodo at ligula malesuada congue. Pellentesque dictum magna et commodo malesuada. Vivamus placerat nulla a metus semper, id pulvinar nulla tristique. Proin iaculis metus sit amet nisi dignissim ultricies. Aenean sed porta urna. Nullam sagittis odio lorem, vel semper ipsum semper non. Nulla eget varius eros, eget congue orci. ]]></description>
             <link>https://c.mmusielik.xyz/posts/WHY</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/WHY</guid>
-            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Hello World!]]></title>
-            <description><![CDATA[Heheheha]]></description>
+            <title><![CDATA[Pierwszy post]]></title>
+            <description><![CDATA[Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum beatae nobis maiores accusantium? Atque laboriosam ullam laborum. Officiis magni nostrum beatae, voluptatum optio dolor voluptatem illo maiores, suscipit est numquam?]]></description>
             <link>https://c.mmusielik.xyz/posts/eqqre</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/eqqre</guid>
-            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Hello World!]]></title>
-            <description><![CDATA[Heheheha]]></description>
+            <description><![CDATA[Pellentesque ut libero vel nisi dapibus convallis sit amet ac velit. Phasellus volutpat venenatis congue. Nunc lacus quam, vehicula eu iaculis tincidunt, mollis quis quam. Proin euismod sagittis dapibus. Praesent in arcu vulputate, lobortis nulla at, lobortis magna. Integer vel leo at urna pharetra suscipit aliquet tincidunt enim. Phasellus laoreet erat ac molestie sagittis. Curabitur eu velit nunc. Aliquam tempor posuere quam eu aliquam. Aliquam tristique gravida massa, a fermentum purus molestie blandit. ]]></description>
             <link>https://c.mmusielik.xyz/posts/example</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/example</guid>
-            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 23 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Wstęp do C++]]></title>
@@ -38,15 +38,16 @@
             <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Hello World!]]></title>
-            <description><![CDATA[Heheheha]]></description>
+            <title><![CDATA[Why is Next.js so hard]]></title>
+            <description><![CDATA[ Proin non magna fermentum, viverra tortor sed, bibendum nunc. Sed ac ante et arcu porttitor luctus facilisis at nibh. Duis tempor ultricies neque et vestibulum. Donec feugiat ex quis elit lacinia semper. Praesent malesuada bibendum risus, id aliquam sem tincidunt ac. Pellentesque nec iaculis risus. Maecenas volutpat risus a velit tincidunt, id mollis libero ultricies. Duis in odio tristique mi blandit rhoncus eu id nisi. Suspendisse feugiat eu enim blandit venenatis. Maecenas et ultricies enim, non mattis turpis. Donec condimentum quam sit amet magna pellentesque, eget rutrum risus auctor. Maecenas euismod nec dolor non egestas. Nunc quis consequat augue. Vivamus purus eros, eleifend sit amet sapien non, porttitor accumsan tortor.
+]]></description>
             <link>https://c.mmusielik.xyz/posts/really</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/really</guid>
-            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Hello World!]]></title>
-            <description><![CDATA[Heheheha]]></description>
+            <title><![CDATA[Testing RSS is fun! (not)]]></title>
+            <description><![CDATA[Vivamus dapibus scelerisque nisi, vitae posuere erat iaculis sed. Nulla eget odio eu metus accumsan malesuada. Phasellus ac cursus purus. Fusce volutpat arcu ac mauris viverra maximus. Sed in tempus odio, gravida dapibus odio. Fusce sit amet fringilla urna. Donec maximus vehicula ligula, a placerat tellus maximus volutpat. Proin sollicitudin libero eget rhoncus vehicula. In turpis elit, sodales id commodo sit amet, rutrum ut leo. In vulputate venenatis velit eget ullamcorper. Nulla vel bibendum nisl. Pellentesque congue ornare porttitor. Vestibulum commodo mi malesuada sapien molestie, eu dignissim felis maximus. Integer vel venenatis est, ut imperdiet mi. Sed accumsan ac quam eu blandit. Aliquam quis fermentum nulla. ]]></description>
             <link>https://c.mmusielik.xyz/posts/why</link>
             <guid isPermaLink="true">https://c.mmusielik.xyz/posts/why</guid>
             <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>

@@ -6,7 +6,7 @@ import {useTheme} from 'next-themes'
 export default function Header() {
 	const {theme, setTheme} = useTheme()
 	return ( 
-		<nav className='w-full fixed bottom-0 lg:top-0 h-16 z-20 '>
+		<nav className='w-full fixed bottom-0 lg:top-0 h-16 lg:h-14 z-20 '>
 			<ul id="nav" className='flex row justify-around lg:justify-center bg-black text-white px-6'>
 
 				<li>
