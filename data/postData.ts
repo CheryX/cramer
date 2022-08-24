@@ -29,14 +29,19 @@ export function getAllPostsData() {
 	let posts: Post[] = [];
 
 	for (let i in postFilePaths) {
-		const source = fs.readFileSync(path.join(POSTS_PATH, postFilePaths[i]));
-		const { content, data } = matter(source);
 
+		const postPath = path.join(POSTS_PATH, postFilePaths[i]);
+		
+		
+		const source = fs.readFileSync(postPath);
+		const { content, data } = matter(source);
+		
 		posts[i] = {
 			content,
 			data,
 			filePath: postFilePaths[i],
 		}
+		
 	}
 
 	return posts;

@@ -3,6 +3,7 @@ import RSS from "rss";
 
 import { getAllPostsData } from "./postData";
 import siteData from "./data"
+import data from "./data";
 
 export default async function generateRSS() {
     const allBlogs = getAllPostsData();
@@ -23,6 +24,8 @@ export default async function generateRSS() {
             url: `${siteData.siteUrl}posts/${post.filePath.replace('.mdx', '')}`,
             date: post.data.date,
             description: post.data.excerpt,
+            categories: post.data.tags,
+            author: data.authors[post.data.authors[0]].name
         });
     });
 
