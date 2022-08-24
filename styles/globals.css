@@ -3,30 +3,16 @@
 @tailwind utilities;
 
 .landing-bg { @apply bg-landing bg-cover bg-center bg-fixed }
-.landing-height { @apply min-h-fit lg:min-h-[90vh] }
+#landing > div { @apply bg-teal-500/40 backdrop-blur-sm }
 
-#landing {
-    @apply landing-height flex items-center justify-center landing-bg
+.nav-tooltip {
+    @apply ease-linear hidden lg:block ml-2 text-lg
 }
 
-.layer-blur {
-    @apply landing-height flex items-center justify-evenly w-full
-
-    py-10 px-5 md:px-10
-    
-    bg-gradient-to-r from-primary-700/70 to-blue-500/70
-    backdrop-blur-[0.5rem]
-
+.nav-item {
+    @apply flex items-center justify-center p-5 lg:mx-5
 }
 
-.brand-logo {
-    @apply w-16 md:w-24 shadow-sm
-}
-
-.title {
-    @apply text-white text-5xl md:text-6xl font-black ml-2 lg:ml-4
-}
-
-#top-posts > h1 {
-    @apply text-center font-extrabold my-16 text-5xl
+.landing-page > nav > ul {
+    @apply lg:bg-slate-800/50
 }

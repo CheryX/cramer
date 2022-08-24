@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
   theme: {
     extend: {
       backgroundImage: {
-        'landing': "url(https://cheryx.github.io/cramer/static/school.jpg)",
+        'landing': "url(/static/school.jpg)",
       },
       colors: {
         primary: {

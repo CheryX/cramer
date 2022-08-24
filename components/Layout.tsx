@@ -1,21 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
+import Header from './Header'
 
 type Props = { children: React.ReactNode }
 
 export default function Layout({ children }: Props) {
 	return (
 		<>
-			<nav className='header'>
+			<Header />
 
-				<Link href={'/'}><a>Home</a></Link>
-				<Link href={'/about'}><a>About</a></Link>
-				<Link href={'/posts'}><a>Search Posts</a></Link>
-				<Link href={'/posts/example'}><a>Example Post</a></Link>
-
-			</nav>
-
-			<main>
+			<main className='pb-16 lg:pt-16'>
 				{children}
 			</main>
 

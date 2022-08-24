@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Header from '../components/Header';
 import Layout from '../components/Layout'
 import SEO from '../components/SEO';
 import { getAllPostsData, Post } from '../data/postData';
