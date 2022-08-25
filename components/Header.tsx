@@ -10,7 +10,7 @@ export default function Header() {
 
 			<div className="hidden lg:flex items-center justify-center text-white">
 
-				<img src="favicon.png" alt="Cramer Logo" width={80} />
+				<img src="/favicon.png" alt="Cramer Logo" width={80} />
 				<span className="text-5xl font-black ml-2">CRAMER</span>
 
 			</div>

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Header from '../components/Header';
 import Layout from '../components/Layout'
+import PostCard from '../components/PostCard';
 import SEO from '../components/SEO';
 import { getAllPostsData, Post } from '../data/postData';
 import generateRSS from '../data/rss';
@@ -18,10 +19,9 @@ const Home = ({ posts }: Props) => {
 
       {posts.map((p, index) => {
         return (
-          <div key={index} className="my-5 px-5 border-l bg-pri">
-            <h3 className='text-2xl'>{p.data.title}</h3>
-            <p>{p.data.excerpt}</p>
-          </div>
+          <span key={index}>
+            <PostCard slug={p.filePath.replace('.mdx', '')} title={p.data.title} excerpt={p.data.excerpt} />
+          </span>
         )
       })}
 
