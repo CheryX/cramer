@@ -15,11 +15,11 @@ const Home = ({ posts }: Props) => {
 
 			<Header />
 
-			<main className='pb-16'>
+			<main className='pb-16 lg:pl-96'>
 				
 				<section id="landing" className='min-h-fit lg:text-center landing-bg text-white'>
 					
-					<div className='px-5 py-10 lg:pb-28 lg:pt-40'>
+					<div className='px-5 py-10 lg:py-28'>
 
 						<h1 className='text-2xl font-black lg:text-5xl'>Tworzymy notatki których i tak nikt nie używa</h1>
 						<p className='lg:text-2xl lg:mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, soluta unde! Doloremque sit rem.</p>

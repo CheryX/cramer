@@ -9,7 +9,7 @@ export default function Layout({ children }: Props) {
 		<>
 			<Header />
 
-			<main className='pb-16 lg:pt-16'>
+			<main className='pb-16 lg:pl-96'>
 				{children}
 			</main>
 

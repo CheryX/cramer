@@ -2,9 +2,12 @@
     <img src="https://user-images.githubusercontent.com/58445363/176503322-79130a6e-d093-44c3-9f3c-6129c833b69e.png" height="80" />
 </div>
 
---- 
-
 Projekt Cramer to jest projekt który ma na celu pomóc uczniom szkół w Polsce w zrozumieniu materiału, poprzez materiały pisane m.in. przez innych uczniów oraz rozwiązywanie zadań. Czyli jak przeżyć w szkole.
+
+- [Contributing](#contributing)
+- [Własne Componenty do postów](#własne-componenty-do-postów)
+- [FAQ](#faq)
+- [Przydatne linki:](#przydatne-linki)
 
 ## Contributing
 
@@ -28,12 +31,12 @@ Wymagania do tworzenia kodu:
 
 Posty mogą mieć własne componenty aby uprzyjemnić czas czytania postu np. przez zadania zamknięte, otwarte, interaktywne grafy i wiele więcej.
 
-Nazwa | Zapis | Opis
--|-|-
-Pytanie ABCD... | `<Question>` | Pytanie z wieloma odpowiedzami
-Accordion | `<Accordion>` | Ukryte pole tekstowe
-Graph | `<Graph>` | Graf pokazujący funkcje oraz punkty
-Zdjęcie na oba motywy | `<BBI>` | Automatyczne dodanie zdjęciu czarnego tła
+| Nazwa                 | Zapis         | Opis                                      |
+| --------------------- | ------------- | ----------------------------------------- |
+| Pytanie ABCD...       | `<Question>`  | Pytanie z wieloma odpowiedzami            |
+| Accordion             | `<Accordion>` | Ukryte pole tekstowe                      |
+| Graph                 | `<Graph>`     | Graf pokazujący funkcje oraz punkty       |
+| Zdjęcie na oba motywy | `<BBI>`       | Automatyczne dodanie zdjęciu czarnego tła |
 
 ## FAQ
 

@@ -5,14 +5,15 @@
 .landing-bg { @apply bg-landing bg-cover bg-center bg-fixed }
 #landing > div { @apply bg-teal-500/40 backdrop-blur-sm }
 
+.nav-bg {
+    background: rgb(0,42,61);
+    background: radial-gradient(circle, rgba(0,42,61,1) 0%, rgba(0,24,34,1) 49%);
+}
+
 .nav-tooltip {
     @apply ease-linear hidden lg:block ml-2 text-lg
 }
 
 .nav-item {
     @apply flex items-center justify-center p-5 lg:p-4 lg:mx-5
-}
-
-.landing-page > nav > ul {
-    @apply lg:bg-slate-800/50
 }
