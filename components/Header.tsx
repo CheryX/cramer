@@ -10,7 +10,7 @@ export default function Header() {
 
 			<Link href={'/'}>
 				<a>
-					<div className="hidden lg:flex items-center justify-center text-white">
+					<div className="hidden lg:flex items-center justify-center py-5 text-white">
 
 						<img src="/favicon.png" alt="Cramer Logo" width={70} />
 						<span className="text-5xl font-black ml-2">CRAMER</span>
@@ -19,7 +19,7 @@ export default function Header() {
 				</a>
 			</Link>
 
-			<ul id="nav" className='flex lg:flex-col justify-around items-start lg:justify-center text-white px-8 lg:w-full'>
+			<ul id="nav" className='flex lg:flex-col justify-around items-center lg:justify-center text-white px-8 lg:w-full'>
 
 				<li>
 					<Link href="/"><a className="nav-item">
