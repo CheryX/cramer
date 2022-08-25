@@ -11,9 +11,34 @@
 }
 
 .nav-tooltip {
-    @apply ease-linear hidden lg:block ml-2 text-lg
+    @apply ease-linear hidden lg:block ml-3
 }
 
 .nav-item {
-    @apply flex items-center justify-center p-5 lg:p-4 lg:mx-5
+    @apply flex items-center justify-start p-5 lg:p-4 lg:mx-5
+}
+
+
+#nav_socials > li > a {
+    @apply p-5 block
+}
+
+#nav_socials > li > a > span {
+    @apply text-3xl
+}
+
+#nav_socials > li > a > span:hover {
+    @apply text-slate-200
+}
+
+.nav-item > span {
+    @apply text-2xl
+}
+
+#nav > li {
+    @apply w-full border-r-white
+}
+
+#nav > li:hover {
+    @apply border-r-4 text-slate-200
 }
