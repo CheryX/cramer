@@ -11,16 +11,18 @@ Projekt Cramer to jest projekt który ma na celu pomóc uczniom szkół w Polsce
 Wymagania do dodania postu:
 - Znajomość Githuba
 - Markdown
-- Umiejętność tworzenia kodu bazując na szablonie
 
-Wymagania do kodu:
-- Node.js (Typescript SOON™)
+Wymagania do tworzenia kodu:
+- Node.js 
+- TypesSript
+- HTML
 - TailwindCSS
 - Next.js
 
-1. Dodaj siebie oraz informacje o poscie w pliku `/posts/data.js`
-2. Dodaj nowy plik w folderze `/posts` o formacie `.mdx`
-3. Stwórz nowego pull requesta
+1. Na podstawie pliku `/posts/example.mdx` stwórz nowy plik `.mdx` w folderze `/posts`.
+2. Stwórz nowego pull requesta
+
+> Jeśli nie zmieniasz postów, nie musisz commitować RSS aka. `feed.xml`.
 
 ## Własne Componenty do postów
 
