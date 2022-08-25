@@ -2,29 +2,40 @@
 import Image from "next/image";
 import Link from "next/link";
 import {useTheme} from 'next-themes'
-
 export default function Header() {
 	const {theme, setTheme} = useTheme()
+
 	return ( 
-		<nav className='w-full fixed bottom-0 lg:top-0 h-16 lg:min-h-screen lg:w-96 lg:py-10 z-20 nav-bg flex flex-col justify-between'>
+		<nav className='w-full fixed bottom-0 lg:top-0 h-16 lg:min-h-screen lg:w-80 lg:py-10 z-20 bg-slate-800 flex flex-col justify-between'>
 
-			<Link href={'/'}>
-				<a>
-					<div className="hidden lg:flex items-center justify-center py-5 text-white">
 
-						<img src="/favicon.png" alt="Cramer Logo" width={70} />
-						<span className="text-5xl font-black ml-2">CRAMER</span>
+			<div className="hidden lg:flex justify-center items-center">
+				<Link href={'/'}>
+					<a className="flex">
+						<div className="flex items-center justify-center py-5 text-white">
 
-					</div>
-				</a>
-			</Link>
+							<img src="/logo_white.png" alt="Cramer Logo" width={60} />
+							<span className="text-4xl font-black ml-2">CRAMER</span>
 
-			<ul id="nav" className='flex lg:flex-col justify-around items-center lg:justify-center text-white px-8 lg:w-full'>
+						</div>
+					</a>
+				</Link>
+			</div>
+
+			<ul id="nav" className='flex lg:flex-col justify-around items-center lg:justify-center text-white lg:w-full'>
+
 
 				<li>
 					<Link href="/"><a className="nav-item">
 						<span className="material-symbols-rounded">home</span>
 						<span className="nav-tooltip">Home</span>
+					</a></Link>
+				</li>
+
+				<li>
+					<Link href="/about"><a className="nav-item">
+						<span className="material-symbols-rounded">info</span>
+						<span className="nav-tooltip">O nas</span>
 					</a></Link>
 				</li>
 
@@ -42,35 +53,26 @@ export default function Header() {
 					</a></Link>
 				</li>
 
-				<li>
-					<button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="nav-item">
-						<span className="material-symbols-rounded">person</span>
-						<span className="nav-tooltip">Profil</span>
-					</button>
-				</li>
-
 			</ul>
 
 			<ul className="hidden lg:flex row items-center justify-center text-white" id="nav_socials">
 
 				<li>
-					<Link href="">
-						<a>
-							<span className="material-symbols-rounded">logo_dev</span>
-						</a>
-					</Link>
+					<button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+						<span className="material-symbols-rounded">dark_mode</span>
+					</button>
 				</li>
 				<li>
 					<Link href="">
 						<a target={"_blank"}>
-							<span className="material-symbols-rounded">logo_dev</span>
+							<span className="material-symbols-rounded">info</span>
 						</a>
 					</Link>
-				</li>
+				</li> 
 				<li>
-					<Link href="">
+					<Link href="https://github.com/CheryX/cramer">
 						<a target={"_blank"}>
-							<span className="material-symbols-rounded">logo_dev</span>
+							<span className="material-symbols-rounded">code</span>
 						</a>
 					</Link>
 				</li>

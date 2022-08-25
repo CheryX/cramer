@@ -4,18 +4,19 @@
         <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
         <link>https://c.mmusielik.xyz/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 24 Aug 2022 13:30:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Aug 2022 17:42:04 GMT</lastBuildDate>
         <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 24 Aug 2022 13:30:32 GMT</pubDate>
+        <pubDate>Thu, 25 Aug 2022 17:42:04 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
         <language><![CDATA[pl]]></language>
         <item>
-            <title><![CDATA[Stars soon^tm?]]></title>
-            <description><![CDATA[Nunc accumsan ante nibh, sit amet facilisis est iaculis in. Ut commodo rhoncus blandit. In enim mauris, blandit sit amet consequat in, gravida vitae felis. Nullam vehicula erat a turpis mattis, in lobortis augue tempor. Cras blandit, diam vel viverra porttitor, mauris urna vehicula neque, vel posuere ex est ac elit. Integer ornare, velit non eleifend porta, felis leo fringilla lacus, sed vehicula nulla leo quis erat. Curabitur ut est ante. Donec commodo at ligula malesuada congue. Pellentesque dictum magna et commodo malesuada. Vivamus placerat nulla a metus semper, id pulvinar nulla tristique. Proin iaculis metus sit amet nisi dignissim ultricies. Aenean sed porta urna. Nullam sagittis odio lorem, vel semper ipsum semper non. Nulla eget varius eros, eget congue orci. ]]></description>
-            <link>https://c.mmusielik.xyz/posts/WHY</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/WHY</guid>
-            <category><![CDATA[hello]]></category>
-            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <title><![CDATA[Programownie w HTML]]></title>
+            <description><![CDATA[Naucz się programowania w HTML]]></description>
+            <link>https://c.mmusielik.xyz/posts/artykul_html</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/artykul_html</guid>
+            <category><![CDATA[programowanie]]></category>
+            <category><![CDATA[html]]></category>
+            <dc:creator><![CDATA[Electruuu]]></dc:creator>
             <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
@@ -58,13 +59,13 @@
             <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Testing RSS is fun! (not)]]></title>
-            <description><![CDATA[Vivamus dapibus scelerisque nisi, vitae posuere erat iaculis sed. Nulla eget odio eu metus accumsan malesuada. Phasellus ac cursus purus. Fusce volutpat arcu ac mauris viverra maximus. Sed in tempus odio, gravida dapibus odio. Fusce sit amet fringilla urna. Donec maximus vehicula ligula, a placerat tellus maximus volutpat. Proin sollicitudin libero eget rhoncus vehicula. In turpis elit, sodales id commodo sit amet, rutrum ut leo. In vulputate venenatis velit eget ullamcorper. Nulla vel bibendum nisl. Pellentesque congue ornare porttitor. Vestibulum commodo mi malesuada sapien molestie, eu dignissim felis maximus. Integer vel venenatis est, ut imperdiet mi. Sed accumsan ac quam eu blandit. Aliquam quis fermentum nulla. ]]></description>
-            <link>https://c.mmusielik.xyz/posts/why</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/why</guid>
+            <title><![CDATA[Stars soon^tm?]]></title>
+            <description><![CDATA[Nunc accumsan ante nibh, sit amet facilisis est iaculis in. Ut commodo rhoncus blandit. In enim mauris, blandit sit amet consequat in, gravida vitae felis. Nullam vehicula erat a turpis mattis, in lobortis augue tempor. Cras blandit, diam vel viverra porttitor, mauris urna vehicula neque, vel posuere ex est ac elit. Integer ornare, velit non eleifend porta, felis leo fringilla lacus, sed vehicula nulla leo quis erat. Curabitur ut est ante. Donec commodo at ligula malesuada congue. Pellentesque dictum magna et commodo malesuada. Vivamus placerat nulla a metus semper, id pulvinar nulla tristique. Proin iaculis metus sit amet nisi dignissim ultricies. Aenean sed porta urna. Nullam sagittis odio lorem, vel semper ipsum semper non. Nulla eget varius eros, eget congue orci. ]]></description>
+            <link>https://c.mmusielik.xyz/posts/WHY</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/WHY</guid>
             <category><![CDATA[hello]]></category>
             <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
-            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

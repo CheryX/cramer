@@ -15,15 +15,16 @@ const Home = ({ posts }: Props) => {
     <Layout>
       <SEO ogUrl={`https://c.mmusielik.xyz/posts`} />
 
-      <h1 className='text-3xl'>Post List</h1>
+			<section id="posts" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mx-auto'>
 
-      {posts.map((p, index) => {
-        return (
-          <span key={index}>
-            <PostCard slug={p.filePath.replace('.mdx', '')} title={p.data.title} excerpt={p.data.excerpt} />
-          </span>
-        )
-      })}
+				{posts.slice(0, 6).map((p, index) => (
+						<span key={index}>
+							<PostCard slug={p.filePath.replace('.mdx', '')} title={p.data.title} excerpt={p.data.excerpt} thumbnail={p.data.thumbnail} date={p.data.date} />
+						</span>
+					))
+				}
+
+			</section>
 
     </Layout>
   )

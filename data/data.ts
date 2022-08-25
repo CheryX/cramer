@@ -29,4 +29,10 @@ const data = {
     }
 }
 
+const splashes = [
+    "Utworzymy folder /data, który już istnieje",
+    "Błagam nie patrz na kod",
+]
+
+export { splashes };
 export default data;

@@ -16,9 +16,7 @@ module.exports = {
         'landing': "url(/static/school.jpg)",
       },
       colors: {
-        primary: {
-          teal: colors.teal
-        }
+        primary: colors.teal
       }
     },
   },

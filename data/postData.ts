@@ -20,6 +20,7 @@ export interface Post {
 export interface PostData {
 	title: string,
 	excerpt: string,
+	thumbnail: string,
 	tags: string[],
 	authors: string[]
 }

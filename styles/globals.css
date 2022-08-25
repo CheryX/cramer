@@ -15,20 +15,19 @@
 }
 
 .nav-item {
-    @apply flex items-center justify-start p-5 lg:p-4 lg:mx-5 w-full
+    @apply flex items-center justify-start p-5 lg:p-4 lg:px-9
 }
 
 
-#nav_socials > li > a {
+#nav_socials > li > a,
+#nav_socials > li > img,
+#nav_socials > li > button {
     @apply p-5 block
 }
 
-#nav_socials > li > a > span {
-    @apply text-3xl
-}
-
-#nav_socials > li > a > span:hover {
-    @apply text-slate-200
+#nav_socials > li > a > span,
+#nav_socials > li > button > span {
+    @apply text-3xl hover:text-teal-500 hover:fill-teal-500
 }
 
 .nav-item > span {
@@ -36,9 +35,14 @@
 }
 
 #nav > li {
-    @apply lg:w-full lg:border-r-white
+    @apply lg:w-full lg:border-r-teal-500
 }
 
 #nav > li:hover {
-    @apply lg:border-r-4 text-slate-200
+    @apply lg:border-r-4 text-teal-100
+}
+
+#id > div {
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
 }
