@@ -25,24 +25,32 @@
     @apply p-5 block
 }
 
-#nav_socials > li > a > span,
-#nav_socials > li > button > span {
-    @apply text-3xl hover:text-teal-500 hover:fill-teal-500
+#nav_socials > li > a > i,
+#nav_socials > li > button > i {
+    @apply text-2xl duration-200 hover:text-teal-500 hover:fill-teal-500
 }
 
-.nav-item > span {
+.nav-item > span, .nav-item > i {
     @apply text-2xl
 }
 
-#nav > li {
-    @apply lg:w-full lg:border-r-teal-500
+.nav-item > i {
+    @apply w-7
 }
 
-#nav > li:hover {
-    @apply lg:border-r-4 text-teal-100
+#nav > li {
+    @apply lg:w-full duration-200 lg:border-r-teal-500 hover:lg:border-r-4 hover:text-teal-500
 }
 
 #id > div {
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
+}
+
+.bg-dark {
+    @apply bg-slate-900 bg-gradient-to-b from-slate-900 to-slate-800
+}  
+
+.bg-light {
+    @apply bg-teal-50 bg-gradient-to-b from-teal-50 to-[#e2fcf6]
 }

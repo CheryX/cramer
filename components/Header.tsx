@@ -6,7 +6,7 @@ export default function Header() {
 	const {theme, setTheme} = useTheme()
 
 	return ( 
-		<nav className='w-full fixed bottom-0 lg:top-0 h-16 lg:min-h-screen lg:w-80 lg:py-10 z-20 bg-slate-800 flex flex-col justify-between'>
+		<nav className='w-full fixed bottom-0 lg:top-0 h-16 lg:min-h-screen lg:w-80 lg:py-10 z-20 bg-dark flex flex-col justify-between'>
 
 
 			<div className="hidden lg:flex justify-center items-center">
@@ -14,7 +14,7 @@ export default function Header() {
 					<a className="flex">
 						<div className="flex items-center justify-center py-5 text-white">
 
-							<img src="/logo_white.png" alt="Cramer Logo" width={60} />
+							<img src="/logo_white.png" alt="Cramer Logo" width={60} className="" />
 							<span className="text-4xl font-black ml-2">CRAMER</span>
 
 						</div>
@@ -27,31 +27,35 @@ export default function Header() {
 
 				<li>
 					<Link href="/"><a className="nav-item">
-						<span className="material-symbols-rounded">home</span>
+						<i className="fa-solid fa-house"></i>
 						<span className="nav-tooltip">Home</span>
 					</a></Link>
 				</li>
 
-				<li>
+				<li className="hidden lg:block">
 					<Link href="/about"><a className="nav-item">
-						<span className="material-symbols-rounded">info</span>
+					<i className="fa-solid fa-user"></i>
 						<span className="nav-tooltip">O nas</span>
 					</a></Link>
 				</li>
 
 				<li>
 					<Link href="/posts/"><a className="nav-item">
-						<span className="material-symbols-rounded">search</span>
+						<i className="fa-solid fa-magnifying-glass"></i>
 						<span className="nav-tooltip">Szukaj</span>
 					</a></Link>
 				</li>
 
 				<li>
 					<Link href="/posts/example"><a className="nav-item">
-						<span className="material-symbols-rounded">star</span>
+						<i className="fa-solid fa-star"></i>
 						<span className="nav-tooltip">Ulubione</span>
 					</a></Link>
 				</li>
+
+				<button className="nav-item lg:hidden" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+						<i className="fa-solid fa-circle-half-stroke"></i>
+				</button>
 
 			</ul>
 
@@ -59,27 +63,27 @@ export default function Header() {
 
 				<li>
 					<button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-						<span className="material-symbols-rounded">dark_mode</span>
+						<i className="fa-solid fa-circle-half-stroke"></i>
 					</button>
 				</li>
 				<li>
 					<Link href="">
 						<a target={"_blank"}>
-							<span className="material-symbols-rounded">info</span>
+							<i className="fa-solid fa-circle-info"></i>
 						</a>
 					</Link>
 				</li> 
 				<li>
 					<Link href="https://github.com/CheryX/cramer">
 						<a target={"_blank"}>
-							<span className="material-symbols-rounded">code</span>
+							<i className="fa-brands fa-github"></i>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/feed.xml">
 						<a target={"_blank"}>
-							<span className="material-symbols-rounded">rss_feed</span>
+							<i className="fa-solid fa-rss"></i>
 						</a>
 					</Link>
 				</li>

@@ -30,7 +30,9 @@ export default function PostPage({ source, frontMatter, slug }: Props) {
 			
 			<SEO title={frontMatter.title} description={frontMatter.excerpt} ogUrl={`https://c.mmusielik.xyz/posts/${slug}`} />
 
-			<MDXRemote {...source} components={components} />
+			<div className="prose">
+				<MDXRemote {...source} components={components} />
+			</div>
 
 		</Layout>
 	)

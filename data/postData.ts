@@ -45,6 +45,8 @@ export function getAllPostsData() {
 		
 	}
 
+	posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime() )
+
 	return posts;
 
 }
