@@ -22,7 +22,8 @@ export interface PostData {
 	excerpt: string,
 	thumbnail: string,
 	tags: string[],
-	authors: string[]
+	authors: string[],
+	date: string
 }
 
 export function getAllPostsData() {

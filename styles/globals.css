@@ -54,3 +54,62 @@
 .bg-light {
     @apply bg-teal-50 bg-gradient-to-b from-teal-50 to-[#e2fcf6]
 }
+
+.prose p {
+    @apply py-1 my-1;
+}
+
+.prose h1 {
+    @apply font-bold text-3xl my-2;
+}
+
+.prose h2 {
+    @apply font-bold text-2xl my-2;
+}
+
+.prose h3 {
+    @apply font-bold text-xl my-2;
+}
+
+.prose h4 {
+    @apply font-bold text-lg my-2;
+}
+
+.prose hr {
+    @apply my-5 border-slate-500;
+}
+
+.prose :not(pre) > code {
+    @apply bg-slate-900 text-teal-500 py-1 px-2 rounded-lg mx-1
+}
+
+.prose blockquote {
+    @apply bg-black/20 px-5 py-1 border-l-4 border-l-teal-500 my-5 
+}
+
+.prose table {
+    @apply table-auto border-collapse w-full border border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-800 my-5
+
+}
+
+.prose thead {
+    @apply bg-slate-100 dark:bg-slate-900
+}
+
+.prose th {
+    @apply border border-slate-200 dark:border-slate-600 font-semibold p-3 text-slate-900 dark:text-slate-200 text-left
+}
+
+.prose td {
+    @apply border border-slate-200 dark:border-slate-600 p-3 text-slate-800 dark:text-slate-300
+}
+
+.prose a {
+    @apply text-teal-500 underline
+}
+
+.katex-html {
+    @apply hidden
+}
+
+

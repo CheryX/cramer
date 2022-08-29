@@ -4,58 +4,128 @@
         <description><![CDATA[Projekt Cramer, czyli jak przeżyć w szkole.]]></description>
         <link>https://c.mmusielik.xyz/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 29 Aug 2022 18:13:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Aug 2022 20:01:25 GMT</lastBuildDate>
         <atom:link href="https://c.mmusielik.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 29 Aug 2022 18:13:21 GMT</pubDate>
+        <pubDate>Mon, 29 Aug 2022 20:01:25 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Maciej Musielik]]></copyright>
         <language><![CDATA[pl]]></language>
         <item>
-            <title><![CDATA[Pierwszy post]]></title>
-            <description><![CDATA[Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum beatae nobis maiores accusantium? Atque laboriosam ullam laborum. Officiis magni nostrum beatae, voluptatum optio dolor voluptatem illo maiores, suscipit est numquam?]]></description>
-            <link>https://c.mmusielik.xyz/posts/eqqre</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/eqqre</guid>
-            <category><![CDATA[hello]]></category>
-            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <title><![CDATA[Programownie w HTML]]></title>
+            <description><![CDATA[Naucz się programowania w HTML]]></description>
+            <link>https://c.mmusielik.xyz/posts/artykul_html</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/artykul_html</guid>
+            <category><![CDATA[programowanie]]></category>
+            <category><![CDATA[html]]></category>
+            <dc:creator><![CDATA[Electruuu]]></dc:creator>
             <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Stars soon^tm?]]></title>
-            <description><![CDATA[Nunc accumsan ante nibh, sit amet facilisis est iaculis in. Ut commodo rhoncus blandit. In enim mauris, blandit sit amet consequat in, gravida vitae felis. Nullam vehicula erat a turpis mattis, in lobortis augue tempor. Cras blandit, diam vel viverra porttitor, mauris urna vehicula neque, vel posuere ex est ac elit. Integer ornare, velit non eleifend porta, felis leo fringilla lacus, sed vehicula nulla leo quis erat. Curabitur ut est ante. Donec commodo at ligula malesuada congue. Pellentesque dictum magna et commodo malesuada. Vivamus placerat nulla a metus semper, id pulvinar nulla tristique. Proin iaculis metus sit amet nisi dignissim ultricies. Aenean sed porta urna. Nullam sagittis odio lorem, vel semper ipsum semper non. Nulla eget varius eros, eget congue orci. ]]></description>
-            <link>https://c.mmusielik.xyz/posts/WHY</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/WHY</guid>
-            <category><![CDATA[hello]]></category>
+            <title><![CDATA[Trygonometria]]></title>
+            <description><![CDATA[Podstawowe informacje o funkcjach sin, cos oraz tg na przykładzie kąta ostrego. Twierdzenie sinusów oraz cosinusów (Twierdzenie pitagorasa+)]]></description>
+            <link>https://c.mmusielik.xyz/posts/trygonometria</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/trygonometria</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[fizyka]]></category>
+            <category><![CDATA[trygonometria]]></category>
             <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
-            <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Sat, 16 Jul 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Hello World!]]></title>
-            <description><![CDATA[Pellentesque ut libero vel nisi dapibus convallis sit amet ac velit. Phasellus volutpat venenatis congue. Nunc lacus quam, vehicula eu iaculis tincidunt, mollis quis quam. Proin euismod sagittis dapibus. Praesent in arcu vulputate, lobortis nulla at, lobortis magna. Integer vel leo at urna pharetra suscipit aliquet tincidunt enim. Phasellus laoreet erat ac molestie sagittis. Curabitur eu velit nunc. Aliquam tempor posuere quam eu aliquam. Aliquam tristique gravida massa, a fermentum purus molestie blandit. ]]></description>
-            <link>https://c.mmusielik.xyz/posts/example</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/example</guid>
-            <category><![CDATA[hello]]></category>
+            <title><![CDATA[Przekształcanie wzorów]]></title>
+            <description><![CDATA[Naucz się jak szybko przekształcać wzory, od wzoru na prędkość do wyprowadzania równania kwadratowego.]]></description>
+            <link>https://c.mmusielik.xyz/posts/wzory</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/wzory</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[fizyka]]></category>
+            <category><![CDATA[wzory]]></category>
+            <category><![CDATA[algebra]]></category>
             <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
-            <pubDate>Tue, 23 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Why is Next.js so hard]]></title>
-            <description><![CDATA[ Proin non magna fermentum, viverra tortor sed, bibendum nunc. Sed ac ante et arcu porttitor luctus facilisis at nibh. Duis tempor ultricies neque et vestibulum. Donec feugiat ex quis elit lacinia semper. Praesent malesuada bibendum risus, id aliquam sem tincidunt ac. Pellentesque nec iaculis risus. Maecenas volutpat risus a velit tincidunt, id mollis libero ultricies. Duis in odio tristique mi blandit rhoncus eu id nisi. Suspendisse feugiat eu enim blandit venenatis. Maecenas et ultricies enim, non mattis turpis. Donec condimentum quam sit amet magna pellentesque, eget rutrum risus auctor. Maecenas euismod nec dolor non egestas. Nunc quis consequat augue. Vivamus purus eros, eleifend sit amet sapien non, porttitor accumsan tortor.
-]]></description>
-            <link>https://c.mmusielik.xyz/posts/really</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/really</guid>
-            <category><![CDATA[hello]]></category>
+            <title><![CDATA[Geometria]]></title>
+            <description><![CDATA[Definicja prostej, półprostej, odcinka, punktu oraz kąta]]></description>
+            <link>https://c.mmusielik.xyz/posts/geometria-a</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/geometria-a</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[geometria]]></category>
             <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
-            <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
+            <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Wstęp do C++]]></title>
             <description><![CDATA[Podstawowe informacje o C++]]></description>
-            <link>https://c.mmusielik.xyz/posts/me</link>
-            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/me</guid>
+            <link>https://c.mmusielik.xyz/posts/cpp</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/cpp</guid>
             <category><![CDATA[informatyka]]></category>
             <category><![CDATA[c++]]></category>
             <category><![CDATA[cpp]]></category>
             <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
             <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Wyrażenia Algebraiczne]]></title>
+            <description><![CDATA[Potęgi, logarytmy oraz wzory skróconego mnożenia]]></description>
+            <link>https://c.mmusielik.xyz/posts/wyrazenia-algebraiczne</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/wyrazenia-algebraiczne</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[algebra]]></category>
+            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Zbiory Liczbowe]]></title>
+            <description><![CDATA[Definicja zbioru, suma, różnica zbioru, część wspólna]]></description>
+            <link>https://c.mmusielik.xyz/posts/zbiory</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/zbiory</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[zbiory]]></category>
+            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Układy Równań]]></title>
+            <description><![CDATA[Rozwiązywanie układów równań]]></description>
+            <link>https://c.mmusielik.xyz/posts/uklady-rownan</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/uklady-rownan</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[funkcje]]></category>
+            <category><![CDATA[uklady]]></category>
+            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Wybrane funkcje]]></title>
+            <description><![CDATA[Funkcja kwadratowa, logarytmiczna oraz proporcjonalność odwrotna]]></description>
+            <link>https://c.mmusielik.xyz/posts/wybrane-funkcje</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/wybrane-funkcje</guid>
+            <category><![CDATA[matematyka]]></category>
+            <category><![CDATA[funkcje]]></category>
+            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Rodzaj rzeczownika]]></title>
+            <description><![CDATA[Pomoc do znalezienia rodzaju rzeczownika]]></description>
+            <link>https://c.mmusielik.xyz/posts/rodzaj-rzeczownika</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/rodzaj-rzeczownika</guid>
+            <category><![CDATA[niemiecki]]></category>
+            <category><![CDATA[gramatyka]]></category>
+            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Systematyka związków nieorganicznych]]></title>
+            <description><![CDATA[Tlenki, Wodorki, Wodorotlenki, Kwasy oraz Sole w jednym miejscu]]></description>
+            <link>https://c.mmusielik.xyz/posts/systematyka-zwiazkow</link>
+            <guid isPermaLink="true">https://c.mmusielik.xyz/posts/systematyka-zwiazkow</guid>
+            <category><![CDATA[chemia]]></category>
+            <category><![CDATA[zwiazki]]></category>
+            <category><![CDATA[tlenki]]></category>
+            <category><![CDATA[kwasy]]></category>
+            <category><![CDATA[sole]]></category>
+            <dc:creator><![CDATA[Maciej Musielik]]></dc:creator>
+            <pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
