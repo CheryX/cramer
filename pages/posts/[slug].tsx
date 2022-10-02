@@ -10,6 +10,8 @@ import { PostData, postFilePaths, POSTS_PATH } from '../../data/postData'
 import { GetStaticProps } from 'next'
 import SEO from '../../components/SEO'
 
+import toc from 'markdown-toc'
+
 // Markdown plugins ts-ignore for this module
 import rehypeHighlight from "rehype-highlight"
 import rehypeKatex from 'rehype-katex'
@@ -36,7 +38,7 @@ type Props = {
 	slug: string
 }
 
-export default function PostPage({ source, frontMatter, slug }: Props) {
+export default function PostPage({ source, frontMatter, slug, toc }: Props) {
 
 	return (
 		<Layout>
@@ -55,6 +57,13 @@ export default function PostPage({ source, frontMatter, slug }: Props) {
 					{/* {frontMatter.excerpt && <p className="text-sm text-gray-500">{frontMatter.excerpt}</p>} */}
 
 					<article className="prose my-5">
+						{toc.map((heading: any) => (
+							<li key={heading.content} className={`toc-${heading.lvl}`}>
+								<Link href={`#${heading.slug}`}>
+									<a>{heading.content}</a>
+								</Link>
+							</li>
+						))}
 						<MDXRemote {...source} components={components} />
 					</article>
 
@@ -89,6 +98,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	
 	const postFilePath = path.join(POSTS_PATH, `${params?.slug}.mdx`)
 	const source = fs.readFileSync(postFilePath)
+	const parsedSource = toc(source.toString()).json
+	console.log(parsedSource)
 
 	const { content, data } = matter(source)
 
@@ -105,7 +116,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		props: {
 			source: mdxSource,
 			frontMatter: data,
-			slug: params?.slug
+			slug: params?.slug,
+			toc: parsedSource
 		},
 	}
 }
